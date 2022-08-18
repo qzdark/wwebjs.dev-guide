@@ -12,7 +12,7 @@ For most cases we recommend using the [`LocalAuth` strategy](#localauth-strategy
 
 This is the default `AuthStrategy` used when you don't provide one. It does not provide any means of saving and restoring sessions. You can set this if you'd like to be explicit about getting a fresh session every time the client is restarted. 
 
-```js
+```javascript
 const { Client, NoAuth } = require('whatsapp-web.js');
 
 const client = new Client();
@@ -31,7 +31,7 @@ const client = new Client({
 
 This strategy enables session-restore functionality by passing a persistent [user data directory](https://chromium.googlesource.com/chromium/src/+/master/docs/user_data_dir.md) to the browser. This means that other data, such as message history when using a multidevice-enabled account, will also be persisted and restored. 
 
-```js
+```javascript
 const { Client, LocalAuth } = require('whatsapp-web.js');
 
 const client = new Client({
@@ -41,10 +41,10 @@ const client = new Client({
 
 By default, the relevant session files are stored under a `.wwebjs_auth` directory, but you can change this by specifying the `dataPath` option when instantiating `LocalAuth`.
 
-### Multiple sessions
+### Multiple Sessions
 If you're using multiple clients belonging to different sessions, you can pass a `clientId` to segregate them:
 
-```js
+```javascript
 const { Client, LocalAuth } = require('whatsapp-web.js');
 
 const client1 = new Client({
@@ -64,7 +64,7 @@ const client2 = new Client({
 
 This was previously the only way to authenticate, but is now discouraged since it will not work with multidevice-enabled accounts. It injects or pulls the relevant tokens from WhatsApp Web and allows the user to decide how they want to store and provide them by exposing them in the `authenticated` event payload.
 
-```js
+```javascript
 const { Client, LegacySessionAuth } = require('whatsapp-web.js');
 
 const client = new Client({
@@ -72,7 +72,7 @@ const client = new Client({
 });
 ```
 
-### The authenticated event
+### Authenticated Event
 
 This event is emitted after authentication is successful, whether it's due to the QR Code being scanned or the session has been restored successfully. This event gives you a `session` object that you can use to later restore the same session.
 
@@ -83,7 +83,7 @@ client.on('authenticated', (session) => {
 });
 ```
 
-### Restoring the session
+### Restoring The Session
 
 The same object you get from the `authenticated` event can be passed as an option when creating the client:
 
@@ -97,7 +97,7 @@ const client = new Client({
 });
 ```
 
-### Example: Saving session data to a file
+### Saving Session Data To A File
 
 ```javascript
 const fs = require('fs');
