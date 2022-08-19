@@ -1,6 +1,6 @@
-import navbar from "./config/navbar";
+/*import navbar from "./config/navbar";
 import sidebar from "./config/sidebar";
-
+*/
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
@@ -39,8 +39,8 @@ module.exports = {
     docsDir: "src",
     lastUpdated: "Last Updated",
     sidebarDepth: 3,
-    nav: navbar,
-    sidebar: sidebar,
+    nav: require("./config/navbar"),
+    sidebar: require("./config/sidebar"),
   },
 
   theme: "yuu",
