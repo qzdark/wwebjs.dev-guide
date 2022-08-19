@@ -8,6 +8,8 @@ module.exports = {
         "getting-started",
         "authentication",
         "creating-your-app",
+        "features",
+        ""
       ],
     },
     {
@@ -25,10 +27,22 @@ module.exports = {
       ],
     },
     {
-      title: "Addeitional Inf",
+      title: "Addeitional Information",
       collapsable: false,
       children: [
         "",
+      ],
+    },
+  ],
+  "/guide_old/": [
+    {
+      title: "Guide",
+      collapsable: false,
+      children: [
+        "",
+        "authentication",
+        "handling-attachments",
+        "mentioning-contacts",
       ],
     },
   ],
