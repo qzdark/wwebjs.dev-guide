@@ -42,9 +42,9 @@ module.exports = {
     nav: require("./config/navbar"),
     sidebar: require("./config/sidebar"),
     yuu: {
+      disableThemeIgnore: true,
       labels: {
         darkTheme: 'Dark theme?', // Default is "Enable Dark Theme?"
-        ignoreThemes: 'Ignore themes?', // Default is "Ignore Other Themes?"
       },
     },
 
