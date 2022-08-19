@@ -11,7 +11,6 @@ module.exports = {
         "getting-started",
         "authentication",
         "creating-your-app",
-        "features",
         ""
       ],
     },
