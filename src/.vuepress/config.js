@@ -44,7 +44,7 @@ module.exports = {
     yuu: {
       disableThemeIgnore: true,
       labels: {
-        darkTheme: 'Dark theme?', // Default is "Enable Dark Theme?"
+        darkTheme: 'Darkmode', // Default is "Enable Dark Theme?"
       },
     },
 
