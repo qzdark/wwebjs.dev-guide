@@ -3,7 +3,7 @@ title: Introduction
 description: Introduction to whatsapp-web.js
 ---
 
-![Banner](../images/branding/banner_blue_logo.png)
+![Banner](../images/branding/dark/banner_blue_logo.png)
 
 # Introduction
 
@@ -11,7 +11,7 @@ description: Introduction to whatsapp-web.js
 ## Why `whatsapp-web.js`
 
 
-## How it Works
+## How It Works
 
 
-## Features
+## What Is New
