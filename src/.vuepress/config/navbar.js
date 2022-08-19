@@ -7,10 +7,6 @@ module.exports = [
     link: "/guide/",
   },
   {
-    text: "Documentation",
-    link: "https://docs.wwebjs.dev",
-  },
-  {
     text: "Resources",
     ariaLabel: "Resources",
     items: [
@@ -38,4 +34,8 @@ module.exports = [
       },
     ]
   },
+  {
+    text: "Documentation",
+    link: "https://docs.wwebjs.dev",
+  }
 ]
