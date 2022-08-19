@@ -11,7 +11,7 @@
 ![Preview](./src/images/preview-ideas/message_light_preview.png)
 ### Changed:
     Guide structure
-
+    Additional adjusted to icon #3eaf7c to #25D366
 ### Removed:
     D
 ### Fixed:

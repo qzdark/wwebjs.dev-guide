@@ -11,29 +11,23 @@ module.exports = {
         "getting-started",
         "authentication",
         "creating-your-app",
-        ""
+        "features"
       ],
     },
     {
       title: "Advanced",
       collapsable: false,
-      children: [
-        "",
-      ],
+      children: [],
     },
     {
       title: "Popular Topics",
       collapsable: false,
-      children: [
-        "",
-      ],
+      children: [],
     },
     {
       title: "Addeitional Information",
       collapsable: false,
-      children: [
-        "",
-      ],
+      children: [],
     },
   ],
   "/guide_old/": [
