@@ -1,5 +1,5 @@
-import navbar from "navbar";
-import sidebar from "sidebar";
+import navbar from "./config/navbar";
+import sidebar from "./config/sidebar";
 
 module.exports = {
   /**
