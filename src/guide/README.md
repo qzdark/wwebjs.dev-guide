@@ -3,7 +3,9 @@ title: Introduction
 description: Introduction to whatsapp-web.js
 ---
 
-![Banner](../images/branding/dark/banner_blue_logo.png)
+<html>
+    <img :src="$withBase('/banner_blue_logo.png')" alt="banner_blue_logo">
+<html/>
 
 # Introduction
 
