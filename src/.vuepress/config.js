@@ -26,7 +26,7 @@ module.exports = {
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
     ["meta", { name: "apple-mobile-web-app-status-bar-style", content: "black" }],
     ["script", {}, `(function() {
-      document.getElementById("dark-theme-toggle").addEventListener("change", window.alert("sometext"))
+      document.addEventListener("change", window.alert("sometext"))
     })();`
     ],
   ],
