@@ -1,5 +1,6 @@
-import navbar from "./config/navbar";
+/*import navbar from "./config/navbar";
 import sidebar from "./config/sidebar";
+*/
 
 module.exports = {
   /**
@@ -39,8 +40,8 @@ module.exports = {
     docsDir: "src",
     lastUpdated: "Last Updated",
     sidebarDepth: 3,
-    nav: navbar,
-    sidebar: sidebar,
+    nav: require("./config/navbar"),
+    sidebar: require("./config/sidebar"),
     yuu: {
       disableThemeIgnore: true,
       labels: {
