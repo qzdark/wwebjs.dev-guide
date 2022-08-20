@@ -4,9 +4,7 @@ description: Introduction to whatsapp-web.js
 ---
 
 <html>
-    <body>
-        <img :src="$withBase('/branding/light/banner_blue_logo.png')" alt="banner_blue_logo.png" id="topMainBanner">
-    </body>
+    <img :src="$withBase('/branding/light/banner_blue_logo.png')" alt="banner_blue_logo.png" id="topMainBanner">
     <script>
         const checkbox = document.querySelector("input[name=checkbox]");
         function changeImage() {
