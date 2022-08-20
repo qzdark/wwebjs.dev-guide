@@ -25,8 +25,11 @@ module.exports = {
     ["meta", { name: "theme-color", content: "#25D366" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
     ["meta", { name: "apple-mobile-web-app-status-bar-style", content: "black" }],
-    ["script", {}, `(function() {
-      document.addEventListener("onclick", window.alert("sometext"))
+    ["script", {}, `(function() { 
+      const hallo = "1"
+      if (hallo === "1") {
+        window.alert("sometext")
+      }
     })();`
     ],
   ],
