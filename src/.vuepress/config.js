@@ -19,14 +19,14 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/assets/logo_favicon_32x32.png" }],
-    ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "/assets/logo_favicon_16x16.png" }],
-    ['link', { rel: 'shortcut icon', type: 'image/x-icon', href: '/assets/logo_favicon_shortcut.ico' }],
+    ["link", { rel: "icon", type: "image/png", sizes: "32x32", href: "/assets/logo_favicon_32x32.png" }],
+    ["link", { rel: "icon", type: "image/png", sizes: "16x16", href: "/assets/logo_favicon_16x16.png" }],
+    ["link", { rel: 'shortcut icon', type: 'image/x-icon', href: '/assets/logo_favicon_shortcut.ico' }],
     ["meta", { name: "theme-color", content: "#25D366" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
     ["meta", { name: "apple-mobile-web-app-status-bar-style", content: "black" }],
     ["script", {}, (function() {
-      document.getElementById("dark-theme-toggle").addEventListener("onclick", window.alert("sometext"))
+      addEventListener("onclick", window.alert("sometext"))
     })()],
   ],
 
