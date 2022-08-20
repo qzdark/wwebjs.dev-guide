@@ -11,5 +11,5 @@ export default ({
   siteData // site metadata
 }) => {
   // ...apply enhancements for the site.
-  document.getElementById("dark-theme-toggle").addEventListener("change", myFunction);
+  document.getElementById("dark-theme-toggle").addEventListener("change", window.alert("sometext"));
 }
