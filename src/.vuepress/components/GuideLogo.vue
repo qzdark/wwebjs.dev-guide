@@ -6,12 +6,11 @@
 
 <style lang="stylus">
 .guide-logo .site-name {
-	background: url('/assets/light/banner_green_logo.png') top left / contain no-repeat;
+	background: url('/assets/branding/light/banner_green_logo.png') top left / contain no-repeat;
 	padding-left: 1.5em;
 	max-height: 100%;
 	display: flex;
 	align-items: center;
-	font-size: 2rem;
 	@media screen and (max-width: $MQMobile) {
 		overflow: unset;
 	}
@@ -22,17 +21,17 @@
 }
 .yuu-theme-red {
 	.guide-logo .site-name {
-		background-image: url('/assets/light/banner_red_logo.png');
+		background-image: url('/assets/branding/light/banner_red_logo.png');
 	}
 }
 .yuu-theme-blue {
 	.guide-logo .site-name {
-		background-image: url('/assets/light/banner_blue_logo.png');
+		background-image: url('/assets/branding/light/banner_blue_logo.png');
 	}
 }
 .yuu-theme-purple {
 	.guide-logo .site-name {
-		background-image: url('/assets/light/banner_purple_logo.png');
+		background-image: url('/assets/branding/light/banner_purple_logo.png');
 	}
 }
 </style>
