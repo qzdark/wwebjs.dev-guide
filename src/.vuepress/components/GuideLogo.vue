@@ -1,6 +1,5 @@
 <template>
 	<div router-link :to="$localePath" class="guide-logo"><div>
-		<span class="site-name">12</span>
 	</router-link>
 </template>
 
@@ -14,7 +13,7 @@
 	@media screen and (max-width: $MQMobile) {
 		overflow: unset;
 	}
-	@media screen and (max-width: 100%) {
+	@media screen and (max-width: 600px) {
 		padding-left: 0;
 	}
 }
@@ -34,17 +33,17 @@
 	}
 }
 
-.yuu-theme-red and yuu-theme-dark {
+.yuu-theme-dark and .yuu-theme-red {
 	.guide-logo {
 		background-image: url('/branding/light/banner_red_logo.png');
 	}
 }
-.yuu-theme-blue and yuu-theme-dark {
+.yuu-theme-dark and .yuu-theme-blue {
 	.guide-logo {
 		background-image: url('/branding/light/banner_blue_logo.png');
 	}
 }
-.yuu-theme-purple and yuu-theme-dark {
+.yuu-theme-dark and .yuu-theme-purple {
 	.guide-logo {
 		background-image: url('/branding/light/banner_purple_logo.png');
 	}
