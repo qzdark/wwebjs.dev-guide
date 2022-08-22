@@ -1,11 +1,11 @@
 <template>
 	<div router-link :to="$localePath" class="guide-logo">
-		<img src="/branding/dark/banner_green_logo.png" alt="Banner was not able to load">
+		<img src="/branding/dark/banner_green_logo.png" alt="Banner was not able to load" class="site-name">
 	</div>
 </template>
 
 <style lang="stylus">
-.guide-logo {
+.guide-logo .site-name {
 	padding-left: 1.5em;
 	max-height: 100%;
 	align-items: center;
