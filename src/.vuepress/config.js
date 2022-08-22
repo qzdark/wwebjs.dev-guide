@@ -45,8 +45,9 @@ module.exports = {
     yuu: {
       disableThemeIgnore: true,
       labels: {
-        darkTheme: 'Darkmode', // Default is "Enable Dark Theme?"
+        darkTheme: "Darkmode", // Default is "Enable Dark Theme?"
       },
+      logo: "GuideLogo",
     },
 
   },
@@ -59,6 +60,7 @@ module.exports = {
   plugins: [
     "@vuepress/plugin-back-to-top",
     "@vuepress/plugin-medium-zoom",
+    "vuepress-plugin-smooth-scroll",
     [
       "vuepress-plugin-code-copy",
       {
