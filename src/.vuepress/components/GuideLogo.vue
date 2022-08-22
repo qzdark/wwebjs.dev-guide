@@ -1,6 +1,6 @@
 <template>
 	<div router-link :to="$localePath" class="guide-logo">
-		<img src="$localePath('/branding/dark/banner_green_logo.png')" alt="Banner was not able to load">
+		<img src="/branding/dark/banner_green_logo.png" alt="Banner was not able to load">
 	</div>
 </template>
 
