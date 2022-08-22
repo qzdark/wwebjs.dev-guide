@@ -9,14 +9,12 @@
 	background: url('/branding/dark/banner_green_logo.png') top left / contain no-repeat;
 	padding-left: 1.5em;
 	max-height: 100%;
-	max-width: 100%;
 	display: flex;
 	align-items: center;
 	@media screen and (max-width: $MQMobile) {
 		overflow: unset;
 	}
-	@media screen and (max-width: 600px) {
-		text-indent: -9999px;
+	@media screen and (max-width: 100%) {
 		padding-left: 0;
 	}
 }
