@@ -1,5 +1,5 @@
 <template>
-	<div router-link :to="$localePath" class="guide-logo"><div>
+	<router-link :to="$localePath" class="guide-logo">
 	</router-link>
 </template>
 
