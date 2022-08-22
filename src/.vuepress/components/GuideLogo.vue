@@ -1,12 +1,12 @@
 <template>
 	<div router-link :to="$localePath" class="guide-logo">
-		<img alt="Banner was not able to load" class="site-name">
+		<div alt="Banner was not able to load" class="site-name"></div>
 	</div>
 </template>
 
 <style lang="stylus">
 .guide-logo .site-name {
-	image: url('/branding/dark/banner_green_logo.png');
+	background-image: url('/branding/dark/banner_green_logo.png');
 	padding-left: 1.5em;
 	max-height: 20%;
 	align-items: center;
