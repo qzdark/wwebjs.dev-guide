@@ -36,17 +36,17 @@
 	}
 }
 
-.yuu-theme-red .yuu-theme-dark {
+.yuu-theme-red and yuu-theme-dark {
 	.guide-logo {
 		background-image: url('/branding/light/banner_red_logo.png');
 	}
 }
-.yuu-theme-blue .yuu-theme-dark {
+.yuu-theme-blue and yuu-theme-dark {
 	.guide-logo {
 		background-image: url('/branding/light/banner_blue_logo.png');
 	}
 }
-.yuu-theme-purple .yuu-theme-dark {
+.yuu-theme-purple and yuu-theme-dark {
 	.guide-logo {
 		background-image: url('/branding/light/banner_purple_logo.png');
 	}
