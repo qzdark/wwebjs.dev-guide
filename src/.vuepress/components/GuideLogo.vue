@@ -6,7 +6,7 @@
 
 <style lang="stylus">
 .guide-logo .site-name {
-	background: url('/book-small.png') top left / contain no-repeat;
+	background: url('/assets/light/banner_green_logo.png') top left / contain no-repeat;
 	padding-left: 1.5em;
 	max-height: 100%;
 	display: flex;
@@ -22,17 +22,17 @@
 }
 .yuu-theme-red {
 	.guide-logo .site-name {
-		background-image: url('/book-red-small.png');
+		background-image: url('/assets/light/banner_red_logo.png');
 	}
 }
 .yuu-theme-blue {
 	.guide-logo .site-name {
-		background-image: url('/book-blue-small.png');
+		background-image: url('/assets/light/banner_blue_logo.png');
 	}
 }
 .yuu-theme-purple {
 	.guide-logo .site-name {
-		background-image: url('/book-purple-small.png');
+		background-image: url('/assets/light/banner_purple_logo.png');
 	}
 }
 </style>
