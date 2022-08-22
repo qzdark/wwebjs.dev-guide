@@ -1,5 +1,6 @@
 <template>
 	<div router-link :to="$localePath" class="guide-logo"><div>
+		<span class="site-name">12</span>
 	</router-link>
 </template>
 
@@ -49,5 +50,4 @@
 		background-image: url('/branding/light/banner_purple_logo.png');
 	}
 }
-
 </style>
