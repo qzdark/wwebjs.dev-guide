@@ -1,6 +1,6 @@
 <template>
 	<router-link :to="$localePath" class="guide-logo">
-		<span class="site-banner"></span>
+		<span class="site-banner">1</span>
 	</router-link>
 </template>
 
