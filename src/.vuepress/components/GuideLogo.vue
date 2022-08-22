@@ -2,7 +2,7 @@
 	<router-link :to="$localePath" class="guide-logo">
 		<span class="site-name">
 			<div class="site-banner">
-				test
+
 			</div>
 		</span>
 	</router-link>
