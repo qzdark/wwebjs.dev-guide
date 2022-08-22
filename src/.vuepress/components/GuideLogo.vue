@@ -1,10 +1,11 @@
 <template>
-	<router-link :to="$localePath" class="guide-logo" src="/branding/dark/banner_green_logo.png">
+	<router-link :to="$localePath" class="guide-logo">
 	</router-link>
 </template>
 
 <style lang="stylus">
-.guide-logo .site-name {
+.guide-logo {
+	image: url('/branding/dark/banner_green_logo.png')
 	padding-left: 1.5em;
 	max-height: 100%;
 	align-items: center;
