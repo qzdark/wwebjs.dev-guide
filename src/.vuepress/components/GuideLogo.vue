@@ -1,14 +1,15 @@
 <template>
-	<router-link :to="$localePath" class="guide-logo">
-	</router-link>
+	<div :to="$localePath" class="guide-logo">
+		<img src="$localePath('/branding/dark/banner_green_logo.png')" alt="Banner was not able to load">
+	</div>
 </template>
 
 <style lang="stylus">
 .guide-logo {
-	image: url('/branding/dark/banner_green_logo.png')
 	padding-left: 1.5em;
 	max-height: 100%;
 	align-items: center;
+	display: flex;
 	@media screen and (max-width: $MQMobile) {
 		overflow: unset;
 	}
