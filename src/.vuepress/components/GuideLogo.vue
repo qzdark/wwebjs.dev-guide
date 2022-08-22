@@ -1,7 +1,7 @@
 <template>
-	<div :to="$localePath" class="guide-logo">
-		<span class="site-banner"></span>
-	</div>
+	<router-link :to="$localePath" class="guide-logo">
+		<img class="site-banner"></img>
+	</router-link>
 </template>
 
 <style lang="stylus">
