@@ -1,6 +1,6 @@
 <template>
 	<router-link :to="$localePath" class="guide-logo">
-		<span class="site-name"></span>
+		<span class="site-name">1</span>
 	</router-link>
 </template>
 
@@ -34,4 +34,21 @@
 		background-image: url('/assets/branding/light/banner_purple_logo.png');
 	}
 }
+
+.yuu-theme-red .yuu-theme-dark {
+	.guide-logo .site-name {
+		background-image: url('/assets/branding/light/banner_red_logo.png');
+	}
+}
+.yuu-theme-blue .yuu-theme-dark {
+	.guide-logo .site-name {
+		background-image: url('/assets/branding/light/banner_blue_logo.png');
+	}
+}
+.yuu-theme-purple .yuu-theme-dark {
+	.guide-logo .site-name {
+		background-image: url('/assets/branding/light/banner_purple_logo.png');
+	}
+}
+
 </style>
