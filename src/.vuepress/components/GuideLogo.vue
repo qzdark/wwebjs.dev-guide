@@ -1,8 +1,5 @@
 <template>
-	<div>
-		<router-link :to="$localePath" class="guide-logo">
-		</router-link>
-	</div>
+	<div router-link :to="$localePath" class="guide-logo"></div>
 </template>
 
 <style lang="stylus">
