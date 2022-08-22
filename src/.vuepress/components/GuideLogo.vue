@@ -1,5 +1,7 @@
 <template>
-	<div router-link :to="$localePath" class="guide-logo"></div>
+	<router-link :to="$localePath" class="guide-logo">
+		<span class="site-name">12</span>
+	</router-link>
 </template>
 
 <style lang="stylus">
@@ -14,6 +16,9 @@
 	}
 	@media screen and (max-width: 600px) {
 		padding-left: 0;
+	}
+	@media screen and (max-width: 600px) {
+		
 	}
 }
 .yuu-theme-red {
