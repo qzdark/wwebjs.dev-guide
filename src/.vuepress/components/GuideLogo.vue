@@ -1,14 +1,16 @@
 <template>
-	<router-link :to="$localePath" class="guide-logo">
+	<div>
+		<router-link :to="$localePath" class="guide-logo">
 			<span class="site-name">12</span>
-	</router-link>
+		</router-link>
+	</div>
 </template>
 
 <style lang="stylus">
 .guide-logo {
 	background: url('/branding/dark/banner_green_logo.png') top left / contain no-repeat;
 	padding-left: 1.5em;
-	max-height: 100%;
+	max-height: 90%;
 	display: flex;
 	align-items: center;
 	@media screen and (max-width: $MQMobile) {
