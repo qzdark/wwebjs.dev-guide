@@ -1,8 +1,6 @@
 <template>
 	<router-link :to="$localePath" class="guide-logo">
-		<div class="site-banner">
-
-		</div>
+		<p class="site-banner"></p>
 	</router-link>
 </template>
 
