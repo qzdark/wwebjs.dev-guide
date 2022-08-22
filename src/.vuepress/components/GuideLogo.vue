@@ -1,11 +1,11 @@
 <template>
-	<router-link :to="$localePath" class="guide-logo">
-		<span class="site-name">12</span>
-	</router-link>
+	<div :to="$localePath" class="guide-logo">
+		<span class="site-banner"></span>
+	</div>
 </template>
 
 <style lang="stylus">
-.guide-logo {
+.guide-logo .site-banner {
 	background: url('/branding/dark/banner_green_logo.png') top left / contain no-repeat;
 	padding-left: 1.5em;
 	max-height: 90%;
@@ -17,38 +17,38 @@
 	@media screen and (max-width: 600px) {
 		padding-left: 0;
 	}
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 450px) {
 		
 	}
 }
 .yuu-theme-red {
-	.guide-logo {
+	.guide-logo .site-banner {
 		background-image: url('/branding/dark/banner_red_logo.png');
 	}
 }
 .yuu-theme-blue {
-	.guide-logo {
+	.guide-logo .site-banner {
 		background-image: url('/branding/dark/banner_blue_logo.png');
 	}
 }
 .yuu-theme-purple {
-	.guide-logo {
+	.guide-logo .site-banner {
 		background-image: url('/branding/dark/banner_purple_logo.png');
 	}
 }
 
 .yuu-theme-dark and .yuu-theme-red {
-	.guide-logo {
+	.guide-logo .site-banner {
 		background-image: url('/branding/light/banner_red_logo.png');
 	}
 }
 .yuu-theme-dark and .yuu-theme-blue {
-	.guide-logo {
+	.guide-logo .site-banner {
 		background-image: url('/branding/light/banner_blue_logo.png');
 	}
 }
 .yuu-theme-dark and .yuu-theme-purple {
-	.guide-logo {
+	.guide-logo .site-banner {
 		background-image: url('/branding/light/banner_purple_logo.png');
 	}
 }
