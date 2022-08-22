@@ -6,7 +6,12 @@
 
 <style lang="stylus">
 .guide-logo .site-name {
-	background-image: url('/branding/dark/banner_green_logo.png');
+	background-image: -webkit-image-set(
+    	url('/branding/dark/banner_green_logo.png') 1x,
+    	url('/branding/dark/banner_green_logo.png') 2x);
+  	background-image: image-set(
+    	url('/branding/dark/banner_green_logo.png') 1x,
+    	url('/branding/dark/banner_green_logo.png') 2x);
 	padding-left: 1.5em;
 	max-height: 20%;
 	align-items: center;
