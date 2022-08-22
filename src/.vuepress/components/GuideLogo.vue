@@ -10,6 +10,8 @@
 .guide-logo site-banner {
 	background-image: url('/branding/dark/banner_green_logo.png');
 	padding-left: 1.5em;
+	height: 200px
+	width: 200px
 	max-height: 20%;
 	align-items: center;
 	display: flex;
