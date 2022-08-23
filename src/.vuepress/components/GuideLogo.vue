@@ -1,6 +1,6 @@
 <template>
-	<router-link :to="$localePath" class="guide-logo" target="_lank">
-		<p class="site-name"></p>
+	<router-link :to="$localePath" class="guide-logo">
+		<p class="site-name">1</p>
 	</router-link>
 </template>
 
@@ -8,7 +8,7 @@
 .guide-logo .site-name {
 	background-image: url('/branding/dark/banner_green_logo.png');
 	padding-left: 1.5em;
-	max-height: 100%;
+	max-height: 50%;
 	display: flex;
 	align-items: center;
 
