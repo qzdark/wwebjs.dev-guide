@@ -20,7 +20,7 @@
 	display: flex;
 	height: auto;
 	width auto;
-	text-align: center;
+	align-items: center;
 }
 .yuu-theme-red {
 	.guide-banner-home .guide-banner {
