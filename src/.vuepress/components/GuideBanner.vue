@@ -11,7 +11,7 @@
 	content: url('/branding/dark/banner_green_logo.png');
 	padding-left: 1em;
 	display: flex;
-	max-height: 10%%;
+	max-height: 10%;
 	max-width 40%;
 	align-items: center;
 
