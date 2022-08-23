@@ -16,10 +16,10 @@
 }
 .guide-banner-home .guide-banner {
 	content: url('/branding/dark/banner_green_logo.png');
-	padding-left: 1.5em;
+	padding-left: 1em;
 	display: flex;
 	height: 50px;
-	width: 100px;
+	width: 300px;
 }
 .yuu-theme-red {
 	.guide-banner-home .guide-banner {
