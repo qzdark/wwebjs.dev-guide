@@ -25,12 +25,12 @@
 		overflow: unset;
 	}
 
-	@media (max-width: 719px) {
+	@media screen and (max-width: 719px) {
 		content: url('/branding/dark/banner_green_normal.png');
 		hight: 40px;
 		wight: auto;
 		text-indent: -9999px;
-		padding-left: 0;
+		padding-left: -0.5;
 	}
 }
 .yuu-theme-red {
