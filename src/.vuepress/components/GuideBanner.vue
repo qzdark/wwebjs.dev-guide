@@ -26,10 +26,12 @@
 	}
 
 	@media (max-width: 719px) {
-		content: url('/branding/dark/banner_green_normal.png');
-		wight: 150px;
-		text-indent: -9999px;
-		padding-left: 0;
+		.guide-banner-home .guide-banner {
+			content: url('/branding/dark/banner_green_normal.png');
+			wight: 150px;
+			text-indent: -9999px;
+			padding-left: 0;
+		}
 	}
 }
 .yuu-theme-red {
