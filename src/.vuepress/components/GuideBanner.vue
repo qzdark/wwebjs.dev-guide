@@ -1,7 +1,7 @@
 <template>
 	<RouterLink :to="$localePath" class="guide-banner-home">
 
-		<img class="guide-banner" :alt="Banner">
+		<div class="guide-banner"></div>
 
 	</RouterLink>
 </template>
@@ -15,7 +15,10 @@
 	display: flex;
 }
 .guide-logo guide-banner {
-	background-image: url('/branding/dark/banner_green_logo.png') no-repeat;;
+	width: 130px;
+    height: 195px;
+	background-image: url('/branding/dark/banner_green_logo.png') no-repeat;
+	display: inline-block;
 }
 .yuu-theme-red {
 	.guide-logo .guide-banner {
