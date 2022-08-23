@@ -32,7 +32,7 @@
 
 .yuu-theme-dark {
 	.guide-banner-home .guide-banner {
-		content: "$withBase('/branding/light/banner_green_logo.png')";
+		content: url('/branding/light/banner_green_logo.png');
 	}
 }
 .yuu-theme-dark.yuu-theme-red {
