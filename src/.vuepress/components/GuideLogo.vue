@@ -9,6 +9,7 @@
 	background-image: url('/branding/dark/banner_green_logo.png');
 	padding-left: 1.5em;
 	max-height: 200px;
+	max-width: 200px;
 	display: flex;
 	align-items: center;
 
