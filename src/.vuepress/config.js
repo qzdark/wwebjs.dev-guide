@@ -47,7 +47,7 @@ module.exports = {
       labels: {
         darkTheme: "Darkmode", // Default is "Enable Dark Theme?"
       },
-      logo: "GuideLogo",
+      logo: "logo.png",
     },
 
   },
