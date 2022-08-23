@@ -21,7 +21,10 @@
 	}
 
 	@media screen and (max-width: 600px) {
+		content: url('/branding/dark/banner_green_logo.png');
+		wight: 150px;
 		text-indent: -9999px;
+		padding-left: 0;
 	}
 }
 .yuu-theme-red {
