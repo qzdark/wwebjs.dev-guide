@@ -14,9 +14,6 @@
 	max-width: 50px;
 	display: flex;
 }
-.guide-logo guide-banner {
-	content:url('/branding/dark/banner_green_logo.png') no-repeat;;
-}
 .yuu-theme-red {
 	.guide-logo .guide-banner {
 		src: url('/branding/dark/banner_red_logo.png');
@@ -35,7 +32,7 @@
 
 .yuu-theme-dark {
 	.guide-logo .guide-banner {
-		src: url('/branding/light/banner_green_logo.png');
+		content:url('/branding/light/banner_green_logo.png');
 	}
 }
 .yuu-theme-dark.yuu-theme-red {
