@@ -18,7 +18,7 @@
 	content: url('/branding/dark/banner_green_logo.png');
 	padding-left: 1.5em;
 	display: flex;
-	height: 100px;
+	height: 50px;
 	width: 100px;
 }
 .yuu-theme-red {
