@@ -30,7 +30,7 @@
 		hight: 40px;
 		wight: auto;
 		text-indent: -9999px;
-		padding-left: -0.5;
+		padding-left: 0;
 	}
 }
 .yuu-theme-red {
