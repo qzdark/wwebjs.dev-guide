@@ -33,18 +33,18 @@ On Linux, you can consult [this page](https://nodejs.org/en/download/package-man
 
 :::: code-group
 ::: code-group-item npm
-```bash:no-line-numbers
-npm i whatsapp-web.js
+```sh:no-line-numbers
+npm init
 ```
 :::
 ::: code-group-item yarn
-```bash:no-line-numbers
-yarn add whatsapp-web.js
+```sh:no-line-numbers
+yarn init
 ```
 :::
 ::: code-group-item pnpm
-```bash:no-line-numbers
-pnpm add whatsapp-web.js
+```sh:no-line-numbers
+pnpm init
 ```
 :::
 ::::
