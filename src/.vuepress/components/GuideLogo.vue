@@ -11,7 +11,6 @@
 	max-height: 200px;
 	max-width: 50px;
 	display: flex;
-	align-items: center;
 }
 .yuu-theme-red {
 	.guide-logo .site-name {
