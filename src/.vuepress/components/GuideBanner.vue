@@ -18,7 +18,6 @@
 	width: 130px;
     height: 195px;
 	background-image: url('/branding/dark/banner_green_logo.png') no-repeat;
-	display: inline-block;
 }
 .yuu-theme-red {
 	.guide-logo .guide-banner {
