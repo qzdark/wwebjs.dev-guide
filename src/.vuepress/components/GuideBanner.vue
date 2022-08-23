@@ -14,6 +14,7 @@
 	max-height: 40px;
 	max-width 225px;
 	align-items: center;
+	display: inline-block;
 
 	@media screen and (max-width: $MQMobile) {
 		overflow: unset;
