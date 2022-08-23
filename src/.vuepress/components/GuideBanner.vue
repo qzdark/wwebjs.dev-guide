@@ -18,6 +18,8 @@
 	content: url('/branding/dark/banner_green_logo.png');
 	padding-left: 1.5em;
 	display: flex;
+	max-height: 10%;
+
 }
 .yuu-theme-red {
 	.guide-banner-home .guide-banner {
