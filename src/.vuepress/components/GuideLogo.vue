@@ -1,7 +1,7 @@
 <template>
 	<RouterLink :to="$localePath" class="guide-banner-home">
 
-		<img class="guide-banner" :src="$withBase('/branding/dark/banner_green_logo.png')" :alt="$siteTitle">
+		<img class="guide-banner" :src="$withBase('/branding/dark/banner_green_logo.png')" :alt="Banner">
 
 	</RouterLink>
 </template>
