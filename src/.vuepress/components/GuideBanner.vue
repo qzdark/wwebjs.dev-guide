@@ -11,12 +11,16 @@
 	content: url('/branding/dark/banner_green_logo.png');
 	padding-left: 1em;
 	display: flex;
-	max-height: 10%;
-	max-width 40%;
+	max-height: 40px;
+	max-width 225px;
 	align-items: center;
 
 	@media screen and (max-width: $MQMobile) {
 		overflow: unset;
+	}
+
+	@media screen and (max-width: 600px) {
+		text-indent: -9999px;
 	}
 }
 .yuu-theme-red {
