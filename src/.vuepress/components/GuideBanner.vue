@@ -9,10 +9,10 @@
 <style lang="stylus">
 .guide-banner-home .sguide-banner {
 	background-image: url('/branding/dark/banner_green_logo.png');
-	padding-left: 1.5em;
-	max-height: 400px;
-	max-width: 80px;
+	height: auto;
+	width auto;
 	display: flex;
+	text-align: center;
 }
 .guide-banner-home .guide-banner {
 	content: url('/branding/dark/banner_green_logo.png');
