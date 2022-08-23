@@ -9,16 +9,9 @@
 	background-image: url('/branding/dark/banner_green_logo.png');
 	padding-left: 1.5em;
 	max-height: 200px;
-	max-width: 200px;
+	max-width: 50px;
 	display: flex;
 	align-items: center;
-
-	@media screen and (max-width: $MQMobile) {
-		overflow: unset;
-	}
-	@media screen and (max-width: 600px) {
-		padding-left: 0;
-	}
 }
 .yuu-theme-red {
 	.guide-logo .site-name {
