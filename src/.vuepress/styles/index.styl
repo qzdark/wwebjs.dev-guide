@@ -12,17 +12,22 @@ pre .code-copy
   svg path:nth-child(2)
     fill #42b983
 
-.styled-scrollbars {
-  /* Foreground, Background */
-  scrollbar-color: #red #333;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
-.styled-scrollbars::-webkit-scrollbar {
-  width: 10px; /* Mostly for vertical scrollbars */
-  height: 10px; /* Mostly for horizontal scrollbars */
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
 }
-.styled-scrollbars::-webkit-scrollbar-thumb { /* Foreground */
-  background: #red;
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
 }
-.styled-scrollbars::-webkit-scrollbar-track { /* Background */
-  background: #red;
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
