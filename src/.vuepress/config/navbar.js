@@ -31,7 +31,7 @@ module.exports = [
         text: "Support Projekt",
         items: [
           {
-            text: "Via Github",
+            text: "Github",
             link: "https://github.com/sponsors/pedroslopez",
           },
           {
