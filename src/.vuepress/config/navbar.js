@@ -11,24 +11,45 @@ module.exports = [
     ariaLabel: "Resources",
     items: [
       {
-        text: 'Find More',
+        text: 'More WWebJS',
         items: [
           {
-            text: "npm",
+            text: "NPM",
             link: "https://npmjs.com/package/whatsapp-web.js",
           },
           {
             text: "Releases",
             link: "https://github.com/pedroslopez/whatsapp-web.js/releases"
           },
+          {
+            text: "",
+            link: ""
+          }
         ]
       },
       {
-        text: 'Resources',
+        text: "Support Projekt",
         items: [
           {
-            text: "Old Guide",
-            link: "/guide_old/"
+            text: "Via Github",
+            link: "https://github.com/sponsors/pedroslopez",
+          },
+          {
+            text: "Ko-fi",
+            link: "https://ko-fi.com/pedroslopez",
+          }
+        ]
+      },
+      {
+        text: 'Guide Versions',
+        items: [
+          {
+            text: "v1 Guide (Current)",
+            link: "/v1-guide/"
+          },
+          {
+            text: "v0 Guide",
+            link: "/v0-guide/"
           },
         ]
       },
