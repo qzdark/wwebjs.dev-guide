@@ -11,7 +11,7 @@
 	background-image: url('/branding/dark/banner_green_logo.png');
 	padding-left: 1.5em;
 	max-height: 400px;
-	max-width: 50px;
+	max-width: 80px;
 	display: flex;
 }
 .guide-banner-home .guide-banner {
