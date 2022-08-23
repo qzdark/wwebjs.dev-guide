@@ -20,7 +20,7 @@
 		overflow: unset;
 	}
 
-	@media screen and (max-width: 600px) {
+	@media (max-width: 400px) {
 		content: url('/branding/dark/banner_green_logo.png');
 		wight: 150px;
 		text-indent: -9999px;
