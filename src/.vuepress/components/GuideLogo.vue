@@ -1,7 +1,9 @@
 <template>
-	<router-link :to="$localePath" class="guide-logo">
-		<p class="site-name">1</p>
-	</router-link>
+	<RouterLink :to="$localePath" class="guide-banner-home">
+
+		<img class="guide-banner" :src="$withBase('/branding/dark/banner_green_logo.png')" :alt="$siteTitle">
+
+	</RouterLink>
 </template>
 
 <style lang="stylus">
