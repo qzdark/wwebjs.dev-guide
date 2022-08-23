@@ -22,8 +22,8 @@ module.exports = [
             link: "https://github.com/pedroslopez/whatsapp-web.js/releases"
           },
           {
-            text: "",
-            link: ""
+            text: "Discord",
+            link: "https://discord.gg/wyKybbF"
           }
         ]
       },
