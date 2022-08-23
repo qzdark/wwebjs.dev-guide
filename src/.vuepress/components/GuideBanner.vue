@@ -14,7 +14,7 @@
 <style lang="stylus">
 .guide-banner-home .guide-banner {
 	content: url('/branding/dark/banner_green_logo.png');
-	padding-left: 2.5em;
+	padding-left: 1.5em;
 	display: flex;
 	max-height: 40px;
 	max-width 225px;
