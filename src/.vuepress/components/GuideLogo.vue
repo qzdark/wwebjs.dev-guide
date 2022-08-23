@@ -8,7 +8,7 @@
 .guide-logo .site-name {
 	background-image: url('/branding/dark/banner_green_logo.png');
 	padding-left: 1.5em;
-	max-height: 50%;
+	max-height: 10%;
 	display: flex;
 	align-items: center;
 
