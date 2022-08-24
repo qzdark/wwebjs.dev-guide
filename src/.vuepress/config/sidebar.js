@@ -8,18 +8,16 @@ const getGuides = readdirSync(path).filter((dir) =>
 );
 
 function setSidebar() {
-  let inputs = [];
+  const inputs = {};
 
   for (const directory of getGuides) {
     const config = require(path+directory+"/config.js");
 
     if (config.settings.ready) {
-      const createSidebar = {};
-      createSidebar[config.settings.link] = config.sidebar;
-      inputs.push(createSidebar);
+      inputs[config.settings.link] = config.sidebar;
     }
   };
-  return inputs.reverse();
+  return inputs;
 };
 
-module.exports = setSidebar().toString();
+module.exports = setSidebar();
