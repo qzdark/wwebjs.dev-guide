@@ -1,45 +1,28 @@
-module.exports = {
-  /**
-   * Sidebar
-   */
-  "/guide/": [
-    {
-      title: "Guide",
-      collapsable: false,
-      children: [
-        "",
-        "getting-started",
-        "authentication",
-        "creating-your-app",
-        "features"
-      ],
-    },
-    {
-      title: "Advanced",
-      collapsable: false,
-      children: [],
-    },
-    {
-      title: "Popular Topics",
-      collapsable: false,
-      children: [],
-    },
-    {
-      title: "Addeitional Information",
-      collapsable: false,
-      children: [],
-    },
-  ],
-  "/guide_old/": [
-    {
-      title: "Guide",
-      collapsable: false,
-      children: [
-        "",
-        "authentication",
-        "handling-attachments",
-        "mentioning-contacts",
-      ],
-    },
-  ],
+const { readdirSync } = require('fs');
+const { join } = require('path');
+
+const path = join(__dirname, "../../../src/");
+
+const getGuides = readdirSync(path).filter((dir) =>
+  dir.endsWith("guide")
+);
+
+function readGuideConfig() {
+  let inputs = [];
+
+  for (const directory of getGuides) {
+    const config = require(path+directory+"/config.js");
+
+    if (config.settings.ready) {
+      inputs.push(config.sidebar);
+    }
+  };
+  return inputs.reverse();
 };
+
+/*function setSidebar() {
+  const readSidebar = new Map ([readGuideConfig()]);
+  return Object.fromEntries(readSidebar);
+};*/
+
+module.exports = readGuideConfig().toString();

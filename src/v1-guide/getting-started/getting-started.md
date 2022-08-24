@@ -31,24 +31,6 @@ On Linux, you can consult [this page](https://nodejs.org/en/download/package-man
 
 ### Installing On No-gui Systeam
 
-:::: code-group
-::: code-group-item npm
-```sh:no-line-numbers
-npm init
-```
-:::
-::: code-group-item yarn
-```sh:no-line-numbers
-yarn init
-```
-:::
-::: code-group-item pnpm
-```sh:no-line-numbers
-pnpm init
-```
-:::
-::::
-
 ## Setting up Your Application
 
 If you now have Node installed on v12 or a higher version, you can now install `whatsapp-web.js`.
