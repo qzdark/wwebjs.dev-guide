@@ -36,9 +36,6 @@
 	.guide-banner-home .guide-banner {
 		content: url('/branding/dark/banner_red_logo.png');
 	}
-	::-webkit-scrollbar-thumb {
-  		background: #1a1a1a;
-	}
 }
 .yuu-theme-blue {
 	.guide-banner-home .guide-banner {
