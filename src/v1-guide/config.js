@@ -1,7 +1,7 @@
 module.exports = {
     settings: {
         version: 1,
-        link: "/v1-guide/getting-started/",
+        link: "/v1-guide/",
         sidebar: "/v1-guide/",
         navbar: "v1 Guide (Latest)",
         ready: true,
@@ -11,7 +11,7 @@ module.exports = {
             title: "Getting Started",
             collapsable: false,
             children: [
-                "getting-started/",
+                "",
                 "getting-started/what-is-new",
             ],
         },

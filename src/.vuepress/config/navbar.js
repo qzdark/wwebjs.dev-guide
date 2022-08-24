@@ -38,7 +38,7 @@ module.exports = [
    */
   {
     text: "Guide",
-    link: "/v1-guide/getting-started/",
+    link: "/v1-guide/",
   },
   {
     text: "Resources",

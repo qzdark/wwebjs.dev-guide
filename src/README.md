@@ -2,7 +2,7 @@
 home: true
 heroImage: logo.png
 actionText: Get Started →
-actionLink: v1-guide/getting-started/
+actionLink: /v1-guide/
 features:
 - title: Automation for Everyone
   details: Programmatically control WhatsApp whether you're running user or business accounts.
