@@ -7,7 +7,7 @@ const getGuides = readdirSync(path).filter((dir) =>
   dir.endsWith("guide")
 );
 
-function readGuideConfig() {
+function setSidebar() {
   let inputs = [];
 
   for (const directory of getGuides) {
