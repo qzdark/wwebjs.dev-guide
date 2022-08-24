@@ -12,6 +12,7 @@ module.exports = {
             collapsable: false,
             children: [
                 "getting-started/",
+                "getting-started/what-is-new",
             ],
         },
         {
