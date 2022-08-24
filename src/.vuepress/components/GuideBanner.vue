@@ -37,23 +37,17 @@
 		content: url('/branding/dark/banner_red_logo.png');
 	}
 	::-webkit-scrollbar-thumb {
-  		background: #red;
+  		background: #1a1a1a;
 	}
 }
 .yuu-theme-blue {
 	.guide-banner-home .guide-banner {
 		content: url('/branding/dark/banner_blue_logo.png');
 	}
-		::-webkit-scrollbar-thumb {
-  		background: #blue;
-	}
 }
 .yuu-theme-purple {
 	.guide-banner-home .guide-banner {
 		content: url('/branding/dark/banner_purple_logo.png');
-	}
-		::-webkit-scrollbar-thumb {
-  		background: #25D366;
 	}
 }
 
@@ -61,32 +55,20 @@
 	.guide-banner-home .guide-banner {
 		content: url('/branding/light/banner_green_logo.png');
 	}
-		::-webkit-scrollbar-thumb {
-  		background: #25D366;
-	}
 }
 .yuu-theme-dark.yuu-theme-red {
 	.guide-banner-home .guide-banner {
 		content: url('/branding/light/banner_red_logo.png');
-	}
-		::-webkit-scrollbar-thumb {
-  		background: #25D366;
 	}
 }
 .yuu-theme-dark.yuu-theme-blue {
 	.guide-banner-home .guide-banner {
 		content: url('/branding/light/banner_blue_logo.png');
 	}
-		::-webkit-scrollbar-thumb {
-  		background: #25D366;
-	}
 }
 .yuu-theme-dark.yuu-theme-purple {
 	.guide-banner-home .guide-banner {
 		content: url('/branding/light/banner_purple_logo.png');
-	}
-		::-webkit-scrollbar-thumb {
-  		background: #25D366;
 	}
 }
 </style>
