@@ -20,9 +20,9 @@ function readGuideConfig() {
   return inputs.reverse();
 };
 
-/*function setSidebar() {
+function setSidebar() {
   const readSidebar = new Map ([readGuideConfig()]);
   return Object.fromEntries(readSidebar);
-};*/
+};
 
-module.exports = readGuideConfig().toString();
+module.exports = setSidebar();
