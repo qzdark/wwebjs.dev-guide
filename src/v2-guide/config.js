@@ -4,7 +4,7 @@ module.exports = {
         link: "/v2-guide/getting-started/",
         sidebar: "/v2-guide/",
         navbar: "v2 Guide",
-        ready: false,
+        ready: true,
     },
     sidebar: []
 };
