@@ -1,7 +1,8 @@
 module.exports = {
     settings: {
         version: 1,
-        link: "/v1-guide/",
+        link: "/v1-guide/getting-started/",
+        sidebar: "/v1-guide/",
         navbar: "v1 Guide (Latest)",
         ready: true,
     },

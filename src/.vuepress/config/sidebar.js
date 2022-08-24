@@ -14,7 +14,7 @@ function setSidebar() {
     const config = require(path+directory+"/config.js");
 
     if (config.settings.ready) {
-      inputs[config.settings.link] = config.sidebar;
+      inputs[config.settings.sidebar] = config.sidebar;
     }
   };
   return inputs;
