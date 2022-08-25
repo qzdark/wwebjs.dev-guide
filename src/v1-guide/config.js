@@ -28,12 +28,10 @@ module.exports = {
             collapsable: false,
             children: [
                 "creating-your-app/",
-                "creating-your-app/first-steps",
                 "creating-your-app/authentication",
+                "creating-your-app/handeling-messages",
                 "creating-your-app/handling-attachments",
                 "creating-your-app/interfacing-with-groups",
-                "creating-your-app/interfacing-with-groups",
-                "creating-your-app/interfacing-with-groups"
             ],
         },
         {

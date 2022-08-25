@@ -1,1 +1,1 @@
-# Setting up your Application
+# Setting up Application
