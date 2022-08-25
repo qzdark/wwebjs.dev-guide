@@ -16,38 +16,38 @@ footer: Licensed under the Apache License, Version 2.0.
 <style lang="stylus">
 .yuu-theme-red {
 	.home .hero img {
-		content: url('/branding/dark/banner_red_logo.png');
+		content: url('/branding/logo_red.png');
 	}
 }
 .yuu-theme-blue {
 	.home .hero img {
-		content: url('/branding/dark/banner_blue_logo.png');
+		content: url('/branding/logo_blue.png');
 	}
 }
 .yuu-theme-purple {
 	.home .hero img {
-		content: url('/branding/dark/banner_purple_logo.png');
+		content: url('/branding/logo_purple.png');
 	}
 }
 
 .yuu-theme-dark {
 	.home .hero img {
-		content: url('/branding/light/banner_green_logo.png');
+		content: url('/branding/logo_green.png');
 	}
 }
 .yuu-theme-dark.yuu-theme-red {
 	.home .hero img  {
-		content: url('/branding/light/banner_red_logo.png');
+		content: url('/branding/logo_red.png');
 	}
 }
 .yuu-theme-dark.yuu-theme-blue {
 	.home .hero img  {
-		content: url('/branding/light/banner_blue_logo.png');
+		content: url('/branding/logo_blue.png');
 	}
 }
 .yuu-theme-dark.yuu-theme-purple {
 	.home .hero img  {
-		content: url('/branding/light/banner_purple_logo.png');
+		content: url('/branding/logo_purple.png');
 	}
 }
 </style>
