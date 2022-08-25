@@ -12,9 +12,8 @@ This is an introduction to the powerful WhatsApp API library `whatsapp-web.js`. 
 - Exampls and answer questions;
 - and much more things.
 
-an incredible number of ways to interact with WhatsApp. You can run a WhatsApp API client that connects through the WhatsApp Web browser app. It uses Puppeteer to run a real instance of Whatsapp Web to avoid getting blocked. It's one of the easiest and best ways.
+<!-- an incredible number of ways to interact with WhatsApp. You can run a WhatsApp API client that connects through the WhatsApp Web browser app. It uses Puppeteer to run a real instance of Whatsapp Web to avoid getting blocked. --->
 
-You can create a Website/App/Bots/and more -> //create changing HTML on this
 
 ## Why `whatsapp-web.js`
 
@@ -32,3 +31,5 @@ This project is not affiliated, associated, authorized, endorsed by, or in any w
 **NOTE:**
 
 It is not guarantee you will not be blocked by using this method. WhatsApp does not allow bots or unofficial clients on their platform, so this shouldn't be considered totally safe.
+
+<!--- Create your Website/App/Bots/and more -> //create changing HTML on this --->
