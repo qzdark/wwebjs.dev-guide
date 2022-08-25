@@ -61,8 +61,8 @@ module.exports = {
             collapsable: false,
             children: [
                 "popular-topics/",
+                "popular-topics/faq",
                 "popular-topics/hosting",
-                "popular-topics/created-projects-with-wwebjs"
             ],
         },
         {
