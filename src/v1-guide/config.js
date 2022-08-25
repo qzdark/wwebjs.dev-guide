@@ -67,7 +67,8 @@ module.exports = {
             title: "Addeitional Information",
             collapsable: false,
             children: [
-                "addeitional-information/"
+                "addeitional-information/",
+                "something-missing"
             ],
         },
     ]
