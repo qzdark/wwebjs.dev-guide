@@ -12,21 +12,28 @@ module.exports = {
             collapsable: false,
             children: [
                 "",
-                "getting-started/what-is-new",
+                "getting-started/what-is-new"
             ],
         },
         {
             title: "Installation & Preparation",
             collapsable: false,
             children: [
-                "installation-and-preparation/"
+                "installation-and-preparation/",
+                "installation-and-preparation/installing-wwebjs"
             ],
         },
         {
             title: "Creating Your App",
             collapsable: false,
             children: [
-                "creating-your-app/"
+                "creating-your-app/",
+                "creating-your-app/first-steps",
+                "creating-your-app/authentication",
+                "creating-your-app/handling-attachments",
+                "creating-your-app/interfacing-with-groups",
+                "creating-your-app/interfacing-with-groups",
+                "creating-your-app/interfacing-with-groups"
             ],
         },
         {

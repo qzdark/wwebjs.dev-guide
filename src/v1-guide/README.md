@@ -1,9 +1,3 @@
----
-title: Introduction
-description: Introduction to whatsapp-web.js
----
-
-
 # Introduction
 
 :::warning

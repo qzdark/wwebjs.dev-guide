@@ -1,4 +1,4 @@
-## Setting up Your Application
+# First Steps
 
 If you now have Node installed on v12 or a higher version, you can now install `whatsapp-web.js`.
 ### Creating Your App
