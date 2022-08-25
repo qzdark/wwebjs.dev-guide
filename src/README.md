@@ -1,6 +1,6 @@
 ---
 home: true
-homeComponent: CustomHome
+homeComponent: /.vuepress/components/CustomHome
 heroImage: logo.png
 actionText: Get Started →
 actionLink: /v1-guide/
