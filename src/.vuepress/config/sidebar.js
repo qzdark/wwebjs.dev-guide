@@ -1,3 +1,5 @@
+/* This is temporary as long as no vxx.wwebjs.dev is available. */
+
 const { readdirSync } = require('fs');
 const { join } = require('path');
 

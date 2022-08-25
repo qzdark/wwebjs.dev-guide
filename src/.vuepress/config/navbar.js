@@ -1,3 +1,5 @@
+/* This is temporary as long as no vxx.wwebjs.dev is available. */
+
 const { readdirSync } = require('fs');
 const { join } = require('path');
 
@@ -48,7 +50,7 @@ module.exports = [
         text: 'More WWebJS',
         items: [
           {
-            text: "NPM",
+            text: "npm",
             link: "https://npmjs.com/package/whatsapp-web.js",
           },
           {

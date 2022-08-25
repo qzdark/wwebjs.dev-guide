@@ -69,7 +69,7 @@ module.exports = {
             collapsable: false,
             children: [
                 "addeitional-information/",
-                "something-missing"
+                "addeitional-information/something-missing"
             ],
         },
     ]
