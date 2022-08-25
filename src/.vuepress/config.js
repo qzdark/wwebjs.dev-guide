@@ -42,7 +42,7 @@ module.exports = {
     sidebarDepth: 3,
     nav: require("./config/navbar"),
     sidebar: require("./config/sidebar"),
-    yuu: require("./theme/yuu"),
+    yuu: require("./config/yuu"),
 
   },
   theme: "yuu",
