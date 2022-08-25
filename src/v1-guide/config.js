@@ -29,7 +29,7 @@ module.exports = {
             children: [
                 "creating-your-app/",
                 "creating-your-app/authentication",
-                "creating-your-app/handeling-messages",
+                "creating-your-app/handling-messages",
                 "creating-your-app/handling-attachments",
                 "creating-your-app/interfacing-with-groups",
             ],
