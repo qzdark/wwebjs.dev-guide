@@ -1,5 +1,6 @@
 ---
 home: true
+homeComponent: CustomHome
 heroImage: logo.png
 actionText: Get Started →
 actionLink: /v1-guide/

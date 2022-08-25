@@ -45,7 +45,6 @@ module.exports = {
     yuu: require("./theme/yuu"),
 
   },
-
   theme: "yuu",
 
   /**
