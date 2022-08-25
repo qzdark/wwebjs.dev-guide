@@ -16,7 +16,7 @@ module.exports = {
             ],
         },
         {
-            title: "Installation & Preparation",
+            title: "Installation",
             collapsable: false,
             children: [
                 "installation-and-preparation/",
@@ -38,7 +38,8 @@ module.exports = {
             title: "Features",
             collapsable: false,
             children: [
-                "features/"
+                "features/",
+                "features/debugging"
             ],
         },
         {
