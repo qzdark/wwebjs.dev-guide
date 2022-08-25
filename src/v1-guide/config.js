@@ -60,7 +60,8 @@ module.exports = {
             title: "Popular Topics",
             collapsable: false,
             children: [
-                "popular-topics/"
+                "popular-topics/",
+                "hosting.md"
             ],
         },
         {
