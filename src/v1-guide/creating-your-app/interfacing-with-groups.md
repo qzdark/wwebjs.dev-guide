@@ -1,9 +1,4 @@
----
-title: Interfacing With Groups
-description: Learn about the methods and features to handle groups
----
-
-# Interefacing With Group Chats
+# Interefacing with Group
 
 ## Creating a group chat
 
@@ -13,7 +8,8 @@ You pass in the name as the first parameter, and an array of IDs you want to add
 
 ```javascript
 client.on("ready", async () => {
-    await client.createGroup("Testing 1", ["123456789@c.us", "234567980@c.us"])
+  // You onley can create a group chat with 2 or more users
+  await client.createGroup("Testing 1", ["123456789@c.us", "234567980@c.us"])
 })
 ```
 
@@ -26,3 +22,4 @@ client.on("ready', async () => {
   res.gid // ID of the group that was just created (string)
   res.missingParticipants // Participants that couldn't be added to the group, and the reason with more info ({[jid]: {}})
 })
+```
