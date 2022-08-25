@@ -33,3 +33,21 @@ This project is not affiliated, associated, authorized, endorsed by, or in any w
 It is not guarantee you will not be blocked by using this method. WhatsApp does not allow bots or unofficial clients on their platform, so this shouldn't be considered totally safe.
 
 <!--- Create your Website/App/Bots/and more -> //create changing HTML on this --->
+
+<CodeGroup>
+  <CodeGroupItem title="YARN">
+
+```bash:no-line-numbers
+yarn
+```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="NPM" active>
+
+```bash:no-line-numbers
+npm install
+```
+
+  </CodeGroupItem>
+</CodeGroup>
