@@ -39,14 +39,20 @@ module.exports = {
             collapsable: false,
             children: [
                 "features/",
-                "features/debugging"
+                "features/location",
+                "features/sticker",
+                "features/reactions",
+                "features/lists",
+                "features/buttons",
+                "features/business"
             ],
         },
         {
             title: "Advanced",
             collapsable: false,
             children: [
-                "advanced/"
+                "advanced/",
+                "advanced/debugging"
             ],
         },
         {
