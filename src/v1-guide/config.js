@@ -61,7 +61,7 @@ module.exports = {
             collapsable: false,
             children: [
                 "popular-topics/",
-                "hosting.md"
+                "popular-topics/hosting.md"
             ],
         },
         {
