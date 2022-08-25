@@ -35,18 +35,18 @@ footer: Licensed under the Apache License, Version 2.0.
 		content: url('/branding/light/banner_green_logo.png');
 	}
 }
-.home .hero img {
-	.guide-banner-home .guide-banner {
+.yuu-theme-dark.yuu-theme-red {
+	.home .hero img  {
 		content: url('/branding/light/banner_red_logo.png');
 	}
 }
-.home .hero img {
-	.guide-banner-home .guide-banner {
+.yuu-theme-dark.yuu-theme-blue {
+	.home .hero img  {
 		content: url('/branding/light/banner_blue_logo.png');
 	}
 }
-.home .hero img {
-	.guide-banner-home .guide-banner {
+.yuu-theme-dark.yuu-theme-purple {
+	.home .hero img  {
 		content: url('/branding/light/banner_purple_logo.png');
 	}
 }
