@@ -4,8 +4,6 @@
  * ref：https://v1.vuepress.vuejs.org/config/#index-styl
  */
 
-/* File is optimize able */
-
 .home .hero img
   max-width 450px!important
 
@@ -14,47 +12,34 @@ pre .code-copy
   svg path:nth-child(2)
     fill #42b983
 
-.custom-block.danger, .custom-block.tip, .custom-block.warning {
-  border-radius: 6px;
-}
 
-a.sidebar-link.active {
+.custom-block.danger, .custom-block.tip, .custom-block.warning 
+  border-radius: 6px;
+
+a.sidebar-link.active 
   border-radius: 3px;
-}
 
-.theme-default-content:not(.custom) img {
+
+.theme-default-content:not(.custom) img 
   border-radius: 6px;
-}
 
-.theme-default-content:not(.custom) {
+.theme-default-content:not(.custom) 
   max-width: 1050px;
-}
 
-.page-edit {
-  max-width: 1100px;
-}
-
-.page-nav {
-  max-width: 1100px;
-}
 
 /* Scrollbar width */
-html ::-webkit-scrollbar {
+html ::-webkit-scrollbar 
   width: 7px;
-}
 
 /* Scrollbar background */
-html ::-webkit-scrollbar-track {
+html ::-webkit-scrollbar-track
   background: darken(#1A1A1A, 20%);
-}
 
 /* Scrollbar color */
-html ::-webkit-scrollbar-thumb {
+html ::-webkit-scrollbar-thumb
   background: #25D366;
   border-radius: 10px; 
-}
 
 /* Scrollbar color hover */
-html ::-webkit-scrollbar-thumb:hover {
-  background: darken(#25D366, 30%);; 
-}
+html ::-webkit-scrollbar-thumb:hover
+  background: darken(#25D366, 30%);
