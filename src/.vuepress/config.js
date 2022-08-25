@@ -42,13 +42,7 @@ module.exports = {
     sidebarDepth: 3,
     nav: require("./config/navbar"),
     sidebar: require("./config/sidebar"),
-    yuu: {
-      disableThemeIgnore: true,
-      labels: {
-        darkTheme: "Darkmode", // Default is "Enable Dark Theme?"
-      },
-      logo: "GuideBanner",
-    },
+    yuu: require("./theme/yuu"),
 
   },
 
@@ -60,7 +54,6 @@ module.exports = {
   plugins: [
     "@vuepress/plugin-back-to-top",
     "@vuepress/plugin-medium-zoom",
-    "@vuepress/theme-default@next",
     [
       "vuepress-plugin-code-copy",
       {
