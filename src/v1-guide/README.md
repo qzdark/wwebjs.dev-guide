@@ -9,5 +9,5 @@ This is an introduction to the whatsapp-web.js library. With this WhatsApp libra
 ## Why `whatsapp-web.js`
 
 
-## How It Works
+## How it works
 
