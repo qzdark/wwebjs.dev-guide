@@ -33,17 +33,3 @@ This project is not affiliated, associated, authorized, endorsed by, or in any w
 It is not guarantee you will not be blocked by using this method. WhatsApp does not allow bots or unofficial clients on their platform, so this shouldn't be considered totally safe.
 
 <!--- Create your Website/App/Bots/and more -> //create changing HTML on this --->
-
-<code-group>
-<code-block title="YARN" active>
-```bash
-yarn create vuepress-site [optionalDirectoryName]
-```
-</code-block>
-
-<code-block title="NPM">
-```bash
-npx create-vuepress-site [optionalDirectoryName]
-```
-</code-block>
-</code-group>

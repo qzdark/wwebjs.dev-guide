@@ -19,8 +19,8 @@ module.exports = {
             title: "Installation",
             collapsable: false,
             children: [
-                "installation-and-preparation/",
-                "installation-and-preparation/installing-wwebjs"
+                "installation/",
+                "installation/installing-wwebjs"
             ],
         },
         {
