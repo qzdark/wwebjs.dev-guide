@@ -18,7 +18,7 @@ The whatsapp-web.js guide is still a work in progress, which means there may be 
 
 This project is not affiliated, associated, authorized, endorsed by, or in any way officially connected with WhatsApp or any of its subsidiaries or its affiliates. The official WhatsApp website can be found at https://whatsapp.com. "WhatsApp" as well as related names, marks, emblems and images are registered trademarks of their respective owners. Also it is not guaranteed you will not be blocked by using this method. WhatsApp does not allow bots or unofficial clients on their platform, so this shouldn't be considered totally safe.
 
-## Why `whatsapp-web.js`
+## Why whatsapp-web.js
 
 - It is a free library;
 - Easy to understand;
