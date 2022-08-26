@@ -14,3 +14,17 @@ yarn init
 ```
 </script-block>
 </script-code>
+
+<code-group>
+<code-block title="YARN" active>
+```bash
+yarn create vuepress-site [optionalDirectoryName]
+```
+</code-block>
+
+<code-block title="NPM">
+```bash
+npx create-vuepress-site [optionalDirectoryName]
+```
+</code-block>
+</code-group>
