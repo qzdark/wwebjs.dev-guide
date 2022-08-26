@@ -2,29 +2,22 @@
 
 code
 
-<script-code>
-<script-block title="NPM" active>
+<code-group>
+<code-block title="npm" active>
 ```bash
 npm init
 ```
-</script-block>
-<script-block title="YARN">
+</code-block>
+
+<code-block title="yarn">
 ```bash
 yarn init
 ```
-</script-block>
-</script-code>
-
-<code-group>
-<code-block title="YARN" active>
-```bash
-yarn create vuepress-site [optionalDirectoryName]
-```
 </code-block>
 
-<code-block title="NPM">
+<code-block title="pnpm">
 ```bash
-npx create-vuepress-site [optionalDirectoryName]
+pnpm init
 ```
 </code-block>
 </code-group>
