@@ -4,9 +4,9 @@
 The whatsapp-web.js guide is still a work in progress, which means there may be bugs. If this happens, please create an [issue on github](https://github.com/wwebjs/wwebjs.dev/issues/new). To learn about all the features available to you in the library, please check out the [documentation](https://docs.wwebjs.dev/).
 :::
 
-This is an introduction to the powerful WhatsApp API library `whatsapp-web.js`. It offers you knowledge about:
+**This is an introduction to the powerful WhatsApp API library whatsapp-web.js. It offers you knowledge about:**
 
-- How to use `whatsapp-web.js`;
+- How to use whatsapp-web.js;
 - How to create a simple Application;
 - Working with every feature;
 - Exampls and answer questions;
@@ -14,6 +14,9 @@ This is an introduction to the powerful WhatsApp API library `whatsapp-web.js`. 
 
 <!-- an incredible number of ways to interact with WhatsApp. You can run a WhatsApp API client that connects through the WhatsApp Web browser app. It uses Puppeteer to run a real instance of Whatsapp Web to avoid getting blocked. --->
 
+## Disclaimer
+
+This project is not affiliated, associated, authorized, endorsed by, or in any way officially connected with WhatsApp or any of its subsidiaries or its affiliates. The official WhatsApp website can be found at https://whatsapp.com. "WhatsApp" as well as related names, marks, emblems and images are registered trademarks of their respective owners. 
 
 ## Why `whatsapp-web.js`
 
@@ -23,10 +26,6 @@ This is an introduction to the powerful WhatsApp API library `whatsapp-web.js`. 
 - Still in development;
 - Discord and Github Support;
 - and a lot of more.
-
-## Disclaimer
-
-This project is not affiliated, associated, authorized, endorsed by, or in any way officially connected with WhatsApp or any of its subsidiaries or its affiliates. The official WhatsApp website can be found at https://whatsapp.com. "WhatsApp" as well as related names, marks, emblems and images are registered trademarks of their respective owners.
 
 **NOTE:**
 
