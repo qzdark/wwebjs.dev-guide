@@ -48,7 +48,7 @@ module.exports = {
   theme: "yuu",
 
   /**
-   * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
+   * Apply plugins，ref：https://v1.vuepress.vuejs.org/plugin/
    */
   plugins: [
     "@vuepress/plugin-back-to-top",
