@@ -29,6 +29,7 @@
 		padding-left: 0;
 	}
 }
+
 .yuu-theme-red {
 	.guide-banner-home .guide-banner {
 		content: url('/branding/dark/banner_red_logo.png');
@@ -44,6 +45,7 @@
 		content: url('/branding/dark/banner_purple_logo.png');
 	}
 }
+
 .yuu-theme-dark {
 	.guide-banner-home .guide-banner {
 		content: url('/branding/light/banner_green_logo.png');
