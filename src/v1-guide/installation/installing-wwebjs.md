@@ -13,9 +13,4 @@ npm init
 yarn init
 ```
 </script-block>
-<script-block title="PNPM">
-```bash
-pnpm init
-```
-</script-block>
 </script-code>
