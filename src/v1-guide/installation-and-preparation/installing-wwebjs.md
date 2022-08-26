@@ -1,5 +1,7 @@
 # Installing WWebJS
 
+code
+
 <script-code>
     <script-block title="npm" active>
     ```bash

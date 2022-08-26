@@ -19,11 +19,9 @@
 	max-width 225px;
 	align-items: center;
 	display: inline-block;
-
 	@media screen and (max-width: $MQMobile) {
 		overflow: unset;
 	}
-
 	@media screen and (max-width: 719px) {
 		max-hight: 40px;
 		max-wight: auto;
@@ -46,7 +44,6 @@
 		content: url('/branding/dark/banner_purple_logo.png');
 	}
 }
-
 .yuu-theme-dark {
 	.guide-banner-home .guide-banner {
 		content: url('/branding/light/banner_green_logo.png');
