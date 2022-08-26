@@ -23,7 +23,7 @@ pnpm init
 <code-group>
 <code-block title="npm" active>
 ```bash
-npm insall whatsapp-web.js
+npm install whatsapp-web.js
 ```
 </code-block>
 
