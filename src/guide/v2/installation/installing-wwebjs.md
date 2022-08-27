@@ -1,5 +1,7 @@
 # Installing WWebJS
 
+After you have installed Node and are able to run commands in your console, you can now install whatsapp-web.js
+
 <code-group>
 <code-block title="npm" active>
 ```bash

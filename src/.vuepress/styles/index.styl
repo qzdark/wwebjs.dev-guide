@@ -40,11 +40,17 @@ a.sidebar-link.active
 
 /* Scrollbar width */
 html ::-webkit-scrollbar 
-  width: 7px;
+  width: 8px;
 
 /* Scrollbar background */
-html ::-webkit-scrollbar-track
-  background: #171717;
+html ::-webkit-scrollbar-track {
+  background: #EDEDED;
+}
+.yuu-theme-dark {
+  html ::-webkit-scrollbar-track {
+    background: #171717;
+  }
+}
 
 /* Scrollbar color */
 html ::-webkit-scrollbar-thumb
