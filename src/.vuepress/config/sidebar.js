@@ -83,6 +83,15 @@ module.exports = {
       ],
     },
   ],
+  "/guide/v2/": [
+    {
+      title: "Business",
+      collapsable: false,
+      children: [
+        "business/",
+      ],
+    },
+  ],
   "/guide/v3/": [
     {
       title: "v3 Guide",

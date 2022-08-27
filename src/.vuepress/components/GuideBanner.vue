@@ -25,7 +25,6 @@
 	@media screen and (max-width: 719px) {
 		max-hight: 40px;
 		max-wight: auto;
-		text-indent: -9999px;
 		padding-left: 0;
 	}
 }
