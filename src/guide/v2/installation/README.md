@@ -1,6 +1,6 @@
 # Installing Node
 
-Before you can start working with whatsapp-web.js you need to install [Node.js](https://nodejs.org/) and whatsapp-web.js first.
+Before you can start working you need to install [Node.js](https://nodejs.org/) and whatsapp-web.js first.
 
 whatsapp-web.js `v2` is requring Node v12 or higher else you can not use it.
 
