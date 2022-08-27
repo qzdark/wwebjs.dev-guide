@@ -21,7 +21,7 @@ This also applies to macOS. Download any [version above 12+](https://nodejs.org/
 If you are using Linux, chances are you already have Node installed. Check this with `node -v`, if you have an approximate output of `12.0` or higher, you can continue scrolling. If this is not the case, we recommend that you visit [this Node.js](https://nodejs.org/en/download/package-manager/) site.
 
 ::: warning
-If you already have Node installed, but you are using an older version that is below v12, you need to upgrade Node to v12 or higher, because that requires `whatsapp-web.js v2.`
+If you already have Node installed, but you are using an older version that is below v12, you need to upgrade your Node to v12 or higher. That is important because `whatsapp-web.js v2` is requring that.
 :::
 
 ---
@@ -30,7 +30,9 @@ If you already have Node installed, but you are using an older version that is b
 
 After installing Node, you can now run commands in your console. We recommend using [npm](https://www.npmjs.com/), but you can use both [Yarn](https://yarnpkg.com/) and [pnpm](https://pnpm.io/) as package manager. However, we support all package managers in the guide.
 
-Let's get started. Enter this command in your terminal and give your project a name, as well as version and more.
+Let's get started. Open your terminal in your folder and give your project a name, as well as version and more.
+
+You have to run this command to do this.
 
 <code-group>
 <code-block title="npm" active>
