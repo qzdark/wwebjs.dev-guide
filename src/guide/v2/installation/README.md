@@ -30,7 +30,7 @@ If you already have Node installed, but you are using an older version that is b
 
 After installing Node, you can now run commands in your console. We recommend using [npm](https://www.npmjs.com/), but you can use both [Yarn](https://yarnpkg.com/) and [pnpm](https://pnpm.io/) as package manager. However, we support all package managers in the guide.
 
-Let's get started. Open your terminal in your folder and give your project a name, as well as version and more. Execute this command in your terminal.
+Let's get started. Open your terminal in your folder, execute this command and give your project a name, as well as version and more.
 
 <code-group>
 <code-block title="npm" active>
@@ -51,3 +51,27 @@ pnpm init
 ```
 </code-block>
 </code-group>
+
+::: tip
+To get started quickly, you can run the following command to have it fill out everything for you.
+
+<code-group>
+<code-block title="npm" active>
+```bash
+npm init -y
+```
+</code-block>
+
+<code-block title="yarn">
+```bash
+yarn init -y
+```
+</code-block>
+
+<code-block title="pnpm">
+```bash
+pnpm init -y
+```
+</code-block>
+</code-group>
+:::
