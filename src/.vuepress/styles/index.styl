@@ -58,6 +58,12 @@ html ::-webkit-scrollbar-thumb {
   background: var(--theme-color);
   border-radius: 10px;
 }
-/*html ::-webkit-scrollbar-thumb:hover {
-  background-color: darken(var(--theme-color), 30%);
-}*/
+html ::-webkit-scrollbar-thumb:hover {
+  background-color: darken(hex(var(--theme-color)), 30%);
+}
+pre .code-copy {
+  margin-top -0.85rem;
+  svg path:nth-child(2) {
+    fill var(--theme-color)
+  }
+}
