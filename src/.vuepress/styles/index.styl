@@ -43,13 +43,11 @@ html ::-webkit-scrollbar
   width: 8px;
 
 /* Scrollbar background */
-html ::-webkit-scrollbar-track {
-  background: #EDEDED;
-}
 .yuu-theme-dark {
-  html ::-webkit-scrollbar-track {
-    background: #171717;
-  }
+  --scrollbar-background: #171717; 
+}
+html ::-webkit-scrollbar-track {
+  var(--scrollbar-background, #EDEDED);
 }
 
 /* Scrollbar color */

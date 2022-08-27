@@ -1,4 +1,4 @@
 # redirect old guide domain
-https://elaborate-hotteok-0edd53.netlify.app/guide/ https://elaborate-hotteok-0edd53.netlify.app/v1-guide/ 301!
+https://elaborate-hotteok-0edd53.netlify.app/guide/ https://elaborate-hotteok-0edd53.netlify.app/guide/v2/ 301!
 
-/guide/ /v1-guide/ 301! 
+/guide/ /guide/v2/ 301! 
