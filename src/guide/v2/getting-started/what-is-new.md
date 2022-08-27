@@ -45,4 +45,6 @@ You can find a full Changelog on [Github]()
 -
 -
 
+### Future
+
 From now on we want to keep the guide up to date and add all new features as soon as they are available.

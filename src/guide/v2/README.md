@@ -6,9 +6,9 @@ The whatsapp-web.js guide is still a work in progress, which means there may be 
 
 **This is an introduction to the powerful free WhatsApp API library whatsapp-web.js. This Guide will offers you knowledge about:**
 
-- How to create a simple [Application with whatsapp-web.js](v1-guide/creating-your-app/).
+- How to create a simple [Application with whatsapp-web.js](/guide/v2/creating-your-app/).
 - Explanations and examples for each topic.
-- Answering popular [Frequently asked Questions](/v1-guide/popular-topics/faq).
+- Answering popular [Frequently asked Questions](/guide/v2/popular-topics/faq).
 - And much more things.
 
 ## Disclaimer
