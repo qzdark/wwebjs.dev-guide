@@ -1,7 +1,8 @@
 # Installing Node
 
 Before you can start working you need to install [Node.js](https://nodejs.org/) and whatsapp-web.js first.
-whatsapp-web.js `v2` is requring Node v12 or higher else you can not use it.
+
+whatsapp-web.js `v2` is requring Node.js `v12` or higher else you are not able to use it.
 
 ::: tip
 To check if you already have Node installed on your machine, run `node -v` in your [terminal](/guide/v2/popular-topics/guide-explanations/). If the output is `v12` or higher, then you're good to go! Otherwise you should continue reading this.
@@ -9,24 +10,44 @@ To check if you already have Node installed on your machine, run `node -v` in yo
 
 ## Installation on Windows
 
-On Windows, it's as simple as installing any other program. Download the latest version from [the Node.js website](https://nodejs.org/), open the downloaded file, and follow the steps from the installer.
+Installing Node on Windows works just like any other program. Download any [version above 12+](https://nodejs.org/), open the downloaded file and follow the installer steps.
 
 ## Installation on macOS
 
-On macOS, either:
+This also applies to macOS. Download any [version above 12+](https://nodejs.org/), open the downloaded file and follow the installer steps. You may need to use a package manager like [Homebrew](https://brew.sh/) though. Use this with the command `brew install node`.
 
-- Download the latest version from [the Node.js website](https://nodejs.org/), open the package installer, and follow the instructions
-- Use a package manager like [Homebrew](https://brew.sh/) with the command `brew install node`
-
-
-If you're developing on macOS, you have a few options. You can go to the Node.js website (opens new window), download the latest version, double click the package installer, and follow the instructions. Or you can use a package manager like Homebrew (opens new window)with the command brew install node.
 ## Installation on Linux
 
-On Linux, you can consult [this page](https://nodejs.org/en/download/package-manager/) to determine how you should install Node.
+If you are using Linux, chances are you already have Node installed. Check this with `node -v`, if you have an approximate output of `12.0` or higher, you can continue scrolling. If this is not the case, we recommend that you visit [this Node.js](https://nodejs.org/en/download/package-manager/) site.
 
-If you're developing on Linux, you may consult this page (opens new window)to determine how you should install Node.
-On that note, there's a possibility that you may already have Node (e.g., if you're using a VPS). You can check by running the node -v command. If it outputs something like v12.0 or higher, then you're good to go! Otherwise, take a look at the page linked above for instructions on installing Node on your OS.
+::: warning
+If you already have Node installed, but you are using an older version that is below v12, you need to upgrade Node to v12 or higher, because that requires `whatsapp-web.js v2.`
+:::
 
 ---
 
 ## Create your project folder
+
+After installing Node, you can now run commands in your console. We recommend using [npm](https://www.npmjs.com/), but you can use both [Yarn](https://yarnpkg.com/) and [pnpm](https://pnpm.io/) as package manager. However, we support all package managers in the guide.
+
+Let's get started. Enter this command in your terminal and give your project a name, as well as version and more.
+
+<code-group>
+<code-block title="npm" active>
+```bash
+npm init
+```
+</code-block>
+
+<code-block title="yarn">
+```bash
+yarn init
+```
+</code-block>
+
+<code-block title="pnpm">
+```bash
+pnpm init
+```
+</code-block>
+</code-group>

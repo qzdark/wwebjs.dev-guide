@@ -3,11 +3,5 @@ module.exports = {
   labels: {
     darkTheme: "Darkmode", // Default is "Enable Dark Theme?"
   },
-  logo: "GuideBanner",
-  extraOptions: {
-    before: 'BeforeContent',
-    after: 'AfterContent',
-    above: 'AboveContent',
-    below: 'BelowContent',
-  },
+  logo: "GuideBanner"
 };
