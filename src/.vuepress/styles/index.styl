@@ -14,11 +14,8 @@
 .home .hero img {
   max-width 450px!important;
 }
-div.page-nav, footer.page-edit {
+div.page-nav, footer.page-edit, .theme-default-content:not(.custom) {
   max-width: 1050px;
-}
-aside.sidebar {
-  border-right: 0px;
 }
 .custom-block.danger, .custom-block.tip, .custom-block.warning {
   border-radius: 6px;
@@ -31,6 +28,9 @@ a.sidebar-link.active {
 }
 html ::-webkit-scrollbar {
   width: 8px;
+}
+aside.sidebar {
+  border-right: 0px;
 }
 
 /* Change Events */
@@ -54,6 +54,9 @@ html ::-webkit-scrollbar-track {
 html ::-webkit-scrollbar-thumb {
   background: var(--theme-color);
   border-radius: 10px;
+}
+html ::-webkit-scrollbar-thumb:hover {
+  filter: brightness(80%);
 }
 pre .code-copy {
   margin-top -0.85rem;
