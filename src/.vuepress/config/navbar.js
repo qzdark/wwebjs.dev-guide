@@ -1,46 +1,10 @@
-/* This is temporary as long as no vxx.wwebjs.dev is available. */
-
-const { readdirSync } = require('fs');
-const { join } = require('path');
-
-const path = join(__dirname, "../../../src/");
-
-const getGuides = readdirSync(path).filter((dir) =>
-  dir.endsWith("guide")
-);
-
-function readGuideConfig() {
-  let inputs = [];
-
-  for (const directory of getGuides) {
-    const config = require(path+directory+"/config.js");
-
-    if (config.settings.ready) {
-      inputs.push(config.settings);
-    }
-  };
-  return inputs.reverse();
-};
-
-function setGuideVersions() {
-  let sorted = [];
-
-  for (const guideConfig of readGuideConfig()) {
-    sorted.push({
-      text: guideConfig.navbar,
-      link: guideConfig.link,
-    });
-  };
-  return sorted;
-};
-
 module.exports = [
   /**
    * Navigationbar
    */
   {
     text: "Guide",
-    link: "/v1-guide/",
+    link: "/guide/v2/",
   },
   {
     text: "Resources",
@@ -78,7 +42,16 @@ module.exports = [
       },
       {
         text: 'Guide Versions',
-        items: setGuideVersions(),
+        items: [
+          {
+            text: "v2 Guide (Latest)",
+            link: "/guide/v2/"
+          },
+          {
+            text: "v1 Guide",
+            link: "/guide/v1/"
+          }
+        ]
       },
     ]
   },

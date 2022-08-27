@@ -1,7 +1,3 @@
-/*import navbar from "./config/navbar";
-import sidebar from "./config/sidebar";
-*/
-
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
