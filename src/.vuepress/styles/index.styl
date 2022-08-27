@@ -7,8 +7,8 @@
 /* Root directory for extra properties */
 :root {
   --scrollbar-background: #EDEDED;
+  --scrollbar-hover: #171717;
   --theme-color: #25D366;
-  --sidebar-color: 37, 211, 102;
 }
 
 /* No change due to events */
@@ -37,18 +37,16 @@ aside.sidebar {
 /* Change Events */
 .yuu-theme-dark {
   --scrollbar-background: #171717; 
+  --scrollbar-hover: #EDEDED;
 }
 .yuu-theme-blue {
   --theme-color: #2196F3;
-  --sidebar-color: 33, 150, 243;
 }
 .yuu-theme-red {
   --theme-color: #DE3636;
-  --sidebar-color: 222, 54, 54;
 }
 .yuu-theme-purple {
   --theme-color: #A846EB;
-  --sidebar-color: 168, 70, 235;
 }
 
 /* Changes due to events */
@@ -60,7 +58,7 @@ html ::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 html ::-webkit-scrollbar-thumb:hover {
-  background: rgba(var(--sidebar-color), 0.3);
+
 }
 pre .code-copy {
   margin-top -0.85rem;
