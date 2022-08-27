@@ -7,10 +7,6 @@ module.exports = [
     link: "/guide/v2/",
   },
   {
-    text: "Business",
-    link: "/guide/v2/business/",
-  },
-  {
     text: "Resources",
     ariaLabel: "Resources",
     items: [
