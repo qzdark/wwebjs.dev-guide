@@ -1,6 +1,6 @@
 # Installing WWebJS
 
-After you have installed Node and are able to run commands in your console, you can now install whatsapp-web.js
+After installing Node, you can now run commands in your console. We recommend using [npm](https://www.npmjs.com/), but you can use both (Yarn)[https://yarnpkg.com/] and (pnpm)[https://pnpm.io/] as package manager. However, we support all package managers in the guide.
 
 <code-group>
 <code-block title="npm" active>
