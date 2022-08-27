@@ -83,23 +83,6 @@ module.exports = {
       ],
     },
   ],
-  "/guide/business/": [
-    {
-      title: "Getting Started",
-      collapsable: false,
-      children: [
-        "../v2/",
-        "../v2/getting-started/what-is-new"
-      ],
-    },
-    {
-      title: "Business",
-      collapsable: false,
-      children: [
-        ""
-      ],
-    },
-  ],
   "/guide/v3/": [
     {
       title: "v3 Guide",
