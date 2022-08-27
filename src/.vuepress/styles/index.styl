@@ -4,61 +4,59 @@
  * ref：https://v1.vuepress.vuejs.org/config/#index-styl
  */
 
+/* Root directory for extra properties */
 :root {
   --scrollbar-background: #EDEDED;
+  --theme-color: #25D366;
 }
-.home .hero img
+
+/* No change due to events */
+.home .hero img {
   max-width 450px!important;
-
-pre .code-copy
-  margin-top -0.85rem;
-  svg path:nth-child(2)
-    fill #42b983
-
-div.page-nav {
+}
+div.page-nav, footer.page-edit {
   max-width: 1050px;
 }
-
-footer.page-edit {
-  max-width: 1050px;
-}
-
 aside.sidebar {
   border-right: 0px;
 }
-
-.custom-block.danger, .custom-block.tip, .custom-block.warning 
+.custom-block.danger, .custom-block.tip, .custom-block.warning {
   border-radius: 6px;
-
-a.sidebar-link.active 
+}
+a.sidebar-link.active {
   border-radius: 3px;
-
-
-.theme-default-content:not(.custom) img 
+}
+.theme-default-content:not(.custom) img {
   border-radius: 6px;
-
 .theme-default-content:not(.custom) 
   max-width: 1050px;
-
-
-/* Scrollbar width */
-html ::-webkit-scrollbar 
+}
+html ::-webkit-scrollbar {
   width: 8px;
+}
 
-/* Scrollbar background */
+/* Change Events */
 .yuu-theme-dark {
   --scrollbar-background: #171717; 
 }
+.yuu-theme-blue {
+  --theme-color: #2196F3;
+}
+.yuu-theme-red {
+  --theme-color: #DE3636;
+}
+.yuu-theme-purple {
+  --theme-color: #A846EB;
+}
 
+/* Changes due to events */
 html ::-webkit-scrollbar-track {
   background-color: var(--scrollbar-background);
 }
-
-/* Scrollbar color */
-html ::-webkit-scrollbar-thumb
-  background: #25D366;
-  border-radius: 10px; 
-
-/* Scrollbar color hover */
-html ::-webkit-scrollbar-thumb:hover
-  background: darken(#25D366, 30%);
+html ::-webkit-scrollbar-thumb {
+  background: var(--theme-color);
+  border-radius: 10px;
+}
+html ::-webkit-scrollbar-thumb:hover {
+  background: darken(var(--theme-color), 30%);
+}
