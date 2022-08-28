@@ -24,8 +24,6 @@ pnpm add whatsapp-web.js
 
 In your console will now show up the downloading progress. After the download is completed your terminal show you this:
 ```bash
-PS C:\Users\WWebJS\Desktop\whatsapp-bot> npm install whatsapp-web.js
-
 added 67 packages, and audited 68 packages in 52s
 
 8 packages are looking for funding
@@ -35,3 +33,8 @@ found 0 vulnerabilities
 ```
 
 And know your are done with the installation.
+
+## Folder structure
+
+A new foler `node_modules` and a another file `package-lock.json` are now in your project folder.
+
