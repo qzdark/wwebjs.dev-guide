@@ -25,3 +25,16 @@ pnpm add qrcode-terminal
 ```
 </code-block>
 </code-group>
+
+
+You will also need to set the `--no-sandbox` flag in the puppeteer launch command
+```js
+...
+new Client({
+	...,
+	puppeteer: {
+		args: ['--no-sandbox'],
+	}
+})
+...
+```
