@@ -24,13 +24,14 @@ If you are using Linux, chances are you already have Node installed. Check this 
 If you already have Node installed, but you are using an older version that is below v12, you need to upgrade your Node to v12 or higher. That is important because `whatsapp-web.js v2` is requring that.
 :::
 
+Open the terminal, run the node -v command to make sure you've successfully installed Node.js. If it outputs v12.0.0 or higher, then you ready!
 ---
 
 ## Create your project folder
 
 After installing Node, you can now run commands in your console. We recommend using [npm](https://www.npmjs.com/), but you can use both [Yarn](https://yarnpkg.com/) and [pnpm](https://pnpm.io/) as package manager. However, we support all package managers in the guide.
 
-Let's get started. Open your terminal in your folder, execute this command and give your project a name, as well as version and more.
+Let's get started. Open your terminal in your folder, type this command in and execute it. This start a seqeuence, wich will ask you questions about your project. If you're not sure of something or want to skip it as a whole, leave it blank and press enter.
 
 <code-group>
 <code-block title="npm" active>
@@ -51,6 +52,8 @@ pnpm init
 ```
 </code-block>
 </code-group>
+
+Now you should have created a file called `package.json` in your folder. This contains your most important information about your project.
 
 ::: tip
 To get started quickly, you can run the following command to have it fill out everything for you.
@@ -75,3 +78,5 @@ pnpm init -y
 </code-block>
 </code-group>
 :::
+
+Once you're done with that, you're ready to install whatsapp-web.js!
