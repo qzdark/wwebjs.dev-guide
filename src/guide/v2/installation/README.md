@@ -65,12 +65,12 @@ Your `package.json` file should look like this:
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Me",
   "license": "ISC"
 }
 ```
 
-::: tip Quick init
+::: tip QUICK INIT
 To get started quickly, you can run the following command to have it fill out everything for you.
 
 <code-group>

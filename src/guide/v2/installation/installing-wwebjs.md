@@ -26,7 +26,7 @@ pnpm add whatsapp-web.js
 In your console will now show up the downloading progress. After the download is completed, your terminal may show you this:
 
 ```bash
-added 67 packages, and audited 68 packages in 52s
+added 67 packages, and audited 68 packages in 69s
 
 8 packages are looking for funding
   run `npm fund` for details
@@ -34,8 +34,8 @@ added 67 packages, and audited 68 packages in 52s
 found 0 vulnerabilities
 ```
 
-:::tip Info
+:::tip INFO
 You have one more file named `package-lock.json` and one folder `node_modules`, which contains all the modules.
 :::
 
-And now your are done with the installation. You are ready to start coding your App.
+And now your are done with the installation. You are ready to start setting up your App.
