@@ -25,6 +25,7 @@ If you already have Node installed, but you are using an older version that is b
 :::
 
 Open the terminal, run the node -v command to make sure you've successfully installed Node.js. If it outputs v12.0.0 or higher, then you ready!
+
 ---
 
 ## Create your project folder
