@@ -35,7 +35,7 @@ found 0 vulnerabilities
 ```
 
 :::tip Info
-You have one more folder named `node_modules`, which contains all the modules and one file named `package-lock.json`.
+You have one more file named `package-lock.json` and one folder `node_modules`, which contains all the modules.
 :::
 
 And now your are done with the installation. You are ready to start coding your App.
