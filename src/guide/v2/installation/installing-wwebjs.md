@@ -34,41 +34,8 @@ added 67 packages, and audited 68 packages in 52s
 found 0 vulnerabilities
 ```
 
-And know your are done with the installation.
-
-::: vue
-whatsapp-bot
-│ 
-├── node_modules
-│   ├── `@pedroslopez`
-│   ├── `whatsapp-web.js`
-│   └── `more folders`
-│
-├── package-lock.json
-└── package.json
+:::tip Info
+You have one more folder named `node_modules`, which contains all the modules and one file named `package-lock.json`.
 :::
 
-::: vue
-.
-├── docs
-│   ├── .vuepress _(**Optional**)_
-│   │   ├── `components` _(**Optional**)_
-│   │   ├── `theme` _(**Optional**)_
-│   │   │   └── Layout.vue
-│   │   ├── `public` _(**Optional**)_
-│   │   ├── `styles` _(**Optional**)_
-│   │   │   ├── index.styl
-│   │   │   └── palette.styl
-│   │   ├── `templates` _(**Optional, Danger Zone**)_
-│   │   │   ├── dev.html
-│   │   │   └── ssr.html
-│   │   ├── `config.js` _(**Optional**)_
-│   │   └── `enhanceApp.js` _(**Optional**)_
-│   │ 
-│   ├── README.md
-│   ├── guide
-│   │   └── README.md
-│   └── config.md
-│ 
-└── package.json
-:::
+And now your are done with the installation. You are ready to start coding your App.
