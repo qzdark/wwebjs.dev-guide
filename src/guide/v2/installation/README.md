@@ -70,6 +70,8 @@ Your `package.json` file should look like this:
 }
 ```
 
+### Quick init
+
 ::: tip
 To get started quickly, you can run the following command to have it fill out everything for you.
 
