@@ -1,6 +1,6 @@
 # Installing Node
 
-Before you can start working on your project, you need to install [Node.js](https://nodejs.org/) first. whatsapp-web.js is requring Node.js `v12` or higher else you are not able to use it.
+Before you can start working on your project, you need to install [Node.js](https://nodejs.org/) first. whatsapp-web.js `v2` is requring Node.js `v12` or higher else you are not able to use it.
 
 ::: tip
 To check if you already have Node installed on your machine, run `node -v` in your [terminal](/guide/v2/popular-topics/guide-explanations/). If the output is `v12` or higher, then you're good to go! Otherwise you should continue reading this.
@@ -53,6 +53,22 @@ pnpm init
 </code-group>
 
 Now you should have created a file called `package.json` in your folder. This contains your most important information about your project.
+
+Your `package.json` file should look like this:
+
+```json
+{
+  "name": "whatsapp-bot",
+  "version": "1.0.0",
+  "description": "This is a simple WhatsApp bot for explaing this library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+```
 
 ::: tip
 To get started quickly, you can run the following command to have it fill out everything for you.
