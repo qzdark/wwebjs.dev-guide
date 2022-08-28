@@ -3,6 +3,7 @@
 Now that you've installed Node.js, you can finally install whatsapp-web.js! Run the following command in your terminal:
 
 *This could take a few seconds*
+
 <code-group>
 <code-block title="npm" active>
 ```bash
