@@ -1,8 +1,6 @@
 # Installing Node
 
-Before you can start working you need to install [Node.js](https://nodejs.org/) and whatsapp-web.js first.
-
-whatsapp-web.js `v2` is requring Node.js `v12` or higher else you are not able to use it.
+Before you can start working on your project, you need to install [Node.js](https://nodejs.org/) first. whatsapp-web.js is requring Node.js `v12` or higher else you are not able to use it.
 
 ::: tip
 To check if you already have Node installed on your machine, run `node -v` in your [terminal](/guide/v2/popular-topics/guide-explanations/). If the output is `v12` or higher, then you're good to go! Otherwise you should continue reading this.
@@ -24,7 +22,7 @@ If you are using Linux, chances are you already have Node installed. Check this 
 If you already have Node installed, but you are using an older version that is below v12, you need to upgrade your Node to v12 or higher. That is important because `whatsapp-web.js v2` is requring that.
 :::
 
-Open the terminal, run the node -v command to make sure you've successfully installed Node.js. If it outputs v12.0.0 or higher, then you ready!
+Open the terminal, run the `node -v` command to make sure you've successfully installed Node.js. If it outputs `v12.0.0` or higher, then you ready!
 
 ---
 
