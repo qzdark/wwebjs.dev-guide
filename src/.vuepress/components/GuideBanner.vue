@@ -1,7 +1,8 @@
-/*Need to work on this
-* Banner does not fit right in the navbar
-* Maybe add a Guide banner also
-*/
+<!--
+	Need to work on this
+	Banner does not fit right in the navbar
+	Maybe add a Guide banner also
+-->
 
 <template>
 	<RouterLink :to="$localePath" class="guide-banner-home">

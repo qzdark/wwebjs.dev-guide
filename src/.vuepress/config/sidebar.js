@@ -71,6 +71,7 @@ module.exports = {
       children: [
         "popular-topics/",
         "popular-topics/faq",
+        "popular-topics/video-tutorials",
         "popular-topics/hosting",
       ],
     },

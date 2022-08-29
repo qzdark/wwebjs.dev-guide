@@ -26,7 +26,7 @@ Open the terminal, run the `node -v` command to make sure you've successfully in
 
 ## Installation on no-gui systems
 
-::: warning
+::: warning WARNING: NOTE
 If you want to install whatsapp-web.js on a system without GUI (for example `linux server images` that can just be accessed over a shell and dont have something like a desktop) there are a couple of things you need to do so puppeteer can emulate the chromium browser.
 
 For puppeteer to work, you need to install the following dependencies with the `apt-get` command (remember to `apt-get update` before you install)
@@ -81,7 +81,7 @@ Your `package.json` file should look like this:
 }
 ```
 
-::: tip QUICK INIT
+::: tip TIP: QUICK INIT
 To get started quickly, you can run the following command to have it fill out everything for you.
 
 <code-group>

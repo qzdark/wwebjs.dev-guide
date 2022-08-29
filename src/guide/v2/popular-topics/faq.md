@@ -1,4 +1,10 @@
-# Frequently asked Questions
+---
+title: Frequently asked Questions
+description: Frequently asked Questions from the community
+lang: en-US
+---
+
+# {{ $frontmatter.title }}
 
 ## Detect contact who spamming message on client
 
