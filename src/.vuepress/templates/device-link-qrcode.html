@@ -1,0 +1,14 @@
+<template>
+    <div :to="$localePath" class="qrcode-background">
+        <img class="qrcode-scan" :alt="Scan the qrcode">
+    </div>
+</template>
+
+<style lang="stylus">
+.qrcode-background {
+    background-color: aqua;
+}
+.qrcode-scan {
+    background-image: url('/preview/qr_code_scan.png');
+}
+</style>
