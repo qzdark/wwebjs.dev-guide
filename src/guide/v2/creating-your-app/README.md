@@ -1,6 +1,6 @@
 # Setting up Application
 
-Now we really get started with our project. Open your [code editor](/guide/v2/extra-explanations/code-editor) and create a new file. We suggest that you save the file as `index.js`, but you may name it whatever you wish
+Now we really get started with our project. Open your [code editor](/guide/v2/extra-explanations/code-editor) and create a new file. We suggest that you save the file as `index.js`, but you may name it whatever you wish.
 
 :::tip INFO
 If you are running your program with root privileges, you should also use the `--disable-setuid-sandbox` flag since chromium doesn't support running root with no sandbox by default.
