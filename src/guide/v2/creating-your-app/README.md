@@ -88,17 +88,4 @@ client.initialize();
 
 There we go! You can run your file now with `node index.js` in your terminal. Your console will create a QR-Code after some time, meanwhile open [WhatsApp](https://www.whatsapp.com/) on your phone. There should now be a section called *Linked devices* under more options. Press *LINK A DEVICE* and scan the QR code with your camera. This process may sometimes take some time.
 
-<html>
-    <div :to="$localePath" class="qrcode-background">
-        <img class="qrcode-scan" :alt="Scan the qrcode">
-    </div>
-</html>
-
-<style lang="stylus">
-.qrcode-background {
-    background-color: aqua;
-}
-.qrcode-scan {
-    background-image: url('/preview/qr_code_scan.png');
-}
-</style>
+![](/templates/device-link-qrcode.html)
