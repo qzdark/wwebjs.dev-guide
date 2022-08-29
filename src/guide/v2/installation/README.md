@@ -76,7 +76,7 @@ Your `package.json` file should look like this:
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Me",
+  "author": "",
   "license": "ISC"
 }
 ```

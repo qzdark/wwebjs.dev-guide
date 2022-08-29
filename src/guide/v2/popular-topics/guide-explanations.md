@@ -7,3 +7,5 @@ lang: en-US
 # {{ $frontmatter.title }}
 
 ## Terminal
+
+## Code Editor
