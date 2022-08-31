@@ -67,7 +67,7 @@ pnpm add qrcode-terminal
 
 And now we'll modify our code to use this new module:
 
-```js{2,11}
+```js {2,11}
 const { Client } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 
@@ -88,4 +88,12 @@ client.initialize();
 
 There we go! You can run your file now with `node index.js` in your terminal. Your console will create a QR-Code after some time, meanwhile open [WhatsApp](https://www.whatsapp.com/) on your phone. There should now be a section called *Linked devices* under more options. Press *LINK A DEVICE* and scan the QR code with your camera. This process may sometimes take some time.
 
-![](/device-link-qrcode)
+<!--
+Create QR Code
+-->
+
+After scanning this QR code, the client should be authorized and you should see a `Client is ready!` message being printed out. 
+
+### Resulting Code
+
+If you want to compare your code to the code we've constructed so far, you can review it over on the [GitHub repository](). 
