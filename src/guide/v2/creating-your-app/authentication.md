@@ -15,7 +15,7 @@ The [`LegacySessionAuth` strategy]() is no longer supported.
 This is the default `AuthStrategy` used when you don't provide one. It does not provide any means of saving and restoring sessions. You can set this if you'd like to be explicit about getting a fresh session every time the client is restarted. 
 
 ::: details view code
-```js {1,8}
+```js{1,8}
 const { Client, NoAuth } = require('whatsapp-web.js');
 
 const client = new Client();
@@ -35,7 +35,7 @@ const client = new Client({
 
 This strategy enables session-restore functionality by passing a persistent [user data directory](https://chromium.googlesource.com/chromium/src/+/master/docs/user_data_dir.md) to the browser. This means that other data, such as message history when using a multidevice-enabled account, will also be persisted and restored. 
 
-```js {1,5}
+```js{1,5}
 const { Client, LocalAuth } = require('whatsapp-web.js');
 
 const client = new Client({
@@ -49,7 +49,7 @@ By default, the relevant session files are stored under a `.wwebjs_auth` directo
 If you're using multiple clients belonging to different sessions, you can pass a `clientId` to segregate them:
 
 ::: details view code
-```js {4-6, 10-12}
+```js{4-6,10-12}
 const { Client, LocalAuth } = require('whatsapp-web.js');
 
 const client1 = new Client({
