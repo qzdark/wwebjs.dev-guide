@@ -20,3 +20,4 @@ If you now have Node installed on v12 or a higher version, you can now install `
 <WhatsappMessages>
 // Create Whatsapp chat with demo
 </WhatsappMessages>
+

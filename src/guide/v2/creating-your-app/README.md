@@ -67,6 +67,10 @@ pnpm add qrcode-terminal
 
 And now we'll modify our code to use this new module:
 
+:::tip
+New or modified code lines are healed.
+:::
+
 ```js {2,11}
 const { Client } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
@@ -94,6 +98,6 @@ Create QR Code
 
 After scanning this QR code, the client should be authorized and you should see a `Client is ready!` message being printed out. 
 
-### Resulting Code
+## Resulting Code
 
 If you want to compare your code to the code we've constructed so far, you can review it over on the [GitHub repository](). 
