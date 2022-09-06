@@ -15,13 +15,14 @@
 <style lang="stylus">
 :root {
  --theme-banner: url('/branding/dark/banner_green_logo.png');
+ --theme-banner-width: 225px;
 }
 
 .guide-banner-home .guide-banner {
 	content: var(--theme-banner);
 	display: flex;
 	max-height: 40px;
-	max-width 225px;
+	max-witdh: var(--theme-banner-width);
 	align-items: center;
 	display: inline-block;
 	@media screen and (max-width: $MQMobile) {
@@ -29,11 +30,14 @@
 	}
 	@media screen and (max-width: 719px) {
 		max-hight: 40px;
-		max-wight: auto;
+		max-hight: auto;
 		padding-left: 0;
+		
 	}
 	@media screen and (max-witdh: 419px) {
 	 max-hight: 20px;
+	 max-witdh: auto;
+	 --theme-banner: url('/branding/dark/banner_green_small.png');
 	}
 }
 
