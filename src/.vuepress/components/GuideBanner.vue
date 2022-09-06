@@ -32,7 +32,7 @@
 		max-hight: 40px;
 		max-hight: auto;
 		padding-left: 0;
-		
+		--theme-banner: url('/branding/dark/banner_green_small.png');
 	}
 	@media screen and (max-witdh: 419px) {
 	 max-hight: 20px;
