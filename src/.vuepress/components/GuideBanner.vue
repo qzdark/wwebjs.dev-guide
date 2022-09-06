@@ -33,7 +33,7 @@
 		padding-left: 0;
 	}
 	@media screen and (max-witdh: 419px) {
-	 
+	 max-hight: 20px;
 	}
 }
 
