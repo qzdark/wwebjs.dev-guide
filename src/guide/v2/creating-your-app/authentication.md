@@ -4,12 +4,6 @@ By default, whatsapp-web.js does not save session information. This means that y
 
 For most cases we would recommend the [`LocalAuth` strategy](#localauth-strategy) to use.
 
-::: danger DANGER: INFO
-The [`LegacySessionAuth` strategy]() is no longer supported.
-
-*This message will be removed in the future*
-:::
-
 ## `NoAuth` Strategy
 
 This is the default `AuthStrategy` used when you don't provide one. It does not provide any means of saving and restoring sessions. You can set this if you'd like to be explicit about getting a fresh session every time the client is restarted. 
@@ -63,6 +57,12 @@ const client2 = new Client({
 });
 ```
 :::
+
+::: danger DANGER: INFO
+The [`LegacySessionAuth` strategy]() is no longer supported, instead of you can use RemoteAuth. 
+
+*This message will be removed in the future*
+::: 
 
 ## `RemoteAuth` Strategy
 

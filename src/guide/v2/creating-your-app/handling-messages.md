@@ -24,7 +24,7 @@ The messages received have a convenience function on them that allows you to dir
 
 To test this out, let's build a simple ping/pong command:
 
-```
+```js
 client.on('message', message => {
 	if(message.body === '!ping') {
 		message.reply('pong');
@@ -32,15 +32,56 @@ client.on('message', message => {
 });
 ```
 
+<WhatsappMessages>
+// Create Whatsapp chat with demo
+</WhatsappMessages>
+
+You could also choose not to send it as a quoted reply by using the sendMessage function available on the client:
+
+```js
+client.on('message', message => {
+	if(message.body === '!ping') {
+		client.sendMessage(message.from, 'pong');
+	}
+});
+```
+
+<WhatsappMessages>
+// Create Whatsapp chat with demo
+</WhatsappMessages>
+
+In this case, notice that we had to specify which chat we were sending the message to.
+
 ## Message Object
+
+The received message `Object` contains many informations. You can take look here in this preview modal. 
 
 ```json
 
 ```
-
 ## Creating a Command
 
 ### Create a message handler
+
+<code-group>
+<code-block title="main.js" active>
+```js
+
+```
+</code-block>
+
+<code-block title="commandHandler.js">
+```js
+
+```
+</code-block>
+
+<code-block title="config.json">
+```json
+
+```
+</code-block>
+</code-group>
 
 ## Mentioning Contacts
 
