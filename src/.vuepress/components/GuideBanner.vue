@@ -15,14 +15,14 @@
 <style lang="stylus">
 :root {
  --theme-banner: url('/branding/dark/banner_green_logo.png');
- --theme-banner-width: 225px;
+ --theme-banner-normal: url('/branding/dark/banner_green_normal.png');
+ --theme-banner-small: url('/branding/dark/banner_green_small.png');
 }
 
 .guide-banner-home .guide-banner {
 	content: var(--theme-banner);
 	display: flex;
 	max-height: 40px;
-	max-witdh: var(--theme-banner-width);
 	align-items: center;
 	display: inline-block;
 	@media screen and (max-width: $MQMobile) {
@@ -32,7 +32,7 @@
 		max-hight: 40px;
 		max-hight: auto;
 		padding-left: 0;
-		--theme-banner: url('/branding/dark/banner_green_small.png');
+		content: var();
 	}
 	@media screen and (max-witdh: 419px) {
 	 max-hight: 20px;
@@ -78,3 +78,11 @@
 	}
 }
 </style>
+
+<script>
+ const lightThemePath = "";
+ const darkThemePath = "";
+ 
+const text = document.getElementById("body");
+ alert(text);
+</script>
