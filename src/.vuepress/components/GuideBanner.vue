@@ -80,9 +80,10 @@
 </style>
 
 <script>
- const test = window.getElementById("body")
- test.addEventListener("onchange", function() {
-	alert("change")
- })
- alert(text);
+window.addEventListener('load', yourFunction, false);
+window.addEventListener('DOMContentLoaded', yourFunction, false);
+
+yourFunction() {
+	alert("test")
+}
 </script>
