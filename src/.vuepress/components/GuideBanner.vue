@@ -15,75 +15,76 @@
 <style lang="stylus">
 :root {
  --theme-banner: url('/branding/dark/banner_green_logo.png');
- --theme-banner-normal: url('/branding/dark/banner_green_normal.png');
- --theme-banner-small: url('/branding/dark/banner_green_small.png');
 }
 
 .guide-banner-home .guide-banner {
 	content: var(--theme-banner);
+	max-height: 2.5rem;
 	display: flex;
-	max-height: 40px;
 	align-items: center;
-	display: inline-block;
 	@media screen and (max-width: $MQMobile) {
 		overflow: unset;
 	}
 	@media screen and (max-width: 719px) {
-		max-hight: 40px;
-		max-hight: auto;
-		padding-left: 0;
-		content: var();
-	}
-	@media screen and (max-witdh: 419px) {
-	 max-hight: 20px;
-	 max-witdh: auto;
-	 --theme-banner: url('/branding/dark/banner_green_small.png');
+		--theme-banner: url('/branding/dark/banner_green_normal.png');
 	}
 }
 
 .yuu-theme-red {
 	.guide-banner-home .guide-banner {
 		--theme-banner: url('/branding/dark/banner_red_logo.png');
+		@media screen and (max-width: 719px) {
+			--theme-banner: url('/branding/dark/banner_red_normal.png');
+		}
 	}
 }
 .yuu-theme-blue {
 	.guide-banner-home .guide-banner {
 		--theme-banner: url('/branding/dark/banner_blue_logo.png');
+		@media screen and (max-width: 719px) {
+			--theme-banner: url('/branding/dark/banner_blue_normal.png');
+		}
 	}
 }
 .yuu-theme-purple {
 	.guide-banner-home .guide-banner {
 		--theme-banner: url('/branding/dark/banner_purple_logo.png');
+		@media screen and (max-width: 719px) {
+			--theme-banner: url('/branding/dark/banner_purple_normal.png');
+		}
 	}
 }
 
 .yuu-theme-dark {
 	.guide-banner-home .guide-banner {
 		--theme-banner: url('/branding/light/banner_green_logo.png');
+		@media screen and (max-width: 719px) {
+			--theme-banner: url('/branding/light/banner_green_normal.png');
+		}
 	}
 }
 .yuu-theme-dark.yuu-theme-red {
 	.guide-banner-home .guide-banner {
 		--theme-banner: url('/branding/light/banner_red_logo.png');
+		@media screen and (max-width: 719px) {
+			--theme-banner: url('/branding/light/banner_red_normal.png');
+		}
 	}
 }
 .yuu-theme-dark.yuu-theme-blue {
 	.guide-banner-home .guide-banner {
 		--theme-banner: url('/branding/light/banner_blue_logo.png');
+		@media screen and (max-width: 719px) {
+			--theme-banner: url('/branding/light/banner_blue_normal.png');
+		}
 	}
 }
 .yuu-theme-dark.yuu-theme-purple {
 	.guide-banner-home .guide-banner {
 		--theme-banner: url('/branding/light/banner_purple_logo.png');
+		@media screen and (max-width: 719px) {
+			--theme-banner: url('/branding/light/banner_purple_normal.png');
+		}
 	}
 }
 </style>
-
-<script>
-window.addEventListener('load', yourFunction, false);
-window.addEventListener('DOMContentLoaded', yourFunction, false);
-
-yourFunction() {
-	alert("test")
-}
-</script>
