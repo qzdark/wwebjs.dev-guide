@@ -80,7 +80,7 @@
 </style>
 
 <script>
- const test = document.getElementById("body")
+ const test = window.getElementById("body")
  test.addEventListener("onchange", function() {
 	alert("change")
  })
