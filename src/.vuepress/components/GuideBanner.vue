@@ -80,9 +80,9 @@
 </style>
 
 <script>
- const lightThemePath = "";
- const darkThemePath = "";
- 
-const text = document.getElementById("body");
+ const test = document.getElementById("body")
+ test.addEventListener("onchange", function() {
+	alert("change")
+ })
  alert(text);
 </script>
