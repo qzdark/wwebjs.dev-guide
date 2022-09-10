@@ -148,6 +148,21 @@ Message {
 ```
 :::
 
+Let's start and create a command that count all your chats on your phone. Do to this, we need to modify our message lister to an `async`, because we have to `await` the `client` counted all chats.
+
+```js {1,5-8}
+client.on('message', async msg => {
+	if (message.body === '!ping') {
+		client.sendMessage(message.from, 'pong');
+	}
+	else if (msg.body === '!chats') {
+        const chats = await client.getChats();
+        client.sendMessage(msg.from, `You have ${chats.length} chats open.`);
+    }
+}
+```
+
+
 
 ## Create a message handler
 

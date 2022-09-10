@@ -63,3 +63,28 @@ const client2 = new Client({
 ::: tip INFO
 The [`LegacySessionAuth` strategy]() is no longer supported, instead of you can use [`RemoteAuth` strategy]().
 ::: 
+
+The [`RemoteAuth` strategy]() allows you saving the WhatsApp Multi-Device session into a remote database. Instead of depending on a persistent FileSystem, RemoteAuth is able to save, extract & restore sessions efficiently. It also generates periodic backups so that the session saved is always on sync and avoid data-loss.
+
+### Remote stores
+
+## Authenticated
+
+To let us know if our app has made it and is authenticated, we can listen to the authentication event.
+
+```js {2-4}
+// When the client is authenticated, run this code
+client.on('authenticated', () => {
+    console.log('AUTHENTICATED');
+});
+```
+
+Also we can listen to, if our client had failed to authenticate.
+
+```js {2-5}
+// When the client is failed to authenticate, run this code
+client.on('auth_failure', msg => {
+    // Fired if session restore was unsuccessful
+    console.error('AUTHENTICATION FAILURE', msg);
+});
+```
