@@ -1,6 +1,22 @@
 # Setting up Application
 
-Now we really get started with our project. Open your [code editor](/guide/v2/extra-explanations/code-editor) and create a new file. We suggest that you save the file as `index.js`, but you may name it whatever you wish.
+Now we really get started with our project. Open your [code editor](/guide/v2/extra-explanations/code-editor) and create a new file. We suggest that you save the file as `main.js`, but you may name it whatever you wish. If you want to change the name of the file, then don't forget to change it in your `package.json` file.
+
+```json
+{
+  "name": "whatsapp-bot",
+  "version": "1.0.0",
+  "description": "This is a simple WhatsApp bot for experaring this library.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+```
+
+## Creating the main file
 
 :::tip INFO
 If you are running your program with root privileges, you should also use the `--disable-setuid-sandbox` flag since chromium doesn't support running root with no sandbox by default.
@@ -90,7 +106,7 @@ client.initialize();
 
 ### Link Your Device
 
-There we go! You can run your file now with `node index.js` in your terminal. Your console will create a QR-Code after some time, meanwhile open [WhatsApp](https://www.whatsapp.com/) on your phone. There should now be a section called *Linked devices* under more options. Press *LINK A DEVICE* and scan the QR code with your camera. This process may sometimes take some time.
+There we go! You can run your file now with `node main.js` in your terminal. Your console will create a QR-Code after some time, meanwhile open [WhatsApp](https://www.whatsapp.com/) on your phone. There should now be a section called *Linked devices* under more options. Press *LINK A DEVICE* and scan the QR code with your camera. This process may sometimes take some time.
 
 <!--
 Create QR Code

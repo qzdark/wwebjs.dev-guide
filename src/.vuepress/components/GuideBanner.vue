@@ -14,7 +14,7 @@
 
 <style lang="stylus">
 :root {
- --theme-banner: url('/branding/dark/banner_green_logo.png');
+ 	--theme-banner: url('/branding/dark/banner_green_logo.png');
 }
 
 .guide-banner-home .guide-banner {
@@ -24,6 +24,7 @@
 	align-items: center;
 	@media screen and (max-width: $MQMobile) {
 		overflow: unset;
+		padding-left: 0.3rem
 	}
 	@media screen and (max-width: 719px) {
 		--theme-banner: url('/branding/dark/banner_green_normal.png');

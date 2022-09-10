@@ -71,7 +71,7 @@ Your `package.json` file should look like this:
 {
   "name": "whatsapp-bot",
   "version": "1.0.0",
-  "description": "This is a simple WhatsApp bot for explaing this library.",
+  "description": "This is a simple WhatsApp bot for experaring this library.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

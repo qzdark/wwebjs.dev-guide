@@ -9,59 +9,147 @@ This page is a follow-up and bases its code on the [previous page](/guide/v2/cre
 Now that we can connect to WhatsApp, it's time to listen for incoming messages. Doing so with whatsapp-web.js is pretty straightforward. The client emits a `message` event whenever a message is received. This means we can capture it like so:
 
 ```js
+// Listening to all incoming messages
 client.on('message', message => {
 	console.log(message.body);
-}); 
+});
 ```
 
+<!--// Listening to received messages (onley others)
+client.on('recived_message', message => {
+	console.log(message.body);
+});
+
+// Listening to received messages (onley yours)
+client.on('create_message', message => {
+	console.log(message.body);
+});-->
 <!-- Image -->
 
 Running this example should log all incoming messages to the console. 
 
 ## Replying to messages
 
-The messages received have a convenience function on them that allows you to directly reply to them via WhatsApp's reply feature. This will show the quoted message above the reply.
+Logging to the console is great and all, but it doesn't provide any feedback for the end-user. Let's create a basic ping/pong command before you move on to making real commands. Remove the `console.log(message.body)` line from your code and replace it with the following:
 
-To test this out, let's build a simple ping/pong command:
-
-```js
+```js {2-5}
 client.on('message', message => {
-	if(message.body === '!ping') {
-		message.reply('pong');
-	}
-});
-```
-
-<WhatsappMessages>
-// Create Whatsapp chat with demo
-</WhatsappMessages>
-
-You could also choose not to send it as a quoted reply by using the sendMessage function available on the client:
-
-```js
-client.on('message', message => {
-	if(message.body === '!ping') {
+	if (message.body === '!ping') {
+		// send back "pong" to the chat the message was sent in
 		client.sendMessage(message.from, 'pong');
 	}
 });
 ```
 
-<WhatsappMessages>
+Restart your application and then send `!ping` to a chat. If all goes well, you should see something like this:
+
+<!-- <WhatsappMessages>
 // Create Whatsapp chat with demo
-</WhatsappMessages>
+</WhatsappMessages> -->
 
-In this case, notice that we had to specify which chat we were sending the message to.
+The messages received have a convenience function on them that allows you to directly reply to them via WhatsApp's reply feature.
 
-## Message Object
-
-The received message `Object` contains many informations. You can take look here in this preview modal. 
-
-```json
-
+```js {2-5}
+client.on('message', message => {
+	if (message.body === '!ping') {
+		// reply back "pong" directly to the message
+		message.reply('pong');
+	}
+});
 ```
-## Creating a Command
 
-### Create a message handler
+<!-- <WhatsappMessages>
+// Create Wha  tsapp chat with demo
+</WhatsappMessages> -->
+
+In this case, notice that we dont have to specify which chat we were sending the message to.
+
+## Creating more Commands
+
+You already learnd how to create a simple command. Now we will go on with this knowledge and create more Commands.
+
+::: tip
+
+The received message contains informations many intersting things. You can take a look here in this preview modal.
+::: details Preview modal
+```js
+Message {
+  	_data: {
+    	id: {
+			fromMe: boolen,
+      		remote: string,
+      		id: string,
+      		_serialized: string
+    	},
+    	body: string,
+    	type: string,
+    	t: number,
+    	notifyName: string,
+    	from: string,
+    	to: string,
+    	self: string,
+    	ack: number,
+    	isNewMsg: boolen,
+    	star: boolen,
+    	kicNotified: boolen,
+    	recvFresh: boolen,
+    	isFromTemplate: boolen,
+    	pollInvalidated: boolen,
+    	broadcast: boolen,
+    	mentionedJidList: [],
+    	isVcardOverMmsDocument: boolen,
+    	isForwarded: boolen,
+    	hasReaction: boolen,
+    	ephemeralOutOfSync: boolen,
+    	productHeaderImageRejected: boolen,
+    	lastPlaybackProgress: number,
+    	isDynamicReplyButtonsMsg: boolen,
+    	isMdHistoryMsg: boolen,
+    	requiresDirectConnection: boolen,
+    	pttForwardedFeaturesEnabled: boolen,
+    	isEphemeral: boolen,
+    	isStatusV3: boolen,
+    	links: []
+  	},
+    mediaKey: string,
+    id: {
+        fromMe: boolen,
+        remote: string,
+        id: string,
+        _serialized: string
+    },
+    ack: number,
+    hasMedia: boolen,
+    body: string,
+    type: string,
+    timestamp: number,
+    from: string,
+    to: string,
+    author: string,
+    deviceType: string,
+    isForwarded: boolen,
+    forwardingScore: number,
+    isStatus: boolen,
+    isStarred: boolen,
+    broadcast: boolen,
+    fromMe: boolen,
+    hasQuotedMsg: boolen,
+    duration: string,
+    location: string,
+    vCards: [],
+    inviteV4: string,
+    mentionedIds: [],
+    orderId: string,
+    token: string,
+    isGif: boolen,
+    isEphemeral: boolen,
+    links: []
+}
+```
+:::
+
+
+## Create a message handler
 
 <code-group>
 <code-block title="main.js" active>
@@ -83,9 +171,9 @@ The received message `Object` contains many informations. You can take look here
 </code-block>
 </code-group>
 
-## Mentioning Contacts
+### Mentioning Contacts
 
-### Getting mentioned Contacts
+#### Getting mentioned Contacts
 
-### Sending messages with mentions
+#### Sending messages with mentions
 

@@ -42,7 +42,7 @@ module.exports = {
 
   },
   theme: "yuu",
-
+  
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/plugin/
    */
@@ -53,8 +53,8 @@ module.exports = {
       "vuepress-plugin-code-copy",
       {
         align: "bottom",
-        color: "#42b983",
-        backgroundColor: "#42b983",
+        color: "#25D366",
+        backgroundColor: "#25D366",
       },
     ],
   ],

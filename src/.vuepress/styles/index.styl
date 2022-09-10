@@ -6,13 +6,17 @@
 
 :root {
   --scrollbar-background: #EDEDED;
-  --scrollbar-hover: #55e189;
+  --scrollbar-hover: #55E189;
   --theme-color: #25D366;
+  --custom-block-details: #EDEDED;
 }
 
 
 .yuu-theme-dark {
-  --scrollbar-background: #171717; 
+  --scrollbar-background: #171717;
+  .custom-block.details {
+    background-color: #323843;
+  }
 }
 .yuu-theme-blue {
   --theme-color: #2196F3;
@@ -34,8 +38,9 @@
 div.page-nav, footer.page-edit, .theme-default-content:not(.custom) {
   max-width: 1050px;
 }
-.custom-block.danger, .custom-block.tip, .custom-block.warning {
+.custom-block.danger, .custom-block.tip, .custom-block.warning, .custom-block.details {
   border-radius: 6px;
+  border-left-width: 0.45rem;
 }
 a.sidebar-link.active {
   border-radius: 3px;

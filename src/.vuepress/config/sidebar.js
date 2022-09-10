@@ -39,6 +39,7 @@ module.exports = {
         "creating-your-app/authentication",
         "creating-your-app/handling-messages",
         "creating-your-app/handling-attachments",
+        "creating-your-app/directory-structure",
         "creating-your-app/interfacing-with-groups",
         "creating-your-app/interfacing-with-errors",
       ],

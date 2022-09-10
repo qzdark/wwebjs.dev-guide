@@ -2,13 +2,12 @@
 
 By default, whatsapp-web.js does not save session information. This means that you would have to scan the QR code to reauthenticate every time you restart the client. If you'd like to persist the session, you can pass an `authStrategy` as a client option. The library provides a few authentication strategies to choose from, but you can also choose to extend them or build your own.
 
-For most cases we would recommend the [`LocalAuth` strategy](#localauth-strategy) to use.
+For most cases we would recommend the [`LocalAuth` strategy](#localauth-strategy), because it is the easyist to use. 
 
 ## `NoAuth` Strategy
 
-This is the default `AuthStrategy` used when you don't provide one. It does not provide any means of saving and restoring sessions. You can set this if you'd like to be explicit about getting a fresh session every time the client is restarted. 
+This is the default `authStrategy` used when you don't provide one. It does not provide any means of saving and restoring sessions. You can set this if you'd like to be explicit about getting a fresh session every time the client is restarted. 
 
-::: details view code
 ```js {1,7}
 const { Client, NoAuth } = require('whatsapp-web.js');
 
@@ -19,6 +18,9 @@ const client = new Client({
     authStrategy: new NoAuth()
 });
 ```
+
+::: tip INFO
+In this Guide we will work with the [`NoAuth()` strategy](), but can use any other strategy too.
 :::
 
 ## `LocalAuth` Strategy
@@ -42,7 +44,6 @@ By default, the relevant session files are stored under a `.wwebjs_auth` directo
 ### Multiple sessions
 If you're using multiple clients belonging to different sessions, you can pass a `clientId` to segregate them:
 
-::: details view code
 ```js {1,3-6,8-11}
 const { Client, LocalAuth } = require('whatsapp-web.js');
 
@@ -56,13 +57,9 @@ const client2 = new Client({
     clientId: "client-two" })
 });
 ```
-:::
-
-::: danger DANGER: INFO
-The [`LegacySessionAuth` strategy]() is no longer supported, instead of you can use RemoteAuth. 
-
-*This message will be removed in the future*
-::: 
 
 ## `RemoteAuth` Strategy
 
+::: tip INFO
+The [`LegacySessionAuth` strategy]() is no longer supported, instead of you can use [`RemoteAuth` strategy]().
+::: 
