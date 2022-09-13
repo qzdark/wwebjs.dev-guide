@@ -184,7 +184,7 @@ for (const folder of commandFolders) {
 }
 
 client.on('message', message => {
-	if (!message.body.startsWith(config.prefix) || message.id.fromMe) return;
+	if (!message.body.startsWith(prefix) || message.id.fromMe) return;
 
 	const args = message.body.slice(prefix.length).trim().split(/ +/);
 	const commandName = args.shift().toLowerCase();
@@ -195,7 +195,7 @@ client.on('message', message => {
 	if (!command) return;
 
 	try {
-		command.execute(message);
+		command.execute(client, message);
 	} catch (error) {
 		console.error(error);
 		message.reply('there was an error trying to execute that command!');
