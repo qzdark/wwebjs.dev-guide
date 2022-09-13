@@ -148,7 +148,7 @@ Message {
 ```
 :::
 
-Let's start and create a command that count all your chats on your phone. Do to this, we need to modify our message lister to an `async`, because we have to `await` the `client` counted all chats.
+Let's start and create a command that count all your chats on your phone. Do to this, we need to modify our message lister to an `async`, because we have to `await` that the client counted all chats.
 
 ```js {1,5-8}
 client.on('message', async msg => {
@@ -162,24 +162,83 @@ client.on('message', async msg => {
 }
 ```
 
-
-
 ## Create a message handler
 
 <code-group>
 <code-block title="main.js" active>
 ```js
+const { Client, NoAuth } = require('whatsapp-web.js');
+const qrcode = require('qrcode-terminal');
+const fs = require('fs');
 
-```
-</code-block>
+const config = require('./config');
+const commandFolders = fs.readdirSync('./commands');
 
-<code-block title="commandHandler.js">
-```js
+for (const folder of commandFolders) {
+	const commandFiles = fs.readdirSync(`./commands/${folder}`).filter(file => file.endsWith('.js'));
 
+	for (const file of commandFiles) {
+		const command = require(`./commands/${folder}/${file}`);
+		client.commands.set(command.name, command);
+	}
+}
+
+client.on('message', message => {
+	if (!message.body.startsWith(config.prefix) || message.id.fromMe) return;
+
+	const args = message.body.slice(prefix.length).trim().split(/ +/);
+	const commandName = args.shift().toLowerCase();
+
+	const command = client.commands.get(commandName)
+		|| client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
+
+	if (!command) return;
+
+	try {
+		command.execute(message);
+	} catch (error) {
+		console.error(error);
+		message.reply('there was an error trying to execute that command!');
+	}
+});
 ```
 </code-block>
 
 <code-block title="config.json">
+```json
+{
+	"prefix": "!"
+}
+```
+</code-block>
+</code-group>
+
+<code-group>
+
+<code-block title="commands/ping.js">
+```js
+module.exports = {
+    name: 'ping',
+    execute(message) {
+        message.reply('pong');
+    }
+}
+```
+</code-block>
+
+<code-block title="commands/chats.js">
+```js
+module.exports = {
+    name: 'chats',
+    async execute(client, message) {
+        const chats = await client.getChats();
+        client.sendMessage(msg.from, `You have ${chats.length} chats open.`);
+    }
+};
+```
+</code-block>
+
+<code-block title="commands/typeing.js">
 ```json
 
 ```
