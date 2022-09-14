@@ -166,27 +166,24 @@ client.on('message', async msg => {
 
 <code-group>
 <code-block title="main.js" active>
-```js
-const { Client, NoAuth } = require('whatsapp-web.js');
-const qrcode = require('qrcode-terminal');
+```js {4,6,8-12,14-31}
 const fs = require('fs');
-
 const config = require('./config');
-const commandFolders = fs.readdirSync('./commands');
 
-for (const folder of commandFolders) {
-	const commandFiles = fs.readdirSync(`./commands/${folder}`).filter(file => file.endsWith('.js'));
+client.prefix = config.prefix;
 
-	for (const file of commandFiles) {
-		const command = require(`./commands/${folder}/${file}`);
-		client.commands.set(command.name, command);
-	}
-}
+client.commands = new Map();
+
+const commandFiles = fs.readdirSync(`./commands/${folder}`).filter(file => file.endsWith('.js'));
+for (const file of commandFiles) {
+	const command = require(`./commands/${folder}/${file}`);
+	client.commands.set(command.name, command);
+};
 
 client.on('message', message => {
-	if (!message.body.startsWith(prefix) || message.id.fromMe) return;
+	if (!message.body.startsWith(client.prefix) || message.id.fromMe) return;
 
-	const args = message.body.slice(prefix.length).trim().split(/ +/);
+	const args = message.body.slice(client.prefix.length).trim().split(/ +/);
 	const commandName = args.shift().toLowerCase();
 
 	const command = client.commands.get(commandName)
@@ -201,6 +198,8 @@ client.on('message', message => {
 		message.reply('there was an error trying to execute that command!');
 	}
 });
+ 
+client.initialize();
 ```
 </code-block>
 
@@ -215,7 +214,7 @@ client.on('message', message => {
 
 <code-group>
 
-<code-block title="commands/ping.js">
+<code-block title="utility/ping.js">
 ```js
 module.exports = {
     name: 'ping',
@@ -226,7 +225,18 @@ module.exports = {
 ```
 </code-block>
 
-<code-block title="commands/chats.js">
+<code-block title="utility/beep.js">
+```js
+module.exports = {
+    name: 'beep',
+    execute(message) {
+        message.reply('meep');
+    }
+}
+```
+</code-block>
+
+<code-block title="utility/chats.js">
 ```js
 module.exports = {
     name: 'chats',
@@ -238,9 +248,16 @@ module.exports = {
 ```
 </code-block>
 
-<code-block title="commands/typeing.js">
-```json
-
+<code-block title="utility/typeing.js">
+```js
+module.exports = {
+    name: 'typeing',
+    async execute(client, message) {
+        const chat = await message.getChat();
+        // simulates typing in the chat
+        chat.sendStateTyping();
+    }
+};
 ```
 </code-block>
 </code-group>

@@ -41,7 +41,7 @@ module.exports = {
     yuu: require("./config/yuu"),
 
   },
-  theme: "yuu",
+  theme: "/theme/layouts/Layout.vue",
   
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/plugin/
