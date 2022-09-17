@@ -10,9 +10,8 @@ features:
   details: Whatsapp-web.js connects to an official version of WhatsApp Web under the hood, reducing ban risks.
 - title: Easy to use
   details: The object-oriented approach makes it easy to get running quickly.
-footer: Licensed under the Apache License, Version 2.0. | [Pedro S. Lopez](https://github.com/pedroslopez)
+footer: Licensed under the Apache License, Version 2.0.
 ---
-
 
 <style lang="stylus">
 .yuu-theme-red {

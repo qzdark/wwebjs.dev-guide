@@ -22,7 +22,15 @@ module.exports = {
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
     ["meta", { name: "apple-mobile-web-app-status-bar-style", content: "black" }],
   ],
+  locales: {
+    '/': {
+      lang: 'en-US'
 
+    },
+    '/zh/': {
+      lang: 'de'
+    }
+  },
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
    *
@@ -34,6 +42,7 @@ module.exports = {
     docsBranch: "main",
     editLinks: true,
     docsDir: "src",
+    smoothScroll: true,
     lastUpdated: "Last Updated",
     sidebarDepth: 3,
     nav: require("./config/navbar"),
@@ -42,7 +51,7 @@ module.exports = {
 
   },
   theme: "/theme/layouts/Layout.vue",
-  
+
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/plugin/
    */
@@ -56,6 +65,14 @@ module.exports = {
         color: "#25D366",
         backgroundColor: "#25D366",
       },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'vue',
+        before: '<pre class="vue-container"><code>',
+        after: '</code></pre>'
+      }
     ],
   ],
 };
