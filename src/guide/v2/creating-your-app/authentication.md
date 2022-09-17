@@ -88,3 +88,7 @@ client.on('auth_failure', msg => {
     console.error('AUTHENTICATION FAILURE', msg);
 });
 ```
+
+## Resulting Code
+
+If you want to see all example authentication strategies, you can review it over on the [GitHub repository](). 
