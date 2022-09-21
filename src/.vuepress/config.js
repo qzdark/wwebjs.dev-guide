@@ -29,7 +29,7 @@ module.exports = {
    *
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
-  locales: { /*
+  locales: {
     '/': {
       lang: 'English',
       title: 'whatsapp-web.js',
@@ -45,7 +45,7 @@ module.exports = {
       title: 'whatsapp-web.js',
       description: 'A WhatsApp client library for NodeJS that connects through the WhatsApp Web browser app'
     }
-  */},
+  },
   themeConfig: {
     repo: "pedroslopez/whatsapp-web.js",
     docsRepo: "wwebjs/wwebjs.dev",
@@ -53,12 +53,8 @@ module.exports = {
     editLinks: true,
     docsDir: "src",
     smoothScroll: true,
-    sidebarDepth: 3,
     locales: {
       '/': {
-        lang: 'English',
-        title: 'whatsapp-web.js',
-        description: 'A WhatsApp client library for NodeJS that connects through the WhatsApp Web browser app',
         label: 'English',
         selectText: 'Languages',
         ariaLabel: 'Select language',
@@ -131,4 +127,5 @@ module.exports = {
       }
     ],
   ],
+  extraWatchFiles: ['.vuepress/config/**'],
 };
