@@ -114,6 +114,7 @@ module.exports = {
   plugins: [
     "@vuepress/plugin-back-to-top",
     "@vuepress/plugin-medium-zoom",
+    "@vuepress/plugin-last-updated",
     [
       "vuepress-plugin-code-copy",
       {
