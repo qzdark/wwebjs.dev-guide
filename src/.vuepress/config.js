@@ -57,6 +57,7 @@ module.exports = {
     docsDir: "src",
     smoothScroll: true,
     sidebarDepth: 3,
+    searchPlaceholder: 'Search...',
     locales: {
       '/': {
         label: 'English',
@@ -65,13 +66,7 @@ module.exports = {
         editLinkText: 'Edit this page on GitHub',
         lastUpdated: 'Last Updated',
         nav: NavItems4EN,
-        sidebar: Sidebar4EN,
-        serviceWorker: {
-          updatePopup: {
-            message: "New content is available.",
-            buttonText: "Refresh"
-          }
-        },
+        sidebar: Sidebar4EN
       },
       '/de/': {
         label: 'Deutsch',
@@ -80,13 +75,7 @@ module.exports = {
         editLinkText: 'Ändere diese Seite auf GitHub',
         lastUpdated: 'Letztes Update',
         nav: NavItems4DE,
-        sidebar: Sidebar4DE,
-        serviceWorker: {
-          updatePopup: {
-            message: "Es ist neuer Inhalt verfügbar.",
-            buttonText: "Neuladen"
-          }
-        },
+        sidebar: Sidebar4DE
       },
       '/fr/': {
         label: 'Français',
@@ -95,13 +84,7 @@ module.exports = {
         editLinkText: 'Modifier cette page sur GitHub',
         lastUpdated: 'Dernière mise à jour',
         nav: NavItems4FR,
-        sidebar: Sidebar4FR,
-        serviceWorker: {
-          updatePopup: {
-            message: "De nouveaux contenus sont disponibles.",
-            buttonText: "Rafraîchir"
-          }
-        },
+        sidebar: Sidebar4FR
       }
     },
     yuu: require("./config/yuu"),
@@ -114,6 +97,26 @@ module.exports = {
   plugins: [
     "@vuepress/plugin-back-to-top",
     "@vuepress/plugin-medium-zoom",
+    [
+      '@vuepress/pwa',
+      {
+        serviceWorker: true,
+        updatePopup: {
+          '/': {
+            message: "New content is available.",
+            buttonText: "Refresh"
+          },
+          '/de/': {
+            message: "Es ist neuer Inhalt verfügbar.",
+            buttonText: "Neuladen"
+          },
+          '/fr/': {
+            message: "De nouveaux contenus sont disponibles.",
+            buttonText: "Rafraîchir"
+          }
+        }
+      }
+    ],
     [
       "vuepress-plugin-code-copy",
       {
