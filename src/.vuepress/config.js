@@ -131,4 +131,5 @@ module.exports = {
       }
     ],
   ],
+  extraWatchFiles: ['.vuepress/config/**'],
 };

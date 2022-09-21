@@ -280,6 +280,8 @@ module.exports = {
 
 ### Mentioning Contacts
 
+Test
+
 #### Getting mentioned Contacts
 
 #### Sending messages with mentions
