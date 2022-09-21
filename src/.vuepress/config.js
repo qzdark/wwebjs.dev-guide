@@ -1,3 +1,5 @@
+const { NavItems4EN, NavItems4DE, NavItems4FR, Sidebar4EN, Sidebar4DE, Sidebar4FR } = require("./config/index");
+
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
@@ -22,20 +24,28 @@ module.exports = {
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
     ["meta", { name: "apple-mobile-web-app-status-bar-style", content: "black" }],
   ],
-  locales: {
-    '/': {
-      lang: 'en-US'
-
-    },
-    '/zh/': {
-      lang: 'de'
-    }
-  },
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
    *
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
+  locales: {
+    '/': {
+      lang: 'English',
+      title: 'whatsapp-web.js',
+      description: 'A WhatsApp client library for NodeJS that connects through the WhatsApp Web browser app'
+    },
+    '/de/': {
+      lang: 'Deutsch',
+      title: 'whatsapp-web.js',
+      description: 'Eine WhatsApp-Clientbibliothek für NodeJS, die eine Verbindung über die WhatsApp-Webbrowser-App herstellt'
+    },
+    '/fr/': {
+      lang: 'Français',
+      title: 'whatsapp-web.js',
+      description: 'A WhatsApp client library for NodeJS that connects through the WhatsApp Web browser app'
+    }
+  },
   themeConfig: {
     repo: "pedroslopez/whatsapp-web.js",
     docsRepo: "wwebjs/wwebjs.dev",
@@ -43,12 +53,55 @@ module.exports = {
     editLinks: true,
     docsDir: "src",
     smoothScroll: true,
-    lastUpdated: "Last Updated",
     sidebarDepth: 3,
-    nav: require("./config/navbar"),
-    sidebar: require("./config/sidebar"),
+    locales: {
+      '/': {
+        label: 'English',
+        selectText: 'Languages',
+        ariaLabel: 'Select language',
+        editLinkText: 'Edit this page on GitHub',
+        lastUpdated: 'Last Updated',
+        nav: NavItems4EN,
+        sidebar: Sidebar4EN,
+        serviceWorker: {
+          updatePopup: {
+            message: "New content is available.",
+            buttonText: "Refresh"
+          }
+        },
+      },
+      '/de/': {
+        lang: 'Deutsch',
+        selectText: 'Sprachen',
+        ariaLabel: 'Wähle Sprache',
+        editLinkText: 'Ändere diese Seite auf GitHub',
+        lastUpdated: 'Letztes Update',
+        nav: NavItems4DE,
+        sidebar: Sidebar4DE,
+        serviceWorker: {
+          updatePopup: {
+            message: "Es ist neuer Inhalt verfügbar.",
+            buttonText: "Neuladen"
+          }
+        },
+      },
+      '/fr/': {
+        lang: 'Français',
+        selectText: 'Langages',
+        ariaLabel: 'Choisir la langue',
+        editLinkText: 'Modifier cette page sur GitHub',
+        lastUpdated: 'Dernière mise à jour',
+        nav: NavItems4FR,
+        sidebar: Sidebar4FR,
+        serviceWorker: {
+          updatePopup: {
+            message: "De nouveaux contenus sont disponibles.",
+            buttonText: "Rafraîchir"
+          }
+        },
+      }
+    },
     yuu: require("./config/yuu"),
-
   },
   theme: "/theme/layouts/Layout.vue",
 

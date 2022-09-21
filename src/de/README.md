@@ -1,16 +1,16 @@
 ---
 home: true
 heroImage: logo.png
-actionText: Get Started →
-actionLink: /guide/v2/
+actionText: Los legen →
+actionLink: /de/guide/v2/
 features:
-- title: Automation for Everyone
-  details: Programmatically control WhatsApp whether you're running user or business accounts.
-- title: Built on WhatsApp Web
-  details: Whatsapp-web.js connects to an official version of WhatsApp Web under the hood, reducing ban risks.
-- title: Easy to use
-  details: The object-oriented approach makes it easy to get running quickly.
-footer: Licensed under the Apache License, Version 2.0.
+- title: Automatisierung für alle
+  details: Steuern Sie WhatsApp unabhängig davon, ob du ein Benutzer- oder Geschäftskonten führst.
+- title: Basierend auf WhatsApp Web
+  details: Whatsapp-web.js stellt verdeckt eine Verbindung zu einer offiziellen Version von WhatsApp Web her, wodurch das Sperrrisiko reduziert wird.
+- title: Einfach zu benutzen
+  details: Der objektorientierte Ansatz macht es einfach, schnell loszulegen.
+footer: Lizenziert unter der Apache License, Version 2.0.
 ---
 
 <style lang="stylus">

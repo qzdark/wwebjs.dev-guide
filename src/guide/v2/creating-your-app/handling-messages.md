@@ -148,7 +148,9 @@ Message {
 ```
 :::
 
-Let's start and create a command that count all your chats on your phone. Do to this, we need to modify our message lister to an `async`, because we have to `await` that the client counted all chats.
+### Chats command
+
+Let's start and create a command that count all your chats on your phone. Do to this, we need to modify our message lister to an `async`, because we have to `await` that the client counted all chats. With an if-standment `else if` we can create a new command:
 
 ```js {1,5-8}
 client.on('message', async msg => {
@@ -161,6 +163,22 @@ client.on('message', async msg => {
     }
 }
 ```
+### User info command
+
+### The problem with `if`/`else if`
+
+If you don't plan on making more than a couple commands, then using an `if`/`else if` chain is fine; however, this isn't always the case. Using a giant `if`/`else if` chain will only hinder your development process in the long run.
+
+Here's a small list of reasons why you shouldn't do so:
+
+* Takes longer to find a piece of code you want;
+* Easier to fall victim to [spaghetti code](https://en.wikipedia.org/wiki/Spaghetti_code);
+* Difficult to maintain as it grows;
+* Difficult to debug;
+* Difficult to organize;
+* General bad practice.
+
+Next, we'll be diving into something called a "command handler" – code that makes handling commands easier and much more efficient. This allows you to move your commands into individual files.
 
 ## Create a message handler
 
@@ -181,14 +199,12 @@ for (const file of commandFiles) {
 };
 
 client.on('message', message => {
-	if (!message.body.startsWith(client.prefix) || message.id.fromMe) return;
+	if (!message.body.startsWith(client.prefix)) return;
 
 	const args = message.body.slice(client.prefix.length).trim().split(/ +/);
 	const commandName = args.shift().toLowerCase();
 
-	const command = client.commands.get(commandName)
-		|| client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
-
+	const command = client.commands.get(commandName);
 	if (!command) return;
 
 	try {
@@ -268,3 +284,6 @@ module.exports = {
 
 #### Sending messages with mentions
 
+## Resulting Code
+
+If you want to compare your code to the code we've constructed so far, you can review it over on the [GitHub repository](). 

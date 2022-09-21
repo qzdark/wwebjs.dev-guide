@@ -2,7 +2,7 @@ module.exports = {
   /**
    * Sidebar
    */
-  "/guide/v1/": [
+  "/de/guide/v1/": [
     {
       title: "Guide",
       collapsable: false,
@@ -14,7 +14,7 @@ module.exports = {
       ],
     },
   ],
-  "/guide/v2/": [
+  "/de/guide/v2/": [
     {
       title: "Getting Started",
       collapsable: false,
@@ -39,9 +39,9 @@ module.exports = {
         "creating-your-app/authentication",
         "creating-your-app/handling-messages",
         "creating-your-app/handling-attachments",
-        "creating-your-app/directory-structure",
-        "creating-your-app/interfacing-with-groups",
+        "creating-your-app/handling-groups",
         "creating-your-app/interfacing-with-errors",
+        "creating-your-app/directory-structure",
       ],
     },
     {
@@ -85,7 +85,7 @@ module.exports = {
       ],
     },
   ],
-  "/guide/v3/": [
+  "/de/guide/v3/": [
     {
       title: "v3 Guide",
       collapsable: false

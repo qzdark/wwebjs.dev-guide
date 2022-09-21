@@ -7,12 +7,15 @@ module.exports = [
     link: "/guide/v2/",
   },
   {
-    text: "Resources",
-    ariaLabel: "Resources",
+    text: "More",
+    ariaLabel: "More",
     items: [
       {
-        text: 'More WWebJS',
         items: [
+          {
+            text: "Documentation",
+            link: "https://docs.wwebjs.dev",
+          },
           {
             text: "npm",
             link: "https://npmjs.com/package/whatsapp-web.js",
@@ -54,9 +57,5 @@ module.exports = [
         ]
       },
     ]
-  },
-  {
-    text: "Documentation",
-    link: "https://docs.wwebjs.dev",
   }
 ];

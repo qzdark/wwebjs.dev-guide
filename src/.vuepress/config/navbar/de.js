@@ -4,15 +4,18 @@ module.exports = [
    */
   {
     text: "Guide",
-    link: "/guide/v2/",
+    link: "/de/guide/v2/",
   },
   {
-    text: "Resources",
-    ariaLabel: "Resources",
+    text: "Mehr",
+    ariaLabel: "Mehr",
     items: [
       {
-        text: 'More WWebJS',
         items: [
+          {
+            text: "Documentation",
+            link: "https://docs.wwebjs.dev",
+          },
           {
             text: "npm",
             link: "https://npmjs.com/package/whatsapp-web.js",
@@ -28,7 +31,7 @@ module.exports = [
         ]
       },
       {
-        text: "Support Projekt",
+        text: "Unterstütze Projekt",
         items: [
           {
             text: "Github",
@@ -44,19 +47,15 @@ module.exports = [
         text: "Guide Versions",
         items: [
           {
-            text: "v2 Guide (Latest)",
-            link: "/guide/v2/"
+            text: "v2 Guide (Neuste)",
+            link: "/de/guide/v2/"
           },
           {
             text: "v1 Guide",
-            link: "/guide/v1/"
+            link: "/de/guide/v1/"
           }
         ]
       },
     ]
-  },
-  {
-    text: "Documentation",
-    link: "https://docs.wwebjs.dev",
   }
 ];

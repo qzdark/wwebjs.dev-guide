@@ -1,4 +1,4 @@
-# Interfacing with Group
+# Handling Groups
 
 ## Creating a group chat
 
