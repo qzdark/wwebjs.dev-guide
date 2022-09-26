@@ -49,6 +49,9 @@ module.exports = {
    *
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
     repo: "pedroslopez/whatsapp-web.js",
     docsRepo: "wwebjs/wwebjs.dev",
