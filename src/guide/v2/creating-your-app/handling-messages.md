@@ -64,13 +64,89 @@ client.on('message', message => {
 
 In this case, notice that we dont have to specify which chat we were sending the message to.
 
+### Simple command structure
+
+You learnd how to create a simple command. You already have an if statement that checks messages for a ping/pong command. Adding other command checks is just as easy; chain an `else if` to your existing condition.
+
+```js {5-7}
+client.on('message', message => {
+	if (message.body === '!ping') {
+		message.reply('pong');
+	}
+	else if (message.body === '!beep') {
+		message.reply('meep');
+	}
+});
+```
+
 ## Creating more Commands
 
-You already learnd how to create a simple command. Now we will go on with this knowledge and create more Commands.
+Now we will go on with this knowledge and create more Commands.
 
+```js {5-13}
+client.on('message', msg => {
+	if (message.body === '!ping') {
+		client.sendMessage(message.from, 'pong');
+	}
+	else if (msg.body === '!beep') {
+       client.sendMessage(message.from, 'meep');
+    }
+	else if (msg.body === '!chats') {
+       client.sendMessage(message.from, 'chats');
+    }
+	else if (msg.body === '!user info') {
+        client.sendMessage(message.from, 'user info');
+    }
+});
+```
+
+### Chats command
+
+Let's start and create a command that count all your chats on your phone. Do to this, we need to modify our message lister to an `async`, because we have to `await` that the client counted all chats. Lets start:
+
+```js {1,8-11}
+client.on('message', async msg => {
+	if (message.body === '!ping') {
+		client.sendMessage(message.from, 'pong');
+	}
+	else if (msg.body === '!beep') {
+		client.sendMessage(message.from, 'meep');
+    }
+	else if (msg.body === '!chats') {
+        const chats = await client.getChats();
+        client.sendMessage(msg.from, `You have ${chats.length} chats open.`);
+    }
+	else if (msg.body === '!user info') {
+        client.sendMessage(message.from, 'user info');
+    }
+}
+```
+### User info command
+```js {12-20}
+client.on('message', async msg => {
+	if (message.body === '!ping') {
+		client.sendMessage(message.from, 'pong');
+	}
+	else if (msg.body === '!beep') {
+		client.sendMessage(message.from, 'meep');
+    }
+	else if (msg.body === '!chats') {
+        const chats = await client.getChats();
+        client.sendMessage(msg.from, `You have ${chats.length} chats open.`);
+    }
+	else if (msg.body === '!user info') {
+    	let info = client.info;
+        message.reply(
+            `*Connection info*\n`+
+            `User name: ${info.pushname}\n`+
+            `My number: ${info.wid.user}\n`+
+            `Platform: ${info.platform}`
+        );
+    }
+}
+```
 ::: tip
-
-The received message contains informations many intersting things. You can take a look here in this preview modal.
+The received message contains informations many intersting things. You can take a look here in this preview modal. For a full list of all the properties and methods, check out [the documentation page for it](https://docs.wwebjs.dev/Client.html).
 ::: details Preview modal
 ```js
 Message {
@@ -148,23 +224,6 @@ Message {
 ```
 :::
 
-### Chats command
-
-Let's start and create a command that count all your chats on your phone. Do to this, we need to modify our message lister to an `async`, because we have to `await` that the client counted all chats. With an if-standment `else if` we can create a new command:
-
-```js {1,5-8}
-client.on('message', async msg => {
-	if (message.body === '!ping') {
-		client.sendMessage(message.from, 'pong');
-	}
-	else if (msg.body === '!chats') {
-        const chats = await client.getChats();
-        client.sendMessage(msg.from, `You have ${chats.length} chats open.`);
-    }
-}
-```
-### User info command
-
 ### The problem with `if`/`else if`
 
 If you don't plan on making more than a couple commands, then using an `if`/`else if` chain is fine; however, this isn't always the case. Using a giant `if`/`else if` chain will only hinder your development process in the long run.
@@ -181,6 +240,8 @@ Here's a small list of reasons why you shouldn't do so:
 Next, we'll be diving into something called a "command handler" – code that makes handling commands easier and much more efficient. This allows you to move your commands into individual files.
 
 ## Create a message handler
+
+The other commands and events in this guide will be based on the message handler, but this does not mean that you have to use it. You can also use your app without a message handler.
 
 <code-group>
 <code-block title="main.js" active>

@@ -93,40 +93,21 @@ module.exports = {
     lineNumbers: true
   },
   theme: "/theme/layouts/Layout.vue",
-
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/plugin/
    */
   plugins: [
     "@vuepress/plugin-back-to-top",
     "@vuepress/plugin-medium-zoom",
+    "@vuepress/plugin-last-updated",
+    "@vuepress/plugin-active-header-links",
     [
-      '@vuepress/pwa',
+      "@vuepress/pwa",
       {
         serviceWorker: true,
-        updatePopup: {
-          '/': {
-            message: "New content is available.",
-            buttonText: "Refresh"
-          },
-          '/de/': {
-            message: "Es ist neuer Inhalt verfügbar.",
-            buttonText: "Neuladen"
-          },
-          '/fr/': {
-            message: "De nouveaux contenus sont disponibles.",
-            buttonText: "Rafraîchir"
-          }
-        }
+        updatePopup: true,
+        popupComponent: 'MySWUpdatePopup'
       }
-    ],
-    [
-      "vuepress-plugin-code-copy",
-      {
-        align: "bottom",
-        color: "#25D366",
-        backgroundColor: "#25D366",
-      },
     ],
     [
       "vuepress-plugin-container",
