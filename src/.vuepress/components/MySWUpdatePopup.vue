@@ -30,7 +30,7 @@ export default {
         z-index: 100;
 
         @media (max-width: 959px) {
-            left: 18.4rem;
+            left: 23.4rem;
         }
 
         @media (max-width: 719px) {
@@ -42,5 +42,6 @@ export default {
         border: 1px solid var(--scrollbar-background);
         background-color: var(--scrollbar-background);
         color: var(--theme-color);
+        cursor: pointer;
     }
 </style>
