@@ -28,12 +28,16 @@ export default {
         box-shadow: 0 4px 16px rgb(0 0 0 / 50%);
         text-align: center;
         z-index: 100;
+    }
 
-        @media (max-width: 959px) {
+    @media (max-width: 959px) {
+        .my-sw-update-popup {
             left: 23.4rem;
         }
+    }
 
-        @media (max-width: 719px) {
+    @media (max-width: 719px) {
+        .my-sw-update-popup {
             left: 1rem;
         }
     }
