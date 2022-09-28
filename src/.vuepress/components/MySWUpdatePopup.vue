@@ -24,17 +24,25 @@ export default {
     }
 
     .my-sw-update-popup {
-        background-color: var(--popup-background);
+        background-color: var(--background-color);
         position: fixed;
         right: 1rem;
         bottom: 1rem;
-        left: 21rem;
+        left: 26rem;
         padding: 1em;
         border: 1px solid #3eaf7c;
         border-radius: 4px;
         box-shadow: 0 4px 16px rgb(0 0 0 / 50%);
         text-align: center;
         z-index: 100;
+
+        @media (max-width: 959px) {
+            left: 18.4rem;
+        }
+
+        @media (max-width: 719px) {
+            left: 1rem;
+        }
     }
 
     .my-sw-update-popup button {
