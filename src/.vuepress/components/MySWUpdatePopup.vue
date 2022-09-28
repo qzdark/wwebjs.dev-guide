@@ -43,5 +43,4 @@ export default {
         background-color: var(--scrollbar-background);
         color: var(--theme-color);
     }
-}
 </style>
