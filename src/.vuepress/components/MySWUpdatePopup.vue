@@ -16,15 +16,8 @@ export default {
 </script>
   
 <style>
-    :root {
-        --popup-background: #EDEDED;
-    }
-    .yuu-theme-dark {
-        --popup-background: #171717;
-    }
-
     .my-sw-update-popup {
-        background-color: var(--background-color);
+        background-color: var(--scrollbar-background);
         position: fixed;
         right: 1rem;
         bottom: 1rem;
@@ -46,6 +39,9 @@ export default {
     }
 
     .my-sw-update-popup button {
-        border: 1px solid #fefefe;
+        border: 1px solid var(--scrollbar-background);
+        background-color: var(--scrollbar-background);
+        color: var(--theme-color);
     }
+}
 </style>
