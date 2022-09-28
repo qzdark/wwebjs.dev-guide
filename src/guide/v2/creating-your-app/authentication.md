@@ -91,4 +91,6 @@ client.on('auth_failure', msg => {
 
 ## Resulting Code
 
+Test
+
 If you want to see all example authentication strategies, you can review it over on the [GitHub repository]().
