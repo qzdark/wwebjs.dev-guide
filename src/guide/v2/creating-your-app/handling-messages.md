@@ -300,18 +300,6 @@ module.exports = {
     }
 }
 ```
-</code-block>
-
-<code-block title="utility/beep.js">
-```js
-module.exports = {
-    name: 'beep',
-    execute(message) {
-        message.reply('meep');
-    }
-}
-```
-</code-block>
 
 <code-block title="utility/chats.js">
 ```js
@@ -323,20 +311,6 @@ module.exports = {
     }
 };
 ```
-</code-block>
-
-<code-block title="utility/typeing.js">
-```js
-module.exports = {
-    name: 'typeing',
-    async execute(client, message) {
-        const chat = await message.getChat();
-        // simulates typing in the chat
-        chat.sendStateTyping();
-    }
-};
-```
-</code-block>
 </code-group>
 
 ### Mentioning Contacts
