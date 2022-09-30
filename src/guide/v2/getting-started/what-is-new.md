@@ -2,15 +2,7 @@
 // create preview
 ## Site
 
--
--
--
--
--
--
--
--
--
+- Updated Vuepress from 1.5.9 to 1.9.2
 
 You can find a full Changelog on [Github]()
 
