@@ -122,6 +122,9 @@ client.on('message', async msg => {
 }
 ```
 ### User info command
+
+
+
 ```js {12-20}
 client.on('message', async msg => {
 	if (message.body === '!ping') {
@@ -146,7 +149,7 @@ client.on('message', async msg => {
 }
 ```
 ::: tip
-The received message contains informations many intersting things. You can take a look here in this preview modal. For a full list of all the properties and methods, check out [the documentation page for it](https://docs.wwebjs.dev/Client.html).
+The received message contains informations many intersting things. You can take a look here in this preview modal. For a full list of all the properties and methods, check out [the documentation page for it](https://docs.wwebjs.dev/Client.html). You can also take a look in this `Message Object` here:
 ::: details Preview modal
 ```js
 Message {
@@ -300,6 +303,7 @@ module.exports = {
     }
 }
 ```
+</code-block>
 
 <code-block title="utility/chats.js">
 ```js
@@ -311,11 +315,10 @@ module.exports = {
     }
 };
 ```
+</code-block>
 </code-group>
 
 ### Mentioning Contacts
-
-Test
 
 #### Getting mentioned Contacts
 
