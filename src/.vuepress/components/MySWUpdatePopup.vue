@@ -16,36 +16,36 @@ export default {
 </script>
   
 <style>
+.my-sw-update-popup {
+    background-color: var(--scrollbar-background);
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    left: 26rem;
+    padding: 1em;
+    border: 1px solid var(--theme-color);;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px rgb(0 0 0 / 50%);
+    text-align: center;
+    z-index: 100;
+}
+
+@media (max-width: 959px) {
     .my-sw-update-popup {
-        background-color: var(--scrollbar-background);
-        position: fixed;
-        right: 1rem;
-        bottom: 1rem;
-        left: 26rem;
-        padding: 1em;
-        border: 1px solid #3eaf7c;
-        border-radius: 4px;
-        box-shadow: 0 4px 16px rgb(0 0 0 / 50%);
-        text-align: center;
-        z-index: 100;
+        left: 23.4rem;
     }
+}
 
-    @media (max-width: 959px) {
-        .my-sw-update-popup {
-            left: 23.4rem;
-        }
+@media (max-width: 719px) {
+    .my-sw-update-popup {
+        left: 1rem;
     }
+}
 
-    @media (max-width: 719px) {
-        .my-sw-update-popup {
-            left: 1rem;
-        }
-    }
-
-    .my-sw-update-popup button {
-        border: 1px solid var(--scrollbar-background);
-        background-color: var(--scrollbar-background);
-        color: var(--theme-color);
-        cursor: pointer;
-    }
+.my-sw-update-popup button {
+    border: 1px solid var(--scrollbar-background);
+    background-color: var(--scrollbar-background);
+    color: var(--theme-color);
+    cursor: pointer;
+}
 </style>

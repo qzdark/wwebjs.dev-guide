@@ -3,7 +3,6 @@
  *
  * ref：https://v1.vuepress.vuejs.org/config/#index-styl
  */
-
 :root {
   --scrollbar-background: #EDEDED;
   --scrollbar-hover: #55E189;
@@ -11,69 +10,89 @@
   --custom-block-details: #EDEDED;
 }
 
-
 .yuu-theme-dark {
   --scrollbar-background: #171717;
+
   .custom-block.details {
     background-color: #323843;
   }
 }
+
 .yuu-theme-blue {
   --theme-color: #2196F3;
   --scrollbar-hover: #62B5F7;
 }
+
 .yuu-theme-red {
   --theme-color: #DE3636;
   --scrollbar-hover: #E87171;
 }
+
 .yuu-theme-purple {
   --theme-color: #A846EB;
   --scrollbar-hover: #C88BF2;
 }
 
-
 .home .hero img {
-  max-width 450px!important;
+  max-width: 450px !important;
 }
+
 div.page-nav, footer.page-edit, .theme-default-content:not(.custom) {
   max-width: 1050px;
 }
+
 .custom-block.danger, .custom-block.tip, .custom-block.warning, .custom-block.details {
   border-radius: 6px;
   border-left-width: 0.45rem;
 }
+
 a.sidebar-link.active {
   border-radius: 3px;
 }
+
 .theme-default-content:not(.custom) img {
   border-radius: 6px;
 }
+
 html ::-webkit-scrollbar {
   width: 8px;
 }
+
 aside.sidebar {
   border-right: 0px;
 }
-div[class*="language-"] .highlight-lines .highlighted {
+
+div[class*='language-'] .highlight-lines .highlighted {
   background-color: #353b45;
 }
-pre.vue-container
-  border-left-width: .5rem;
+
+pre.vue-container {
+  border-left-width: 0.5rem;
   border-left-style: solid;
   border-color: #42b983;
   border-radius: 0px;
-  & > code
+
+  & > code {
     font-size: 14px !important;
-    & > p
+
+    & > p {
       margin: -5px 0 -20px 0;
-    code
+    }
+
+    code {
       background-color: #42b983 !important;
       padding: 3px 5px;
       border-radius: 3px;
-      color #000
-    em
-      color #808080
-      font-weight light
+      color: #000;
+    }
+
+    em {
+      color: #808080;
+      font-weight: light;
+    }
+  }
+}
+
 .dropdown-wrapper .dropdown-title, .dropdown-wrapper .mobile-dropdown-title {
   display: block;
   font-size: 1rem;
@@ -86,23 +105,46 @@ pre.vue-container
   font-weight: 500;
   color: #2c3e50;
 }
+
 .theme-code-group__nav[data-v-6f2a4370] {
   @media (max-width: 419px) {
     margin: 0.85rem -1.5rem;
     border-radius: 0;
   }
 }
-div[class*="language-"].line-numbers-mode .highlight-lines .highlighted:before {
+
+div[class*='language-'].line-numbers-mode .highlight-lines .highlighted:before {
   content: ' ';
   position: absolute;
   z-index: 3;
   left: 0;
   top: 0;
   display: block;
-    idth: 3.5rem;
+  idth: 3.5rem;
   height: 100%;
   background-color: #282c34;
 }
+
+div[class*='language-'] .highlight-lines {
+  -webkit-user-select: none;
+  user-select: none;
+  padding-top: 1.3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 1.43;
+}
+
+.theme-default-content pre, .theme-default-content pre[class*='language-'] {
+  line-height: 1.43;
+  padding: 1.25rem 1.5rem;
+  margin: 0.85rem 0;
+  background-color: #282c34;
+  border-radius: 6px;
+  overflow: auto;
+}
+
 .navbar {
   z-index: 20;
   right: 0;
@@ -110,28 +152,35 @@ div[class*="language-"].line-numbers-mode .highlight-lines .highlighted:before {
   box-sizing: border-box;
   border-bottom: 0px;
 }
-div[class*="language-"].line-numbers-mode pre {
+
+div[class*='language-'].line-numbers-mode pre {
   margin-left: 3.5rem;
   padding-left: 1rem;
   padding-left: 1rem;
   vertical-align: middle;
 }
+
 html ::-webkit-scrollbar-track {
   background: var(--scrollbar-background);
 }
+
 html ::-webkit-scrollbar-thumb {
   background: var(--theme-color);
   border-radius: 10px;
 }
+
 html ::-webkit-scrollbar-thumb:hover {
   background: var(--scrollbar-hover);
 }
+
 pre .code-copy {
-  margin-top -0.85rem;
+  margin-top: -0.85rem;
+
   svg path:nth-child(2) {
-    fill var(--theme-color)
+    fill: var(--theme-color);
   }
 }
+
 button.theme-code-group__nav-tab-active[data-v-deefee04] {
   border-bottom: 1px solid var(--theme-color);
 }

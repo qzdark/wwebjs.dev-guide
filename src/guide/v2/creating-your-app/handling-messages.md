@@ -8,6 +8,84 @@ This page is a follow-up and bases its code on the [previous page](/guide/v2/cre
 
 Now that we can connect to WhatsApp, it's time to listen for incoming messages. Doing so with whatsapp-web.js is pretty straightforward. The client emits a `message` event whenever a message is received. This means we can capture it like so:
 
+::: tip INFO
+You can take a look here, how your received `message.body` will look like.
+::: details Preview modal
+```js
+Message {
+  	_data: {
+    	id: {
+			fromMe: boolen,
+      		remote: string,
+      		id: string,
+      		_serialized: string
+    	},
+    	body: string,
+    	type: string,
+    	t: number,
+    	notifyName: string,
+    	from: string,
+    	to: string,
+    	self: string,
+    	ack: number,
+    	isNewMsg: boolen,
+    	star: boolen,
+    	kicNotified: boolen,
+    	recvFresh: boolen,
+    	isFromTemplate: boolen,
+    	pollInvalidated: boolen,
+    	broadcast: boolen,
+    	mentionedJidList: [],
+    	isVcardOverMmsDocument: boolen,
+    	isForwarded: boolen,
+    	hasReaction: boolen,
+    	ephemeralOutOfSync: boolen,
+    	productHeaderImageRejected: boolen,
+    	lastPlaybackProgress: number,
+    	isDynamicReplyButtonsMsg: boolen,
+    	isMdHistoryMsg: boolen,
+    	requiresDirectConnection: boolen,
+    	pttForwardedFeaturesEnabled: boolen,
+    	isEphemeral: boolen,
+    	isStatusV3: boolen,
+    	links: []
+  	},
+    mediaKey: string,
+    id: {
+        fromMe: boolen,
+        remote: string,
+        id: string,
+        _serialized: string
+    },
+    ack: number,
+    hasMedia: boolen,
+    body: string,
+    type: string,
+    timestamp: number,
+    from: string,
+    to: string,
+    author: string,
+    deviceType: string,
+    isForwarded: boolen,
+    forwardingScore: number,
+    isStatus: boolen,
+    isStarred: boolen,
+    broadcast: boolen,
+    fromMe: boolen,
+    hasQuotedMsg: boolen,
+    duration: string,
+    location: string,
+    vCards: [],
+    inviteV4: string,
+    mentionedIds: [],
+    orderId: string,
+    token: string,
+    isGif: boolen,
+    isEphemeral: boolen,
+    links: []
+}
+```
+:::
 ```js
 // Listening to all incoming messages
 client.on('message', message => {
@@ -102,7 +180,7 @@ client.on('message', msg => {
 
 ### Chats command
 
-Let's start and create a command that count all your chats on your phone. Do to this, we need to modify our message lister to an `async`, because we have to `await` that the client counted all chats. Lets start:
+We create another command that show information about you. To do this 
 
 ```js {1,8-11}
 client.on('message', async msg => {
@@ -121,6 +199,15 @@ client.on('message', async msg => {
     }
 }
 ```
+
+The code above would result in this:
+
+<!--image-->
+
+::: tip
+The received message contains informations many intersting things. For a full list of all the properties and methods, check out [the documentation page](https://docs.wwebjs.dev/Message.html) for it.
+:::
+
 ### User info command
 
 
@@ -146,86 +233,17 @@ client.on('message', async msg => {
             `Platform: ${info.platform}`
         );
     }
-}
+};
 ```
+
+The code above would result in this:
+
+<!--image-->
+
 ::: tip
-The received message contains informations many intersting things. You can take a look here in this preview modal. For a full list of all the properties and methods, check out [the documentation page for it](https://docs.wwebjs.dev/Client.html). You can also take a look in this `Message Object` here:
-::: details Preview modal
-```js
-Message {
-  	_data: {
-    	id: {
-			fromMe: boolen,
-      		remote: string,
-      		id: string,
-      		_serialized: string
-    	},
-    	body: string,
-    	type: string,
-    	t: number,
-    	notifyName: string,
-    	from: string,
-    	to: string,
-    	self: string,
-    	ack: number,
-    	isNewMsg: boolen,
-    	star: boolen,
-    	kicNotified: boolen,
-    	recvFresh: boolen,
-    	isFromTemplate: boolen,
-    	pollInvalidated: boolen,
-    	broadcast: boolen,
-    	mentionedJidList: [],
-    	isVcardOverMmsDocument: boolen,
-    	isForwarded: boolen,
-    	hasReaction: boolen,
-    	ephemeralOutOfSync: boolen,
-    	productHeaderImageRejected: boolen,
-    	lastPlaybackProgress: number,
-    	isDynamicReplyButtonsMsg: boolen,
-    	isMdHistoryMsg: boolen,
-    	requiresDirectConnection: boolen,
-    	pttForwardedFeaturesEnabled: boolen,
-    	isEphemeral: boolen,
-    	isStatusV3: boolen,
-    	links: []
-  	},
-    mediaKey: string,
-    id: {
-        fromMe: boolen,
-        remote: string,
-        id: string,
-        _serialized: string
-    },
-    ack: number,
-    hasMedia: boolen,
-    body: string,
-    type: string,
-    timestamp: number,
-    from: string,
-    to: string,
-    author: string,
-    deviceType: string,
-    isForwarded: boolen,
-    forwardingScore: number,
-    isStatus: boolen,
-    isStarred: boolen,
-    broadcast: boolen,
-    fromMe: boolen,
-    hasQuotedMsg: boolen,
-    duration: string,
-    location: string,
-    vCards: [],
-    inviteV4: string,
-    mentionedIds: [],
-    orderId: string,
-    token: string,
-    isGif: boolen,
-    isEphemeral: boolen,
-    links: []
-}
-```
+The get informations about your device and other intersting things, check out [the documentation page](https://docs.wwebjs.dev/Client.html) for a full list of all the properties and methods.
 :::
+
 
 ### The problem with `if`/`else if`
 
@@ -243,6 +261,10 @@ Here's a small list of reasons why you shouldn't do so:
 Next, we'll be diving into something called a "command handler" – code that makes handling commands easier and much more efficient. This allows you to move your commands into individual files.
 
 ## Create a message handler
+
+### Configuration files
+
+### Storing additional data
 
 The other commands and events in this guide will be based on the message handler, but this does not mean that you have to use it. You can also use your app without a message handler.
 
@@ -294,7 +316,7 @@ client.initialize();
 
 <code-group>
 
-<code-block title="utility/ping.js">
+<code-block title="commands/ping.js">
 ```js
 module.exports = {
     name: 'ping',
@@ -305,7 +327,7 @@ module.exports = {
 ```
 </code-block>
 
-<code-block title="utility/chats.js">
+<code-block title="commands/chats.js">
 ```js
 module.exports = {
     name: 'chats',

@@ -4,18 +4,22 @@ description: An introduction to whatsapp-web.js
 lang: en-US
 ---
 
-# {{ $frontmatter.title }}
-
 :::warning
 The whatsapp-web.js guide is still a work in progress, which means there may be bugs. If this happens, please create an [issue on github](https://github.com/wwebjs/wwebjs.dev/issues/new). To learn about all the features available to you in the library, please check out the [documentation](https://docs.wwebjs.dev/).
 :::
 
-**This is an introduction to the powerful free WhatsApp API library whatsapp-web.js. This Guide will offers you knowledge about:**
+# {{ $frontmatter.title }}
 
-- How to create a simple [Application with whatsapp-web.js](/guide/v2/creating-your-app/).
-- Explanations and examples for each topic.
-- Answering popular [Frequently asked Questions](/guide/v2/popular-topics/faq).
-- And much more things.
+whatsapp-web.js is an unofficial library to create automated WhatsApp clients, bots and more by using javascript. The library works by opening the WhatsApp Web browser app and controlling it through puppeteer to run a real instance of Whatsapp Web to avoid getting blocked. The WhatsApp API client that connects through the WhatsApp Web browser app, calling its internal functions.
+
+**In this Guide you will learn how to handle with this powerful library and it offers you knowledge about:**
+
+- How to create a simple [Application with whatsapp-web.js](/guide/v2/creating-your-app/);
+- Explanations and examples for each topic;
+- Answering popular [Frequently asked Questions](/guide/v2/popular-topics/faq);
+- Advanced usage *(like debugging)*;
+- Hosting your application;
+- And much more things *(like show you already created projects)*.
 
 ## Disclaimer
 
@@ -28,6 +32,5 @@ Maybe you create a bot
 Maybe you create a app
 Maybe you create a ticket tool
 Maybe you create a authentication Systeam
-Maybe you create a framework
 Maybe you create a service
 --->
