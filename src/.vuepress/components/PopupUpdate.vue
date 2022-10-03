@@ -1,6 +1,6 @@
 <template>
     <SWUpdatePopup v-slot="{ enabled, reload, message, buttonText }">
-        <div v-if="enabled" class="my-sw-update-popup">
+        <div v-if="enabled" class="update-popup">
             {{ message }}<br>
             <button @click="reload">{{ buttonText }}</button>
         </div>
@@ -16,7 +16,7 @@ export default {
 </script>
   
 <style>
-.my-sw-update-popup {
+.update-popup {
     background-color: var(--scrollbar-background);
     position: fixed;
     right: 1rem;
@@ -31,18 +31,18 @@ export default {
 }
 
 @media (max-width: 959px) {
-    .my-sw-update-popup {
-        left: 23.4rem;
+    .update-popup {
+        left: 21.4rem;
     }
 }
 
 @media (max-width: 719px) {
-    .my-sw-update-popup {
+    .update-popup {
         left: 1rem;
     }
 }
 
-.my-sw-update-popup button {
+.update-popup button {
     border: 1px solid var(--scrollbar-background);
     background-color: var(--scrollbar-background);
     color: var(--theme-color);

@@ -1,6 +1,7 @@
 const {
   NavItems4EN, NavItems4DE, NavItems4FR,
-  Sidebar4EN, Sidebar4DE, Sidebar4FR
+  Sidebar4EN, Sidebar4DE, Sidebar4FR,
+  UpdateMsg4EN, UpdateMsg4DE, UpdateMsg4FR
 } = require("./config/index.js");
 
 module.exports = {
@@ -105,8 +106,12 @@ module.exports = {
       "@vuepress/pwa",
       {
         serviceWorker: true,
-        updatePopup: true,
-        popupComponent: 'PopupUpdate'
+        popupComponent: 'PopupUpdate',
+        updatePopup: {
+          "/": UpdateMsg4EN,
+          "/de/": UpdateMsg4DE,
+          "/fr/": UpdateMsg4FR
+        }
       }
     ],
     [

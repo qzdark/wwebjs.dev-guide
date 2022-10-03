@@ -6,6 +6,10 @@ const Sidebar4EN = require('./sidebar/en');
 const Sidebar4DE = require('./sidebar/de');
 const Sidebar4FR = require('./sidebar/fr');
 
+const UpdateMsg4EN = require('./update/en');
+const UpdateMsg4DE = require('./update/de');
+const UpdateMsg4FR = require('./update/fr');
+
 module.exports = { 
     NavItems4EN, 
     NavItems4DE, 
@@ -13,5 +17,9 @@ module.exports = {
     
     Sidebar4EN, 
     Sidebar4DE, 
-    Sidebar4FR 
+    Sidebar4FR,
+
+    UpdateMsg4EN, 
+    UpdateMsg4DE, 
+    UpdateMsg4FR
 };
