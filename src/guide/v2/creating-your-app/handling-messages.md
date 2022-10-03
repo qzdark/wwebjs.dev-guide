@@ -86,7 +86,7 @@ Message {
 }
 ```
 :::
-```js
+```js {2-4}
 // Listening to all incoming messages
 client.on('message', message => {
 	console.log(message.body);
@@ -346,7 +346,7 @@ module.exports = {
 </code-block>
 </code-group>
 
-In the end your folder should have a look like this:
+After all added code till your folder should have a look like this:
 
 ::: vue
 whatsapp-app

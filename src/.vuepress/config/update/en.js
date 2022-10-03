@@ -1,7 +1,8 @@
+
 module.exports = {
   /**
    * Update popup
    */
-  message: "Neue Guide Inhalte sind nun verfügbar.",
-  buttonText: "Neuladen"
+  message: "New content for the Guide is available.",
+  buttonText: "Refresh"
 };
