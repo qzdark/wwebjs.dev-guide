@@ -1,21 +1,55 @@
 # Handling Attachments
 
+:::tip
+This page is a follow-up and bases its code on the [previous page](/guide/v2/creating-your-app/handling-messages).
+:::
+
+## Listening to attachments
+
+Sometimes your client may need to download and process media files that have been attached to messages it receives. This library includes some useful functions to download these files in base64 format. You can detect which messages have attached media by checking its `hasMedia` property.
+
+```js {1-5}
+client.on('message', async message => {
+    if(message.hasMedia) {
+        console.log("Message with media got received:\n" + message);
+    }
+});
+```
+
 ## Downloading Media
 
-Sometimes your client may need to download and process media files that have been attached to messages it receives. This library includes some useful functions to download these files in base64 format.
+If the received message contains the `hasMedia` property, you can actually download the data by using `downloadMedia()` function:
 
-You can detect which messages have attached media by checking its `hasMedia` property. Then, you can actually download the data by using `downloadMedia()`:
-
-```javascript
-client.on('message', async msg => {
-    if(msg.hasMedia) {
-        const media = await msg.downloadMedia();
-        // do something with the media data here
+```js {3-9}
+client.on('message_create', async message => {
+    if(message.hasMedia) {
+        const media = await message.downloadMedia();
+        console.log(
+			'Information about media:' +
+			`\nType: ${media.mimetype}` +
+			`\nFilesize: ${media.filesize}B` +
+			`\nFilename: ${media.filename}`
+        );
     }
 });
 ```
 
 The `downloadMedia` function returns an object of type [MessageMedia](https://docs.wwebjs.dev/MessageMedia.html). This will give you access to its mimetype, base64 data and filename, if specified.
+
+::: warning
+The `downloadMedia()` function has nothing to do with downloading the media into your directory. 
+:::
+
+### Convert media to local file
+
+```js {3-4}
+client.on('message_create', async message => {
+    if(message.hasMedia) {
+        const media = await message.downloadMedia();
+        await media.toFilePath('./images/');
+    }
+});
+```
 
 :::danger
 You shouldn't assume that the download will be successful. In cases where the media is not able to be downloaded \(for example, if the media has been deleted from the phone or can no longer be downloaded\), the `downloadMedia()` function will return `undefined`.

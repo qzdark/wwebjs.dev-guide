@@ -316,17 +316,6 @@ client.initialize();
 ```
 </code-block>
 
-<code-block title="commands/ping.js">
-```js {1-6}
-module.exports = {
-    name: 'ping',
-    execute(message) {
-        message.reply('pong');
-    }
-}
-```
-</code-block>
-
 <code-block title="commands/chats.js">
 ```js {1-7}
 module.exports = {

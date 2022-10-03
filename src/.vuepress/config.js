@@ -106,7 +106,7 @@ module.exports = {
       {
         serviceWorker: true,
         updatePopup: true,
-        popupComponent: 'MySWUpdatePopup'
+        popupComponent: 'PopupUpdate'
       }
     ],
     [
