@@ -12,14 +12,16 @@ The whatsapp-web.js guide is still a work in progress, which means there may be 
 
 whatsapp-web.js is an unofficial library to create automated WhatsApp clients, bots and more by using javascript. The library works by opening the WhatsApp Web browser app and controlling it through puppeteer to run a real instance of Whatsapp Web to avoid getting blocked. The WhatsApp API client that connects through the WhatsApp Web browser app, calling its internal functions.
 
+Important to notice that this Guide is not exactly made for beginners, but we had made it as far as possible easy to understand for everyone without programming knowledge befor. If you having trouble you can join the [Discord community](https://discord.gg/wyKybbF) and ask a question in the [#help forum](https://discord.gg/qxbwdQsEAn).
+
 **In this Guide you will learn how to handle with this powerful library and it offers you knowledge about:**
 
 - How to create a simple [Application with whatsapp-web.js](/guide/v2/creating-your-app/);
 - Explanations and examples for each topic;
 - Answering popular [Frequently asked Questions](/guide/v2/popular-topics/faq);
-- Advanced usage *(like debugging)*;
-- Hosting your application;
-- And much more things *(like show you already created projects)*.
+- Advanced usage *([like debugging]())*;
+- [Hosting your application]();
+- And much more things *(like show you already [created projects]())*.
 
 ## Disclaimer
 

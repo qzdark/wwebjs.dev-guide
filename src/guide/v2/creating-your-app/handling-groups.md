@@ -23,3 +23,7 @@ client.on("ready', async () => {
   res.missingParticipants // Participants that couldn't be added to the group, and the reason with more info ({[jid]: {}})
 })
 ```
+
+### Configuration files
+
+### Storing additional data

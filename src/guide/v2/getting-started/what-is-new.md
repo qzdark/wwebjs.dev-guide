@@ -23,13 +23,12 @@ Pages got splited in different sections:
 ### New
 
 - [Locations](/guide/v2/features/): Creating and receiving information about locations
-- [MessageMedia](/guide/v2/features/message-media): Attching media to message
+- [MessageMedia](/guide/v2/features/message-media): Downloading and attching media to message
 - [Stickers](/guide/v2/features/stickers): A collection, creating and sending stickers
 - [Reactions](/guide/v2/features/adding-reactions): Adding reactions to messages
 - [Buttons](/guide/v2/features/sending-buttons): Building, sending, and receiving buttons
 - [Lists](/guide/v2/features/sending-lists): Building, sending, and receiving lists
 - [Business](/guide/v2/features/business): A other option for business account users
-
 
 ### Updated
 
