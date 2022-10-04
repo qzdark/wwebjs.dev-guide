@@ -105,13 +105,7 @@ module.exports = {
 You can easily send photos, audio, videos and gifs by using the library. To do this, you'll just need to construct a [MessageMedia](https://docs.wwebjs.dev/MessageMedia.html) object, exactly like the one you get by downloading media. This requires the mimetype for the file you'll send, as well as a base64-encoded string representing the data.
 
 <code-group>
-<code-block title="main.js" active>
-```js {1}
-const { Client, NoAuth, MessageMedia } = require('whatsapp-web.js');
-```
-</code-block>
-
-<code-block title="commands/send-endcode-image.js">
+<code-block title="commands/send-endcode-image.js" active>
 ```js {1-4,6-9}
 module.exports = {
     name: 'endcode image',
@@ -131,13 +125,7 @@ module.exports = {
 A similar helper function is also available for sending files based on a remote URL:
 
 <code-group>
-<code-block title="main.js" active>
-```js {1}
-const { Client, NoAuth, MessageMedia } = require('whatsapp-web.js');
-```
-</code-block>
-
-<code-block title="commands/send-url-image.js">
+<code-block title="commands/send-url-image.js" active>
 ```js {1-7}
 module.exports = {
     name: 'url image',
