@@ -36,11 +36,8 @@ h2 {
 
 // @parent-theme/components/NavLinks.vue
 .nav-links {
-	a,
-	.dropdown-wrapper .dropdown-title,
-	.dropdown-wrapper .nav-dropdown .dropdown-item a {
-		&:hover,
-		&.router-link-active {
+	a, .dropdown-wrapper .dropdown-title, .dropdown-wrapper .nav-dropdown .dropdown-item a {
+		&:hover, &.router-link-active {
 			color: $accentColor;
 		}
 	}
@@ -53,8 +50,8 @@ h2 {
 // @parent-theme/components/PageEdit.vue
 .page-edit {
 	max-width: $contentWidth;
-	.edit-link a,
-	.last-updated .prefix {
+
+	.edit-link a, .last-updated .prefix {
 		color: $accentColor;
 	}
 }
@@ -74,11 +71,7 @@ h2 {
 		}
 	}
 }
-@media (max-width: 419px)
-.theme-code-group__nav[data-v-6f2a4370] {
-    margin: 0.85rem -1.5rem;
-    border-radius: 0;
-}
+
 // @parent-theme/components/SidebarGroup.vue
 .sidebar-heading {
 	color: #999;
@@ -104,7 +97,7 @@ h2 {
 
 // @parent-theme/components/AlgoliaSearchBox.vue
 .algolia-search-wrapper {
-	.algolia-autocomplete  {
+	.algolia-autocomplete {
 		.algolia-docsearch-suggestion {
 			.algolia-docsearch-suggestion--category-header .algolia-docsearch-suggestion--highlight {
 				background-color: rgba(#fff, 0.25);
