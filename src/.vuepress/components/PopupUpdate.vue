@@ -48,5 +48,6 @@ export default {
     color: var(--theme-color);
     cursor: pointer;
     font-size: 1rem;
+    font-weight: bold;
 }
 </style>
