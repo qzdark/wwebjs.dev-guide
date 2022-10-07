@@ -116,4 +116,6 @@ After scanning this QR code, the client should be authorized and you should see 
 
 ## Resulting Code
 
-If you want to compare your code to the code we've constructed so far, you can review it over on the [GitHub repository](). 
+If you 
+Test
+want to compare your code to the code we've constructed so far, you can review it over on the [GitHub repository](). 
