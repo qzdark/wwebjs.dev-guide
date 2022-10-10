@@ -200,15 +200,21 @@
 		input,
 		.suggestions {
     		background-color: #171717;
-    		border-color: #323843;
 		}
 
 		input {
-			color: $darkTextColor;
+			color: transparent;
+			background-color: transparent;
+			border: 1px solid #1a1a1a;
 
 			&:focus {
 				border-color: alpha($accentColor, 0.75);
+				color: white;
 			}
+		}
+
+		.suggestions align-right {
+			width: 20rem;
 		}
 
 		.suggestion {

@@ -142,6 +142,33 @@ $navbar-horizontal-padding = 1.5rem;
 	}
 }
 
+.search-box input {
+    cursor: pointer;
+    width: 0rem;
+    height: 2rem;
+    color: transparent;
+    display: inline-block;
+	border: 1px solid #fff;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    padding: 0 0.5rem 0 2rem;
+    outline: none;
+    transition: all 0.2s ease;
+    background: #fff url(./search.svg) 0.6rem 0.5rem no-repeat;
+    background-size: 1rem;
+}
+
+.search-box input:focus {
+    width: 20rem;
+	color: #4e6e8e;
+}
+
+.search-box input {
+	color: transparent;
+    background-color: transparent;
+}
+
 @media (max-width: $MQMobile) {
 	.navbar {
 		padding-left 4rem;

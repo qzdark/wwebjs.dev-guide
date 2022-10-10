@@ -58,7 +58,6 @@ module.exports = {
     docsDir: "src",
     smoothScroll: true,
     sidebarDepth: 3,
-    searchPlaceholder: 'Search...',
     locales: {
       '/': {
         label: 'English',

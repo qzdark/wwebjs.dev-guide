@@ -60,7 +60,7 @@ const client2 = new Client({
 
 ## `RemoteAuth` Strategy
 
-::: tip INFO
+::: danger INFO
 The [`LegacySessionAuth` strategy]() is no longer supported, instead of you can use [`RemoteAuth` strategy]().
 ::: 
 

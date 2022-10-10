@@ -49,12 +49,11 @@ module.exports = {
       collapsable: false,
       children: [
         "features/",
-        "features/message-media",
         "features/stickers",
-        "features/adding-reactions",
-        "features/sending-buttons",
-        "features/sending-lists",
-        "features/sending-templates",
+        "features/reactions",
+        "features/buttons",
+        "features/lists",
+        "features/templates",
         "features/business"
       ],
     },

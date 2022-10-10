@@ -58,10 +58,6 @@ client.on('message_create', async message => {
 });
 ```
 
-::: warning
-The `downloadMedia()` function has nothing to do with downloading the media into your directory. 
-:::
-
 ## Sending Media
 
 If you're sending files from your computer, you can use a helper function to automatically read the file in base64, compute its mime type and get its filename:
@@ -88,8 +84,9 @@ module.exports = {
 
 :::tip INFO
 You can send a caption along with the file by specifying the `caption` option while sending the message: `chat.sendMessage(message.from media, {caption: 'this is my caption'}`
-:::
 
+<code-group>
+<code-block title="commands/send-local-image.js" active>
 ```js {5}
 module.exports = {
     name: 'local image',
@@ -99,6 +96,9 @@ module.exports = {
     }
 };
 ```
+</code-block>
+</code-group>
+:::
 
 ### Sending endcoded files
 
