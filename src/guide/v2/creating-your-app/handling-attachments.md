@@ -138,13 +138,11 @@ module.exports = {
 </code-block>
 </code-group>
 
-### Caveat for sending videos and gifs
+## Extra options for sending
 
 Whatsapp-web.js uses [puppeteer](https://github.com/puppeteer/puppeteer), which comes bundled with the Chromium browser, an open source version of the popular Google Chrome browser. Since AAC and H.264 are licensed formats, they are not supported by Chromium. More info on this can be found on the[ puppeteer documentation](https://github.com/puppeteer/puppeteer#q-what-features-does-puppeteer-not-support).
 
-Because of this, you'll need to point puppeteer to use a separately installed Chrome browser if you intend to use this functionality. This can be done by passing the `executablePath` option to puppeteer while creating the client:
-
-The `executablePath` value will depend on your OS and install location for Chrome, but here are some defaults by OS:
+Because of this, you'll need to point puppeteer to use a separately installed Chrome browser if you intend to use this functionality. This can be done by passing the `executablePath` option to puppeteer while creating the client. The `executablePath` value will depend on your OS and install location for Chrome, but here are some defaults by OS:
 
 <code-group>
 <code-block title="Windows" active>
@@ -180,7 +178,20 @@ const client = new Client({
 
 If your device is not in this list, you have to search by yourself where the `executablePath` is located.
 
-After all added code till your folder should have a look like this:
+### Requirements for videos
+- Set the `executablePath`
+- File have to be a `.mp4`
+  
+### Requirements for gif
+- Set the `executablePath`
+- File have to be a `.mp4` and without audio
+- Set the MessageSendOptions as `{sendVideoAsGif: true}`
+
+<!--### Requirements for audio
+### Requirements for documents
+### Requirements for sticker-->
+
+After all added code, till your folder should have a look like this:
 
 ::: vue
 whatsapp-app
