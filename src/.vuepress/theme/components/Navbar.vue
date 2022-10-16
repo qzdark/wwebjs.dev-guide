@@ -5,18 +5,10 @@
 			<component :is="yuuConfig.logo" @hook:mounted="handleLinksWrapWidth()" />
 		</div>
 		<router-link v-else :to="$localePath" class="home-link">
-			<img
-				v-if="$site.themeConfig.logo"
-				class="logo"
-				:src="$withBase($site.themeConfig.logo)"
-				:alt="$siteTitle"
-			/>
-			<span
-				v-if="$siteTitle"
-				ref="siteName"
-				class="site-name"
-				:class="{ 'can-hide': $site.themeConfig.logo }"
-			>{{ $siteTitle }}</span>
+			<img v-if="$site.themeConfig.logo" class="logo" :src="$withBase($site.themeConfig.logo)"
+				:alt="$siteTitle" />
+			<span v-if="$siteTitle" ref="siteName" class="site-name" :class="{ 'can-hide': $site.themeConfig.logo }">{{
+			$siteTitle }}</span>
 		</router-link>
 		<div class="links" :style="linksWrapMaxWidth ? { 'max-width': linksWrapMaxWidth + 'px' } : {}">
 			<div v-if="yuuConfig.extraOptions && yuuConfig.extraOptions.before" class="user-options-before">
@@ -75,6 +67,17 @@ export default {
 	mounted() {
 		this.handleLinksWrapWidth()
 		window.addEventListener('resize', this.handleLinksWrapWidth, false)
+
+		window.addEventListener('scroll', () => {
+			if (window.scrollY > 0) {
+				const navbar = document.querySelector(".navbar");
+				navbar.style.boxShadow = "#141414 0px 1px 0px 0px, #141414 0px 1px 2px 0px";
+			}
+			else {
+				const navbar = document.querySelector(".navbar");
+				navbar.style.boxShadow = "";
+			}
+		})
 	},
 	destroyed() {
 		window.removeEventListener('resize', this.handleLinksWrapWidth)
