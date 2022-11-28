@@ -1,7 +1,9 @@
 module.exports = {
+  defaultDarkTheme: false,
   disableThemeIgnore: true,
-  labels: {
-    darkTheme: "Darkmode", // Default is "Enable Dark Theme?"
+  disableDarkTheme: false,
+  extraOptions: {
+    below: 'test',
   },
   logo: "GuideBanner"
 };

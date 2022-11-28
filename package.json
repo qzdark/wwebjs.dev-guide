@@ -10,13 +10,13 @@
   },
   "license": "MIT",
   "dependencies": {
-    "fs": "^0.0.1-security",
+    "@vuepress/plugin-pwa": "^1.9.7",
     "vuepress-plugin-code-copy": "^1.0.6",
     "vuepress-theme-yuu": "^3.1.1"
   },
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.8.2",
-    "@vuepress/plugin-medium-zoom": "^1.8.2",
-    "vuepress": "^1.5.3"
+    "@vuepress/plugin-back-to-top": "^1.9.7",
+    "@vuepress/plugin-medium-zoom": "^1.9.7",
+    "vuepress": "^1.9.7"
   }
 }
