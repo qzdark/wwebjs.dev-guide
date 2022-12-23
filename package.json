@@ -7,7 +7,7 @@
   "scripts": {
     "start": "vuepress dev src",
     "docs:dev": "vuepress dev src",
-    "docs:build": "vuepress build src"
+    "docs:build": "NODE_ENV=production vuepress build src"
   },
   "license": "MIT",
   "bugs": {
