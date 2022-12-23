@@ -5,18 +5,20 @@
   "repository": "https://github.com/wwebjs/wwebjs.dev",
   "author": "WWebJS Contributors",
   "scripts": {
+    "start": "vuepress dev src",
     "docs:dev": "vuepress dev src",
     "docs:build": "vuepress build src"
   },
   "license": "MIT",
-  "dependencies": {
-    "@vuepress/plugin-pwa": "^1.9.7",
-    "vuepress-plugin-code-copy": "^1.0.6",
-    "vuepress-theme-yuu": "^3.1.1"
+  "bugs": {
+    "url": "https://github.com/wwebjs/wwebjs.dev/issues"
   },
+  "homepage": "https://wwebjs.dev/guide",
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.9.7",
-    "@vuepress/plugin-medium-zoom": "^1.9.7",
-    "vuepress": "^1.9.7"
+    "@vuepress/plugin-search": "^2.0.0-beta.59",
+    "vuepress": "^2.0.0-beta.59"
+  },
+  "dependencies": {
+    "@vuepress/cli": "^2.0.0-beta.59"
   }
 }

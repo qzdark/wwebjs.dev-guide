@@ -1,126 +1,51 @@
-const {
-  NavItems4EN, NavItems4DE, NavItems4FR,
-  Sidebar4EN, Sidebar4DE, Sidebar4FR,
-  UpdateMsg4EN, UpdateMsg4DE, UpdateMsg4FR
-} = require("./config/index.js");
+import { defaultTheme } from 'vuepress'
+import { searchPlugin } from '@vuepress/plugin-search'
+import { head, navbarEN, sidebarEN, navbarDE, sidebarDE } from './config/index'
 
-module.exports = {
-  /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#title
-   */
-  title: "whatsapp-web.js",
-  /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#description
-   */
-  description:
-    "A WhatsApp client library for NodeJS that connects through the WhatsApp Web browser app",
-
-  /**
-   * Extra tags to be injected to the page HTML `<head>`
-   *
-   * ref：https://v1.vuepress.vuejs.org/config/#head
-   */
-  head: [
-    ["link", { rel: "icon", type: "image/png", sizes: "32x32", href: "/assets/favcion/logo_32x32.png" }],
-    ["link", { rel: "icon", type: "image/png", sizes: "16x16", href: "/assets/favcion/logo_16x16.png" }],
-    ["link", { rel: 'shortcut icon', type: 'image/x-icon', href: '/assets/favcion/logo_shortcut.ico' }],
-    ["meta", { name: "theme-color", content: "#25D366" }],
-    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
-    ["meta", { name: "apple-mobile-web-app-status-bar-style", content: "black" }],
-  ],
-  locales: {
-    '/': {
-      lang: 'en',
-      title: 'whatsapp-web.js',
-      description: 'A WhatsApp client library for NodeJS that connects through the WhatsApp Web browser app'
-    },
-    '/de/': {
-      lang: 'de',
-      title: 'whatsapp-web.js',
-      description: 'Eine WhatsApp-Clientbibliothek für NodeJS, die eine Verbindung über die WhatsApp-Webbrowser-App herstellt'
-    },
-    '/fr/': {
-      lang: 'fr',
-      title: 'whatsapp-web.js',
-      description: 'A WhatsApp client library for NodeJS that connects through the WhatsApp Web browser app'
-    }
-  },
-  /**
-   * Theme configuration, here is the default theme configuration for VuePress.
-   *
-   * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
-   */
-  themeConfig: {
-    repo: "pedroslopez/whatsapp-web.js",
-    docsRepo: "wwebjs/wwebjs.dev",
-    docsBranch: "main",
-    editLinks: true,
-    docsDir: "src",
-    smoothScroll: true,
-    sidebarDepth: 3,
+export default {
+    head: head,
     locales: {
-      '/': {
-        label: 'English',
-        selectText: 'Languages',
-        ariaLabel: 'Select language',
-        editLinkText: 'Edit this page on GitHub',
-        lastUpdated: 'Last Updated',
-        nav: NavItems4EN,
-        sidebar: Sidebar4EN
-      },
-      '/de/': {
-        label: 'Deutsch',
-        selectText: 'Sprachen',
-        ariaLabel: 'Wähle Sprache',
-        editLinkText: 'Ändere diese Seite auf GitHub',
-        lastUpdated: 'Letztes Update',
-        nav: NavItems4DE,
-        sidebar: Sidebar4DE
-      },
-      '/fr/': {
-        label: 'Français',
-        selectText: 'Langages',
-        ariaLabel: 'Choisir la langue',
-        editLinkText: 'Modifier cette page sur GitHub',
-        lastUpdated: 'Dernière mise à jour',
-        nav: NavItems4FR,
-        sidebar: Sidebar4FR
-      }
+        // The key is the path for the locale to be nested under.
+        // As a special case, the default locale can use '/' as its path.
+        '/': {
+            lang: 'en-US',
+            description: 'A WhatsApp client library for NodeJS that connects through the WhatsApp Web browser app',
+        },
+        '/de/': {
+            lang: 'de-DE',
+            description: 'Eine Bibliothek, die es ermöglicht, mit WhatsApp Web zu interagieren.',
+        },
     },
-    yuu: require("./config/yuu"),
-  },
-  markdown: {
-    lineNumbers: true
-  },
-  theme: "/theme/layouts/Layout.vue",
-  /**
-   * Apply plugins，ref：https://v1.vuepress.vuejs.org/plugin/
-   */
-  plugins: [
-    "@vuepress/plugin-back-to-top",
-    "@vuepress/plugin-medium-zoom",
-    "@vuepress/plugin-last-updated",
-    "@vuepress/plugin-active-header-links",
-    [
-      "@vuepress/pwa",
-      {
-        serviceWorker: true,
-        popupComponent: 'PopupUpdate',
-        updatePopup: {
-          "/": UpdateMsg4EN,
-          "/de/": UpdateMsg4DE,
-          "/fr/": UpdateMsg4FR
-        }
-      }
+    theme: defaultTheme({
+        docsRepo: 'https://github.com/wwebjs/wwebjs.dev',
+        docsBranch: 'main',
+        docsDir: 'src',
+        repo: 'https://github.com/wwebjs/wwebjs.dev',
+        logo: '/assets/light/banner_green_logo.png',
+        colorModeSwitch: true,
+        locales: {
+            '/': {
+                selectLanguageName: 'English',
+                navbar: navbarEN,
+                sidebar: sidebarEN,
+            },
+            '/de/': {
+                selectLanguageName: 'Deutsch',
+                navbar: navbarDE,
+                sidebar: sidebarDE,
+            },
+        },
+    }),
+    plugins: [
+        searchPlugin({
+            locales: {
+                '/': {
+                    placeholder: 'Search',
+                },
+                '/de/': {
+                    placeholder: 'Suchen',
+                },
+            },
+        }),
     ],
-    [
-      "vuepress-plugin-container",
-      {
-        type: 'vue',
-        before: '<pre class="vue-container"><code>',
-        after: '</code></pre>'
-      }
-    ],
-  ],
-  extraWatchFiles: ['.vuepress/config/**'],
-};
+}

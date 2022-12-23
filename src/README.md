@@ -1,8 +1,15 @@
 ---
 home: true
-heroImage: logo.png
-actionText: Get Started →
-actionLink: /guide/v2/
+title: Home
+heroText: whatsapp-web.js
+heroImage: /assets/logo.png
+actions:
+  - text: Guide
+    link: /guide/
+    type: primary
+  - text: Documentation
+    link: https://docs.wwebjs.dev/
+    type: secondary
 features:
 - title: Automation for Everyone
   details: Programmatically control WhatsApp whether you're running user or business accounts.
@@ -10,47 +17,125 @@ features:
   details: Whatsapp-web.js connects to an official version of WhatsApp Web under the hood, reducing ban risks.
 - title: Easy to use
   details: The object-oriented approach makes it easy to get running quickly.
+footer: Licensed under the Apache License, Version 2.0.
 ---
 
-::: slot footer
-Apache License, Version 2.0. | [Pedro S. Lopez](https://github.com/pedroslopez)
+## About
+A WhatsApp API client that connects through the WhatsApp Web browser app
+
+It uses Puppeteer to run a real instance of Whatsapp Web to avoid getting blocked.
+
+**NOTE:** I can't guarantee you will not be blocked by using this method, although it has worked for me. WhatsApp does not allow bots or unofficial clients on their platform, so this shouldn't be considered totally safe.
+
+## Quick Links
+- [Guide / Getting Started](https://wwebjs.dev/guide)
+- [Reference documentation]()
+- [GitHub](https://github.com/pedroslopez/whatsapp-web.js)
+- [npm](https://npmjs.org/package/whatsapp-web.js)
+
+## Installation
+Please note that Node v12+ is required.
+:::: code-group
+::: code-group-item npm
+```sh:no-line-numbers
+npm install discord.js
+```
 :::
+::: code-group-item yarn
+```sh:no-line-numbers
+yarn add discord.js
+```
+:::
+::::
 
-<style lang="stylus">
-.yuu-theme-red {
-	.home .hero img {
-		content: url('/branding/logo_red.png');
-	}
-}
-.yuu-theme-blue {
-	.home .hero img {
-		content: url('/branding/logo_blue.png');
-	}
-}
-.yuu-theme-purple {
-	.home .hero img {
-		content: url('/branding/logo_purple.png');
-	}
-}
+## Example usage
+```javascript
+const { Client } = require('whatsapp-web.js');
 
-.yuu-theme-dark {
-	.home .hero img {
-		content: url('/branding/logo_green.png');
-	}
-}
-.yuu-theme-dark.yuu-theme-red {
-	.home .hero img  {
-		content: url('/branding/logo_red.png');
-	}
-}
-.yuu-theme-dark.yuu-theme-blue {
-	.home .hero img  {
-		content: url('/branding/logo_blue.png');
-	}
-}
-.yuu-theme-dark.yuu-theme-purple {
-	.home .hero img  {
-		content: url('/branding/logo_purple.png');
-	}
-}
-</style>
+const client = new Client();
+
+client.on('qr', (qr) => {
+    // Generate and scan this code with your phone
+    console.log('QR RECEIVED', qr);
+});
+
+client.on('ready', () => {
+    console.log('Client is ready!');
+});
+
+client.on('message', msg => {
+    if (msg.body == '!ping') {
+        msg.reply('pong');
+    }
+});
+
+client.initialize();
+```
+
+Take a look at [example.js](https://github.com/pedroslopez/whatsapp-web.js/blob/master/example.js) for another example with more use cases.
+
+For more information on saving and restoring sessions, check out the available [Authentication Strategies](https://wwebjs.dev/guide/authentication.html).
+
+## Supported features
+
+| Feature                                          | Status                                                                                                              |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| Multi Device                                     | ✅                                                                                                                   |
+| Send messages                                    | ✅                                                                                                                   |
+| Receive messages                                 | ✅                                                                                                                   |
+| Send media (images/audio/documents)              | ✅                                                                                                                   |
+| Send media (video)                               | ✅ [(requires google chrome)](https://wwebjs.dev/guide/handling-attachments.html#caveat-for-sending-videos-and-gifs) |
+| Send stickers                                    | ✅                                                                                                                   |
+| Receive media (images/audio/video/documents)     | ✅                                                                                                                   |
+| Send contact cards                               | ✅                                                                                                                   |
+| Send location                                    | ✅                                                                                                                   |
+| Send buttons                                     | ✅                                                                                                                   |
+| Send lists                                       | ✅ (business accounts not supported)                                                                                 |
+| Receive location                                 | ✅                                                                                                                   |
+| Message replies                                  | ✅                                                                                                                   |
+| Join groups by invite                            | ✅                                                                                                                   |
+| Get invite for group                             | ✅                                                                                                                   |
+| Modify group info (subject, description)         | ✅                                                                                                                   |
+| Modify group settings (send messages, edit info) | ✅                                                                                                                   |
+| Add group participants                           | ✅                                                                                                                   |
+| Kick group participants                          | ✅                                                                                                                   |
+| Promote/demote group participants                | ✅                                                                                                                   |
+| Mention users                                    | ✅                                                                                                                   |
+| Mute/unmute chats                                | ✅                                                                                                                   |
+| Block/unblock contacts                           | ✅                                                                                                                   |
+| Get contact info                                 | ✅                                                                                                                   |
+| Get profile pictures                             | ✅                                                                                                                   |
+| Set user status message                          | ✅                                                                                                                   |
+| React to messages                                | ✅                                                                                                                   |
+
+Something missing? Make an issue and let us know!
+
+## Contributing
+
+Pull requests are welcome! If you see something you'd like to add, please do. For drastic changes, please open an issue first.
+
+## Supporting the project
+
+You can support the maintainer of this project through the links below
+
+- [Support via GitHub Sponsors](https://github.com/sponsors/pedroslopez)
+- [Support via PayPal](https://www.paypal.me/psla/)
+- [Sign up for DigitalOcean](https://m.do.co/c/73f906a36ed4) and get $100 in credit when you sign up (Referral)
+
+## Disclaimer
+
+This project is not affiliated, associated, authorized, endorsed by, or in any way officially connected with WhatsApp or any of its subsidiaries or its affiliates. The official WhatsApp website can be found at https://whatsapp.com. "WhatsApp" as well as related names, marks, emblems and images are registered trademarks of their respective owners.
+
+## License
+
+Copyright 2019 Pedro S Lopez
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this project except in compliance with the License.
+You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
