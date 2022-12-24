@@ -3,10 +3,10 @@ export const sidebarEN = {
         {
             text: "Guide",
             children: [
-              "README.md",
-              "authentication",
-              "handling-attachments",
-              "mentioning-contacts",
+              "/guide/README.md",
+              "/guide/authentication",
+              "/guide/handling-attachments",
+              "/guide/mentioning-contacts",
             ]
         }
     ]
@@ -17,10 +17,10 @@ export const sidebarDE = {
         {
             text: "Guide",
             children: [
-              "README.md",
-              "authentication",
-              "handling-attachments",
-              "mentioning-contacts",
+              "/de/guide/README.md",
+              "/de/guide/authentication",
+              "/de/guide/handling-attachments",
+              "/de/guide/mentioning-contacts",
             ]
         }
     ]

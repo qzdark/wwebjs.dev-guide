@@ -1,5 +1,5 @@
 import { defaultTheme } from 'vuepress'
-import { searchPlugin } from '@vuepress/plugin-search'
+//import { searchPlugin } from '@vuepress/plugin-search'
 import { head, navbarEN, sidebarEN, navbarDE, sidebarDE } from './config/index'
 
 export default {
@@ -37,7 +37,7 @@ export default {
         },
     }),
     plugins: [
-        searchPlugin({
+/*        searchPlugin({
             locales: {
                 '/': {
                     placeholder: 'Search',
@@ -46,6 +46,6 @@ export default {
                     placeholder: 'Suchen',
                 },
             },
-        }),
-    ],
+        }),*/
+    ]//,
 }
