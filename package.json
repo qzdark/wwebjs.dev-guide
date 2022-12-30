@@ -1,22 +1,24 @@
 {
-  "name": "wwebjs.dev",
-  "version": "2.0.0",
-  "description": "The website for wwebjs.dev",
-  "repository": "https://github.com/wwebjs/wwebjs.dev",
-  "author": "WWebJS Contributors",
-  "scripts": {
-    "docs:dev": "vuepress dev src",
-    "docs:build": "vuepress build src"
+  "name": "linked-role-bot",
+  "version": "1.0.0",
+  "private": "true",
+  "type": "module",
+  "engines": {
+    "node": ">=16"
   },
+  "description": "A very simple example of a Linked Role bot for Discord.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Justin Beckwith <justin.beckwith@discordapp.com>",
   "license": "MIT",
   "dependencies": {
-    "@vuepress/plugin-pwa": "^1.9.7",
-    "vuepress-plugin-code-copy": "^1.0.6",
-    "vuepress-theme-yuu": "^3.1.1"
-  },
-  "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.9.7",
-    "@vuepress/plugin-medium-zoom": "^1.9.7",
-    "vuepress": "^1.9.7"
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.0"
   }
 }
