@@ -25,3 +25,14 @@ export const sidebarDE = {
         }
     ]
 }
+
+export const sidebarDC = {
+    '/discord/': [
+        {
+            text: "Guide",
+            children: [
+              "/discord/README.md"
+            ]
+        }
+    ]
+}

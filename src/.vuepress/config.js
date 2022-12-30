@@ -1,6 +1,7 @@
 import { defaultTheme } from 'vuepress'
-//import { searchPlugin } from '@vuepress/plugin-search'
-import { head, navbarEN, sidebarEN, navbarDE, sidebarDE } from './config/index'
+import { searchPlugin } from '@vuepress/plugin-search'
+import { head, navbarEN, sidebarEN, navbarDE, sidebarDE, sidebarDC } from './config/index'
+import discord from '../discord/src/server.js'
 
 export default {
     head: head,
@@ -23,6 +24,7 @@ export default {
         repo: 'https://github.com/wwebjs/wwebjs.dev',
         logo: '/assets/light/banner_green_logo.png',
         colorModeSwitch: true,
+        sidebar: sidebarDC,
         locales: {
             '/': {
                 selectLanguageName: 'English',
@@ -37,7 +39,7 @@ export default {
         },
     }),
     plugins: [
-/*        searchPlugin({
+        searchPlugin({
             locales: {
                 '/': {
                     placeholder: 'Search',
@@ -46,6 +48,8 @@ export default {
                     placeholder: 'Suchen',
                 },
             },
-        }),*/
-    ]//,
+        }),
+    ],
 }
+
+discord();

@@ -5,7 +5,7 @@ heroText: whatsapp-web.js
 heroImage: /assets/logo.png
 actions:
   - text: Guide
-    link: /
+    link: /de/guide/
     type: primary
   - text: Documentation
     link: https://docs.wwebjs.dev/
