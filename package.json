@@ -10,15 +10,16 @@
   "main": "server.js",
   "scripts": {
     "start": "node src/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node src/server.js"
   },
   "keywords": [],
-  "author": "Justin Beckwith <justin.beckwith@discordapp.com>",
+  "author": "darkk",
   "license": "MIT",
   "dependencies": {
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "node-fetch": "^3.3.0"
+    "node-fetch": "^3.3.0",
+    "serverless-http": "^3.1.0"
   }
 }
