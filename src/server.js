@@ -136,7 +136,7 @@ async function updateMetadata(userId) {
 }
 
 const port = process.env.PORT || 3000;
-app.use('/', router);
+app.use('/discord', router);
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
