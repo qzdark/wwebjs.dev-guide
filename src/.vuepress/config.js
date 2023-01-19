@@ -1,7 +1,6 @@
 import { defaultTheme } from 'vuepress'
 import { searchPlugin } from '@vuepress/plugin-search'
 import { head, navbarEN, sidebarEN, navbarDE, sidebarDE, sidebarDC } from './config/index'
-import discord from '../discord/src/server.js'
 
 export default {
     head: head,
@@ -51,5 +50,3 @@ export default {
         }),
     ],
 }
-
-discord();
