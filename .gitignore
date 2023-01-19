@@ -5,3 +5,4 @@ node_modules/
 runhost.cmd
 localhost.cmd
 package-lock.json
+.env
