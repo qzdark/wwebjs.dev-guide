@@ -1,6 +1,6 @@
 <div align="center">
 	<img src="src/images/light/banner_green_small.png" title="wwebjs.dev Guide" alt="wwebjs.dev Guide" />
-</div
+</div>
 
 # WWebjs.dev Guide
 
