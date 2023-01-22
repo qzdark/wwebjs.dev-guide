@@ -1,6 +1,6 @@
 <div align="center">
 	<img src="src/images/light/banner_green_small.png" title="wwebjs.dev Guide" alt="wwebjs.dev Guide"/>
-	<img src="src/images/light/banner_green_v2.png" title="wwebjs.dev Guide" alt="wwebjs.dev Guide" style="margin: 30px; max-width: 115px;"/>
+	<img src="src/images/light/banner_green_v2.png" title="wwebjs.dev v2" alt="wwebjs.dev v2" style="margin-left: 50px; height: 115px;"/>
 </div>
 
 # WWebjs.dev Guide
