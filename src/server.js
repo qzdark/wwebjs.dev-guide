@@ -1,6 +1,5 @@
 import express from 'express';
 import cookieParser from 'cookie-parser';
-import serverless from 'serverless-http';
 
 import config from './config.js';
 import * as discord from './discord.js';
@@ -13,11 +12,10 @@ import * as storage from './storage.js';
 const app = express();
 app.use(cookieParser(config.COOKIE_SECRET));
 
-const router = express.Router();
 /**
  * Just a happy little route to show our server is up.
  */
-router.get('/', (req, res) => {
+app.get('/', (req, res) => {
   res.send('👋');
 });
 
@@ -27,7 +25,7 @@ router.get('/', (req, res) => {
  * To start the flow, generate the OAuth2 consent dialog url for Discord, 
  * and redirect the user there.
  */
-router.get('/linked-role', async (req, res) => {
+app.get('/linked-role', async (req, res) => {
   const { url, state } = discord.getOAuthUrl();
 
   // Store the signed state param in the user's cookies so we can verify
@@ -48,7 +46,7 @@ router.get('/linked-role', async (req, res) => {
  * 3. Stores the OAuth2 Discord Tokens in Redis / Firestore
  * 4. Lets the user know it's all good and to go back to Discord
  */
-router.get('/discord-oauth-callback', async (req, res) => {
+app.get('/discord-oauth-callback', async (req, res) => {
   try {
     // 1. Uses the code and state to acquire Discord OAuth2 tokens
     const code = req.query['code'];
@@ -87,7 +85,7 @@ router.get('/discord-oauth-callback', async (req, res) => {
  * This example calls a common `updateMetadata` method that pushes static
  * data to Discord.
  */
-router.post('/update-metadata', async (req, res) => {
+app.post('/update-metadata', async (req, res) => {
   try {
     const userId = req.body.userId;
     await updateMetadata(userId)
@@ -135,11 +133,8 @@ async function updateMetadata(userId) {
   await discord.pushMetadata(userId, tokens, metadata);
 }
 
+
 const port = process.env.PORT || 3000;
-app.use('/.netlify/functions/server', router);
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
-
-// Export the serverless handler
-export const handler = serverless(app);
