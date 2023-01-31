@@ -15,6 +15,6 @@ On major changes, please open an issue first!
 
 ## Status
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4e403258-ba36-4233-aa30-ff6224ca3af4/deploy-status)](https://app.netlify.com/sites/elaborate-hotteok-0edd53/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9a3e290c-1912-43d0-9332-a55dff6f3658/deploy-status)](https://app.netlify.com/sites/v2-wwebjs-guide-test/deploys)
 
 Website: https://v2-wwebjs-guide-test.netlify.app/
